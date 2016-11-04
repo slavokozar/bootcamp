@@ -100,47 +100,49 @@
 
 <script src="../js/jquery.min.js"></script>
 <script>
+    var jQ2 = $.noConflict();
+    console.log(jQ('#basket'));
 
-    $('.item-to-basket').click(function(e){        
-        e.preventDefault();
+    // $('.item-to-basket').click(function(e){        
+    //     e.preventDefault();
 
-        var aero = '<div id="basket-aero" style="position:absolute;height:50px; width:50px; background-color:red"></div>';
-        $('body').append(aero);
+    //     var aero = '<div id="basket-aero" style="position:absolute;height:50px; width:50px; background-color:red"></div>';
+    //     $('body').append(aero);
 
-        var button_position = $(e.target).offset(); 
+    //     var button_position = $(e.target).offset(); 
 
-        $('#basket-aero').css({
-            'left': button_position.left,
-            'top': button_position.top
-        })
+    //     $('#basket-aero').css({
+    //         'left': button_position.left,
+    //         'top': button_position.top
+    //     })
 
-        // your animation
-        var basket_position = $('#basket').offset();
+    //     // your animation
+    //     var basket_position = $('#basket').offset();
 
-        $('#basket-aero').animate({
-            'left' : basket_position.left,
-            'top': basket_position.top
-        }, 500, function(){
-            $('#basket-aero').fadeOut(300, function(){
+    //     $('#basket-aero').animate({
+    //         'left' : basket_position.left,
+    //         'top': basket_position.top
+    //     }, 500, function(){
+    //         $('#basket-aero').fadeOut(300, function(){
                 
-                incrementBasket();
-                $('#basket-aero').remove();
+    //             incrementBasket();
+    //             $('#basket-aero').remove();
 
-            })
-        });
+    //         })
+    //     });
 
-    })
+    // })
 
-    function incrementBasket(){
-        var count = $('#basket-count').text(); 
-        if(count == ''){
-            count = 0;
-        }
+    // function incrementBasket(){
+    //     var count = $('#basket-count').text(); 
+    //     if(count == ''){
+    //         count = 0;
+    //     }
         
-        count++;
+    //     count++;
 
-        $('#basket-count').text(count);
-    }
+    //     $('#basket-count').text(count);
+    // }
 
 </script>
 </body>
