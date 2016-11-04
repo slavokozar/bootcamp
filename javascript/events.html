@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Mobirise Free Bootstrap Template, https://mobirise.com -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="generator" content="SlavoKozar.sk">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="CodeLeague">
+    <title>Coding Bootcamp JavaScript Example</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!--<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,200i,300,300i,400,400i,600,600i,700,700i,900,900i&subset=latin-ext"
+          rel="stylesheet">-->
+
+    <link rel="stylesheet" href="css/font-awesome.css">
+    <!--<link rel="stylesheet" href="css/prezi.css">-->
+</head>
+<body>
+
+<button id="my-button" data-position="val" class="btn btn-lg btn-primary">Click Me!</button>
+
+<button id="my-button2" class="btn btn-lg btn-primary">Click Me!</button>
+
+
+<script>
+    document.getElementById('my-button').onclick = myFunction;
+    
+    function myFunction(e){
+        console.log(e);
+        e.target.innerHTML = "clicked";
+        console.log(e.target.getAttribute('data-position'));
+        alert('clicked');
+    }
+
+    document.getElementById('my-button2').onclick = function(e){
+        alert('clicked 2');
+    };
+
+</script>
+<script>
+var str = "How are you doing today?";
+var res = str.split("?");
+console.log(res);
+</script>
+</body>
+</html>

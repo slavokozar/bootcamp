@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Mobirise Free Bootstrap Template, https://mobirise.com -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="generator" content="SlavoKozar.sk">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="CodeLeague">
+    <title>Coding Bootcamp JavaScript Example</title>
+    
+</head>
+<body>
+
+<h1 id="clock"><h1>
+
+<script> 
+
+    var clock = {
+        twelveHoursFormat: false,
+        clockElement: "",
+
+        //initialize the object
+        init : function(a, b, c){
+            this.twelveHoursFormat = a;
+            this.clockElement = c;
+
+            var self = this;
+            setInterval(
+                function(){ clock.refresh() },
+                b
+            );
+            
+
+            this.refresh();
+        },
+        
+        refresh : function(){
+            document.getElementById(this.clockElement).innerHTML = this.format();
+        },
+
+        format : function(){
+            var date = new Date(); 
+
+            var hours = date.getHours(); 
+            var minutes = date.getMinutes();
+            var seconds = date.getSeconds();
+
+            if(minutes < 10){
+                minutes = "0" + minutes;
+            }
+
+            if(seconds < 10){
+                seconds = "0" + seconds;
+            }
+
+            if(this.twelveHoursFormat){
+                if(hours > 12){
+                    return (hours - 12) + " : " + minutes + " : " + seconds + " PM";
+                }else{
+                    return hours + " : " + minutes + " : " + seconds + " AM";
+                }
+            }else{
+                return hours + " : " + minutes + " : " + seconds;
+            }
+        }
+    }
+
+    clock.init(true, 1000, 'clock');
+</script>
+
+</body>
+</html>

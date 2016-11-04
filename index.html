@@ -1,0 +1,910 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Mobirise Free Bootstrap Template, https://mobirise.com -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="generator" content="SlavoKozar.sk">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="CodeLeague">
+    <title>Coding Bootcamp</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,200i,300,300i,400,400i,600,600i,700,700i,900,900i&subset=latin-ext"
+          rel="stylesheet">
+
+    <link rel="stylesheet" href="css/font-awesome.css">
+    <link rel="stylesheet" href="css/prezi.css">
+    
+</head>
+<body>
+
+<section>
+    <div class="container wrapper">
+        <div class="content">
+            <h1>jQuery</h1>
+            <h3>Slavo Kožár</h3>
+        </div>
+        <div class="footer"></div>
+    </div>
+</section>
+
+
+<section>
+    <div class="container wrapper">
+        <div class="content">
+            <h1>What is jQuery</h1>
+            <p>jQuery is a lightweight, "write less, do more", JavaScript library.</p>
+            <ul>
+                <li>HTML/DOM manipulation</li>
+                <li>CSS manipulation</li>
+                <li>HTML event methods</li>
+                <li>Effects and animations</li>
+                <li>AJAX</li>
+                <li>Utilities</li>
+            </ul>
+        </div>
+        <div class="footer"></div>
+    </div>
+</section>
+
+
+<section>
+    <div class="container wrapper">
+        <div class="content">
+            <h1>Why jQuery</h1>
+            <p>Many of the biggest companies on the Web use jQuery, such as:
+                <ul>
+                    <li>Google</li>
+                    <li>Microsoft</li>
+                    <li>IBM</li>
+                    <li>Netflix</li>
+                </ul>
+            </p>
+        </div>
+        <div class="footer"></div>
+    </div>
+</section>
+
+
+<section>
+    <div class="container wrapper">
+        <div class="content">
+            <h1>Intro</h1>
+            
+<p>jQuery was create in order to provide unified and simplified system of queries.</p> 
+<p>What kind of queries?</p>
+<p>DOM queries using css selectors.</p> 
+
+<p>The first version of jQuery provided magic function “jQuery” and transformed 
+<pre>
+document.getElementsByName("name"); 
+document.getElementById(“name”);
+</pre>
+into
+<pre>
+jQuery(“name”);
+jQuery(“#name”);
+</pre> 
+</p>
+
+<p>Pretty amazing, isn’t it?</p>
+        </div>
+        <div class="footer"></div>
+    </div>
+</section>
+
+
+<section>
+    <div class="container wrapper">
+        <div class="content">
+            <h1>... intro</h1>
+            
+<p>However, that is alsao too long, for typing. So function $(“”)  was introduced.</p> 
+
+<p>
+Now, we know, $() is a function, which can be used to find anything in DOM using CSS selectors:
+
+<pre>
+$(“body”) 
+$(“#my-element”) 
+$(“.my-elements”) 
+</pre>
+</p>
+        </div>
+        <div class="footer"></div>
+    </div>
+</section>
+
+
+<section>
+    <div class="container wrapper">
+        <div class="content">
+            <h1>using jQuery</h1>
+<p>There are several ways to start using jQuery on your web site. You can:
+<h3>Download the jQuery library from jQuery.com</h3>
+
+<p>Production version - this is for your live website because it has been minified and compressed.</p>
+<p>Development version - this is for testing and development (uncompressed and readable code).</p>
+<pre>
+&lt;script src="jquery.js"&gt;&lt;/script&gt;
+</pre>
+        </div>
+        <div class="footer"></div>
+    </div>
+</section>
+
+
+<section>
+    <div class="container wrapper">
+        <div class="content">
+            <h1>using jQuery</h1>
+
+<h3>jQuery CDN</h3>
+<p>If you don't want to download and host jQuery yourself, you can include it from a CDN (Content Delivery Network).</p>
+
+<p>
+Google CDN
+<pre>
+&lt;script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"&gt;&lt;/script&gt;
+</pre>
+</p>
+
+<p>
+Microsoft CDN
+<pre>
+&lt;script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.1.1.min.js"&gt;&lt;/script&gt;
+</pre>
+</p>
+        </div>
+        <div class="footer"></div>
+    </div>
+</section>
+
+
+<section>
+    <div class="container wrapper">
+        <div class="content">
+            <h1>Syntax</h1>
+            <p>The jQuery syntax is designed for selecting HTML elements and performing some action on the element(s).</p>
+            <p>Basic syntax is: 
+                <pre>$(selector).action()</pre>
+                <ul>
+                    <li>A $ sign to define/access jQuery</li>
+                    <li>A (selector) to "query (or find)" HTML elements</li>
+                    <li>A jQuery action() to be performed on the element(s)</li>
+                </ul>
+            </p>
+        </div>
+        <div class="footer"></div>
+    </div>
+</section>
+
+
+<section>
+    <div class="container wrapper">
+        <div class="content">
+            <h1>... syntax</h1>
+            <p>It is recommended, to wrap your jQuery functionality inside .ready() function.</p>
+<pre>
+$(document).ready(function(){
+   // jQuery methods go here...
+});
+</pre>
+<p>This approach ensures you, in a moment of execution code, all your libraries have been loaded allready.</p>
+
+
+        </div>
+        <div class="footer"></div>
+    </div>
+</section>
+
+
+<section>
+    <div class="container wrapper">
+        <div class="content">
+            <h1>jQuery Selectors</h1>
+            <p>jQuery selectors are one of the most important parts of the jQuery library.</p>
+            <p>
+                The element Selector
+                <pre>$("p")</pre>
+                selects elements &gt;p&lt;&gt;/p&lt;
+            </p>
+
+            <p>
+                The #id Selector
+                <pre>$("#test")</pre>
+                selects element width id=”test”
+            </p>
+
+            <p>
+                The .class Selector
+                <pre>$(".test")</pre>
+                selects elements with class=”test”
+            </p>
+
+        </div>
+        <div class="footer"></div>
+    </div>
+</section>
+
+
+<section>
+    <div class="container wrapper">
+        <div class="content">
+            <h1>Find Function</h1>
+            <pre>$(element).find(“.test”)</pre> 
+            <p>This function find all elements matching selector “.test” inside element.</p>
+        </div>
+        <div class="footer"></div>
+    </div>
+</section>
+
+
+<section>
+    <div class="container wrapper">
+        <div class="content">
+            <h1>Examples of jQuery Selectors</h1>
+            <table>
+                <tr><td>$("*")</td><td>Selects all elements&gt;/td&lt;&gt;/tr&lt;</td></tr>
+                <tr><td>$(this)</td><td>Selects the current HTML element</td></tr>
+                <tr><td>$("p.intro")</td><td>Selects all &gt;p&lt; elements with class="intro"</td></tr>	
+                <tr><td>$("p:first")</td><td>Selects the first &gt;p&lt; element</td></tr>
+                <tr><td>$("ul li:first")</td><td>Selects the first &gt;li&lt; element of the first &gt;ul&lt;</td></tr>
+                <tr><td>$("ul li:first-child")</td><td>Selects the first &gt;li&lt; element of every &gt;ul&lt;</td></tr>
+                <tr><td>$("[href]")</td><td>Selects all elements with an href attribute</td></tr>
+                <tr><td>$("a[target='_blank']")</td><td>Selects all &gt;a&lt; elements with a target attribute value equal to "_blank"</td></tr>
+                <tr><td>$("a[target!='_blank']")</td><td>Selects all &gt;a&lt; elements with a target attribute value NOT equal to "_blank"</td></tr>
+                <tr><td>$(":button")</td><td>Selects all &gt;button&lt; elements and &gt;input&lt; elements of type="button"</td></tr>
+                <tr><td>$("tr:even")</td><td>Selects all even &gt;tr&lt; elements</td></tr>
+                <tr><td>$("tr:odd")</td><td>Selects all odd &gt;tr&lt; elements</td></tr>
+            </table>
+        </div>
+        <div class="footer"></div>
+    </div>
+</section>
+
+
+<section>
+    <div class="container wrapper">
+        <div class="content">
+            <h1>jQuery Object</h1>
+            <p>What exactly does the $() function returns?</p>
+            <p>jQuery function returns a jQuery object containing collection of elements matching the selector.</p> 
+            <p>jQuery collection is data object similar to JS array. However, jQuery collection provides more features, like .first(), .last() selectors and .each() function.</p>
+            <p>jQuery object is object encapsulating DOM object(s) and providing extra functions and length property, which return number of DOM objects in collection.</p> 
+            <p>Every jQuery function returns jQuery object. This feature of jQuery allows us chaining functions. </p>
+            <pre>$("#p1").css("color", "red").slideUp(2000).slideDown(2000);</pre>
+        </div>
+        <div class="footer"></div>
+    </div>
+</section>
+
+
+<section>
+    <div class="container wrapper">
+        <div class="content">
+            <h1>DOM manipulation</h1>
+            <h3>get content</h3>
+            <p>text() - returns the text content of selected elements</p>
+            <p>html() - returns the content of selected elements (including HTML markup)</p>
+            <p>val() - returns the value of form fields</p>            
+        </div>
+        <div class="footer"></div>
+    </div>
+</section>
+
+
+<section>
+    <div class="container wrapper">
+        <div class="content">
+            <h1>DOM manipulation</h1>
+            <h3>get content</h3>
+            <p>The following example demonstrates how to get content with the jQuery text() and html() methods:
+
+<pre>
+$("#btn1").click(function(){
+    alert("Text: " + $("#test").text());
+});
+$("#btn2").click(function(){
+    alert("HTML: " + $("#test").html());
+});
+$("#btn3").click(function(){
+    alert("Value: " + $("#test-input").val());
+});
+</pre>
+            </p>
+
+        </div>
+        <div class="footer"></div>
+    </div>
+</section>
+
+
+<section>
+    <div class="container wrapper">
+        <div class="content">
+            <h1>DOM manipulation</h1>
+            <h3>get content</h3>
+            <p>attr() - returns the attribute value of selected elements</p>
+            <p>The following example demonstrates how to get the value of the href attribute in a link:
+<pre>
+$("button").click(function(){
+    alert($("#w3s").attr("href"));
+});
+</pre>
+            </p>
+            
+        </div>
+        <div class="footer"></div>
+    </div>
+</section>
+
+
+<section>
+    <div class="container wrapper">
+        <div class="content">
+            <h1>DOM manipulation</h1>
+            <h3>set Content</h3>
+            <p>text(val) - sets the text content of selected elements</p>
+            <p>html(val) - sets the content of selected elements (including HTML markup)</p>
+            <p>val(val) - sets the value of form fields</p>
+            <p>attr(val) - sets the attribute value of selected elements</p>
+
+
+            <h3>Can you see the magic of jQuery?</h3>
+        </div>
+        <div class="footer"></div>
+    </div>
+</section>
+
+
+<section>
+    <div class="container wrapper">
+        <div class="content">
+            <h1>Add New HTML Content</h1>
+            
+            <p>We will look at four jQuery methods that are used to add new content.</p>
+            <p>append() - Inserts content at the end of the selected elements</p>
+            <p>prepend() - Inserts content at the beginning of the selected elements</p>
+            <p>after() - Inserts content after the selected elements</p>
+            <p>before() - Inserts content before the selected elements</p>
+
+<pre>
+var txt1 = "&gt;p&lt;Text.&gt;/p&lt;";               // Create element with HTML  
+var txt2 = $("&gt;p&lt;&gt;/p&lt;").text("Text.");   // Create with jQuery
+
+$("body").append(txt1, txt2);      // Append the new elements 
+</pre>
+        </div>
+        <div class="footer"></div>
+    </div>
+</section>
+
+
+<section>
+    <div class="container wrapper">
+        <div class="content">
+            <h1>Add New HTML Content</h1>
+            
+<p>empty() - Removes the child elements from the selected element</p>
+<p>remove() - Removes the selected element (and its child elements)</p>
+
+
+<p>The jQuery remove() method also accepts one parameter, which allows you to filter the elements to be removed.</p>
+
+
+<p>The parameter can be any of the jQuery selector syntaxes.</p>
+
+<pre>
+$("p").remove(".test");
+</pre>
+
+<p>
+example removes all <p> elements with class="test" this code is also compatible with 
+$("p.test").remove();
+</p>
+        </div>
+        <div class="footer"></div>
+    </div>
+</section>
+
+
+<section>
+    <div class="container wrapper">
+        <div class="content">
+            <h1>Manipulating CSS</h1>
+            <p>The css() method sets or returns one or more style properties for the selected elements.</p>
+
+            <h3>Get a CSS Property</h3>
+            <p>css("propertyname");</p>
+
+<pre>
+//the background-color value of the FIRST matched element
+$("p").css("background-color");
+</pre>
+        </div>
+        <div class="footer"></div>
+    </div>
+</section>
+
+
+<section>
+    <div class="container wrapper">
+        <div class="content">
+            <h1>Manipulating CSS</h1>
+            <h3>Set a CSS Property</h3>
+
+            <p>css("propertyname","value");</p>
+
+<pre>
+//set the background-color value for ALL matched elements
+$("p").css("background-color", "yellow");
+</pre>
+<h3>Set Multiple CSS Properties</h3>
+<p>css({"propertyname":"value","propertyname":"value",...});</p>
+
+
+<pre>
+$("p").css({"background-color": "yellow", "font-size": "200%"});
+</pre>
+
+        </div>
+        <div class="footer"></div>
+    </div>
+</section>
+
+
+<section>
+    <div class="container wrapper">
+        <div class="content">
+            <h1>Modifiing classes</h1>
+            <p>addClass("class")</p>
+            <p>This function add class to DOM element.</p>
+
+
+<pre>
+$('#element').addClass('new-class');
+//you can add also multiple classes
+$('#element').addClass('new-class another-class');
+</pre>
+
+
+        </div>
+        <div class="footer"></div>
+    </div>
+</section>
+
+
+<section>
+    <div class="container wrapper">
+        <div class="content">
+            
+            <p>removeClass("class")</p>
+            <p>This funciton removes class from DOM element</p>
+
+
+<pre>
+$('#element').removeClass('new-class');
+</pre>
+
+<p>hasClass("class")</p>
+<p>This function return true, if element has class.</p>
+        </div>
+        <div class="footer"></div>
+    </div>
+</section>
+
+
+<section>
+    <div class="container wrapper">
+        <div class="content">
+
+<p>toggleClass("some-class")</p>
+<p>What does this function do?</p>
+
+<pre>
+$(element).toggleClass("some-class");
+</pre>
+
+
+<p>is equal code to</p>
+	
+<pre>
+if($(element).hasClass("some-class")){
+    $(element).removeClass("some-class");
+}else{
+    $(element).addClass("some-class");
+}
+</pre>
+            
+        </div>
+        <div class="footer"></div>
+    </div>
+</section>
+
+
+<section>
+    <div class="container wrapper">
+        <div class="content">
+            <h1>Dimensions</h1>
+            <p>jQuery has several important methods for working with dimensions:</p>
+
+            <ul>
+                <li>width()</li>
+                <li>height()</li>
+                <li>innerWidth()</li>
+                <li>innerHeight()</li>
+                <li>outerWidth()</li>
+                <li>outerHeight()</li>
+            </ul>
+        </div>
+        <div class="footer"></div>
+    </div>
+</section>
+
+
+<section>
+    <div class="container wrapper">
+        <div class="content">
+            <h1>Dimensions</h1>
+            <img src="http://www.w3schools.com/jquery/img_jquerydim.gif" />
+        </div>
+        <div class="footer"></div>
+    </div>
+</section>
+
+
+<section>
+    <div class="container wrapper">
+        <div class="content">
+            <h1>DOM traversation</h1>
+            <p>jQuery traversing, which means "move through", are used to "find" (or select) HTML elements based on their relation to other elements. Start with one selection and move through that selection until you reach the elements you desire.</p>
+
+            <img src="http://www.w3schools.com/jquery/img_travtree.png" />
+        </div>
+        <div class="footer"></div>
+    </div>
+</section>
+
+
+
+<section>
+    <div class="container wrapper">
+        <div class="content">
+            <h1>Ancestors</h1>
+            <h3>parent()</h3>
+<p>The parent() method returns the direct parent element of the selected element.</p>
+
+
+<h3>parents()</h3>
+<p>The parents() method returns all ancestor elements of the selected element, all the way up to the document's root element (&gt;html&lt;).</p>
+
+
+<h3>parentsUntil(selector)</h3> 
+<p>The parentsUntil() method returns all ancestor elements until ancestor matched by given selector.</p>
+        </div>
+        <div class="footer"></div>
+    </div>
+</section>
+
+
+<section>
+    <div class="container wrapper">
+        <div class="content">
+            <h1>Descendants</h1>
+            <h3>children()</h3>
+<p>The children() method returns all direct children of the selected element.</p>
+
+
+            <h3>find()</h3>
+<p>The find() method returns descendant elements of the selected element, all the way down to the last descendant.</p>
+
+        </div>
+        <div class="footer"></div>
+    </div>
+</section>
+
+
+
+<section>
+    <div class="container wrapper">
+        <div class="content">
+            <h1>Siblings</h1>
+            
+            <h3>siblings()</h3>
+            <h3>next()</h3>
+            <h3>nextAll()</h3>
+            <h3>nextUntil()</h3>
+            <h3>prev()</h3>
+            <h3>prevAll()</h3>
+            <h3>prevUntil()</h3>
+        </div>
+        <div class="footer"></div>
+    </div>
+</section>
+
+
+<section>
+    <div class="container wrapper">
+        <div class="content">
+            <h1>Filtering</h1>
+            <h3>first()</h3>
+            <p>The first() method returns the first element of the selected elements.</p>
+
+<pre>
+$(document).ready(function(){
+    $("div p").first();
+    //returns the first <p> element inside the first <div> element:
+});
+</pre>
+
+
+<h3>last()</h3>
+<p>The last() method returns the last element of the selected elements.</p>
+
+        </div>
+        <div class="footer"></div>
+    </div>
+</section>
+
+<section>
+    <div class="container wrapper">
+        <div class="content">
+            <h3>eq()</h3>
+        <p>The eq() method returns an element with a specific index number of the selected elements.</p>
+
+<pre>
+$(document).ready(function(){
+    $("p").eq(1);
+    //index numbers start at 0, so the first element will have the index number 0 and not 
+    //returns the second &gt;p&lt; element (index number 1)
+});
+</pre>
+
+
+        </div>
+        <div class="footer"></div>
+    </div>
+</section>
+
+
+
+
+
+
+<section>
+    <div class="container wrapper">
+        <div class="content">
+            <h3>filter()</h3>
+            <p>The filter() method lets you specify a criteria. Elements that do not match the criteria are removed from the selection, and those that match will be returned.</p>
+
+<pre>
+$(document).ready(function(){
+    $("p").filter(".intro");
+    //returns all &gt;p&lt; elements with class name "intro"
+});
+</pre>
+
+
+<h3>not()</h3>
+<p>The not() method returns all elements that do not match the criteria.</p>
+<p>Tip: The not() method is the opposite of filter().</p>
+
+
+<pre>
+$(document).ready(function(){
+    $("p").not(".intro");
+    //returns all <p> elements that do not have class name "intro"
+});
+</pre>
+        </div>
+        <div class="footer"></div>
+    </div>
+</section>
+
+
+<section>
+    <div class="container wrapper">
+        <div class="content">
+            <h1>events</h1>
+            <h3>syntax</h3>
+            
+
+<p>In jQuery, most DOM events have an equivalent jQuery method.</p>
+<pre>
+$("p").click(function(){
+    // action goes here!!
+});
+</pre>
+<p><a href="http://www.w3schools.com/jquery/jquery_ref_events.asp">Reference to events</a></p>
+        </div>
+        <div class="footer"></div>
+    </div>
+</section>
+
+
+
+<section>
+    <div class="container wrapper">
+        <div class="content">
+            <h1>Custom events</h1>
+            <h3>on()</h3> 
+<p>The on() method attaches one or more event handlers for the selected elements.</p>
+
+<pre>
+$("p").on("click", function(){
+		$(this).hide();
+});
+// attach a click event to a &gt;p&lt; element
+</pre>
+
+
+<h3>trigger()</h3>
+<p>The trigger() method triggers one or more events for the selected elements.</p>
+
+        </div>
+        <div class="footer"></div>
+    </div>
+</section>
+
+
+<section>
+    <div class="container wrapper">
+        <div class="content">
+            <h1>effects</h1>
+            <h3>syntax</h3>
+            <pre>$(selector).effect(speed, callback);</pre>
+            <p>The optional speed parameter specifies the speed of the effect, and can take the following values: "slow", "fast", or milliseconds.</p>
+            <p>The optional callback parameter is a function to be executed after the effect() method completes.</p>
+
+
+        </div>
+        <div class="footer"></div>
+    </div>
+</section>
+
+
+
+<section>
+    <div class="container wrapper">
+        <div class="content">
+            <h1>hide() / show()</h1>
+
+
+<p>With jQuery, you can hide and show HTML elements with the hide() and show() methods:
+
+<ul>
+    <li>$(selector).hide();</li>
+    <li>$(selector).show();</li>
+    <li>$(selector).toggle();</li>
+</ul>
+</p>
+
+
+<p>With jQuery, you can toggle between the hide() and show() methods with the toggle() method.</p>
+<p>Shown elements are hidden and hidden elements are shown.</p>
+
+        </div>
+        <div class="footer"></div>
+    </div>
+</section>
+
+
+<section>
+    <div class="container wrapper">
+        <div class="content">
+            <h1>fade()</h1>
+            <p>With jQuery you can fade an element in and out of visibility.</p>
+            <p>jQuery has the following fade methods:
+                <ul>
+                    <li>fadeIn()</li>
+                    <li>fadeOut()</li>
+                    <li>fadeToggle()</li>
+                </ul>
+            </p>        
+        </div>
+        <div class="footer"></div>
+    </div>
+</section>
+
+
+<section>
+    <div class="container wrapper">
+        <div class="content">
+            <h1>slide()</h1>
+             
+<p>With jQuery you can create a sliding effect on elements.</p>
+<p>jQuery has the following slide methods:
+    <ul>
+        <li>slideDown()</li>
+        <li>slideUp()</li>
+        <li>slideToggle()</li>
+    </ul>
+</p>
+        </div>
+        <div class="footer"></div>
+    </div>
+</section>
+
+
+<section>
+    <div class="container wrapper">
+        <div class="content">
+            <h1>animate()</h1>
+            
+<p>The jQuery animate() method is used to create custom animations.</p>
+<h3>$(selector).animate({params},speed,callback);</h3>
+<p>$("div").animate({left: '250px'});</p>
+        </div>
+        <div class="footer"></div>
+    </div>
+</section>
+
+
+<section>
+    <div class="container wrapper">
+        <div class="content">
+            <h1>The jQuery noConflict()</h1>
+            <p>As you already know, jQuery uses the $ sign as a shortcut for jQuery.<p>
+<p>There are many other popular JavaScript frameworks like: Angular, Backbone, Ember, Knockout, and more.
+What if other JavaScript frameworks also use the $ sign as a shortcut?
+If two different frameworks are using the same shortcut, one of them might stop working.
+The jQuery team have already thought about this, and implemented the noConflict() method.
+The noConflict() method releases the hold on the $ shortcut identifier, so that other scripts can use it.</p>
+
+        </div>
+        <div class="footer"></div>
+    </div>
+</section>
+
+
+
+
+
+<section>
+    <div class="container wrapper">
+        <div class="content">
+                        <h1>The jQuery noConflict()</h1>
+
+<p>You can of course still use jQuery, simply by writing the full name instead of the shortcut:
+<pre>
+$.noConflict();
+jQuery(document).ready(function(){
+    jQuery("button").click(function(){
+        jQuery("p").text("jQuery is still working!");
+    });
+});
+</pre>
+</p>
+
+<p>You can also create your own shortcut very easily. The noConflict() method returns a reference to jQuery, that you can save in a variable, for later use. Here is an example:
+<pre>
+var jq = $.noConflict();
+jq(document).ready(function(){
+    jq("button").click(function(){
+        jq("p").text("jQuery is still working!");
+    });
+});
+</pre>
+</p>
+        </div>
+        <div class="footer"></div>
+    </div>
+</section>
+
+
+<section>
+    <div class="container wrapper">
+        <div class="content">
+            <h1>THX</h1>
+        </div>
+        <div class="footer"></div>
+    </div>
+</section>
+
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/prezi.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,53 @@
+        body{
+            font-family: 'Source Sans Pro', sans-serif;
+            font-weight: 300;
+            font-style: normal;
+            font-size:28px;
+            line-height:1.8em;
+            background: #fdfdfd;
+            color: #585858;
+        }
+
+        section{
+            height:100vh;
+            border-bottom:1px solid #ddd;
+        }
+
+        section .wrapper{
+            position:relative;
+            display: table;
+            height: 100%;
+        }
+        section .content{
+            display: table-cell;
+            vertical-align: middle;
+        }
+
+        section .footer{
+            position:absolute; 
+            right:0; 
+            bottom:0;
+        }
+
+        h1{
+            font-family: 'Source Sans Pro', sans-serif;
+            font-size:72px;
+            font-weight:500;
+        }
+
+        h2{
+            font-family: 'Source Sans Pro', sans-serif;
+            font-size:48px;
+            font-weight:400;
+        } 
+
+        h3{
+            font-family: 'Source Sans Pro', sans-serif;
+            font-size:36px;
+            font-weight:300;
+        }
+
+        p{
+            margin: 40px 0;
+        }
+    
