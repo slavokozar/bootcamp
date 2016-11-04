@@ -10,7 +10,6 @@
     <title>Coding Bootcamp</title>
     <link rel="stylesheet" href="../css/bootstrap.min.css">
     <link rel="stylesheet" href="../css/font-awesome.css"> 
-
 </head>
 <body>
 
@@ -33,19 +32,81 @@
             </div>
         </div>
         <div class="col-md-6">
-            <div id="element1">
+            <div id="element2">
                 At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.
             </div>
         </div>
     </div>
 </div>
 
-
+<div id="product" style="position:absolute; top:400px; left:200px; width:50px; height:50px; background:red">
+</div> 
 
 
 <script src="../js/jquery.min.js"></script>
 <script>
-    console.log($('#element1'));
+
+    // $('#element1').animate({'margin-top':'100px'}, 10000);
+    
+    var basket_position = $('#btn3').offset();
+
+
+    $('#product').animate({
+        'left' : basket_position.left,
+        'top' : basket_position.top
+    }, 1000, function(){
+        $('#product').fadeOut('fast');
+    })
+
+    // var stop = false;
+
+    // function pulse(){
+    //     $('#element1').slideUp(1000, function(){
+    //         $('#element1').slideDown(1000, function(){
+    //             if(!stop){
+    //                 pulse();
+    //             }
+    //         });
+    //     });
+    // }
+    
+    // pulse();
+
+    // $('#element2').hide(5000);
+    
+    // $('#btn1').click(function(){
+    //     console.log("clicked button 1");
+    //     $('#element1').hide();
+    // });
+
+    // $('#btn2').click(function(){
+    //     console.log("clicked button 2");
+    //     $('#element2').hide();
+    // });
+
+    // $('#btn3').click(function(){
+    //     console.log("clicked button 3");
+    //     $('#element1, #element2').show();
+    // });
+
+    // var $container = $('.row.text-center');
+    // var $btns = $container.find('.btn'); 
+    
+    // $btns.first().css('color','#f00');
+    // $btns.eq(1).css('color','#0f0');
+    // $btns.last().css('color','#00f');
+
+    // $btns.not('.btn-danger').hide();
+
+    // $('.btn-danger').click(function(){
+    //     $btns.not('.btn-danger').show();
+
+    //     $btns.filter('.btn-danger').hide();
+    // })
+
+    // function selector(){
+    //     return '.btn-danger';
+    // }
 </script>
 </body>
 </html>
