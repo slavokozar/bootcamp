@@ -36,7 +36,14 @@
 <script>
 
     $('.form-control').change(function(){
-        // alert('something changed');
+        var type = $(this).attr('type');
+
+        console.log(type);
+        if(type == "email"){
+            validateEmail($(this));
+        }else if(type == "number"){
+            validateNumber($(this));
+        }
     })
 
 
