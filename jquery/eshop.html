@@ -25,8 +25,8 @@
             <h1>Coolest Eshop Ever!</h1>
         </div>
         <div class="col-md-2 text-right">
-            <i class="fa fa-shopping-basket fa-4x"></i>
-            <span></span>
+            <i id="basket" class="fa fa-shopping-basket fa-4x"></i>
+            <span id="basket-count"></span>
         </div>
     </div>
 
@@ -99,5 +99,49 @@
 </div>
 
 <script src="../js/jquery.min.js"></script>
+<script>
+
+    $('.item-to-basket').click(function(e){        
+        e.preventDefault();
+
+        var aero = '<div id="basket-aero" style="position:absolute;height:50px; width:50px; background-color:red"></div>';
+        $('body').append(aero);
+
+        var button_position = $(e.target).offset(); 
+
+        $('#basket-aero').css({
+            'left': button_position.left,
+            'top': button_position.top
+        })
+
+        // your animation
+        var basket_position = $('#basket').offset();
+
+        $('#basket-aero').animate({
+            'left' : basket_position.left,
+            'top': basket_position.top
+        }, 500, function(){
+            $('#basket-aero').fadeOut(300, function(){
+                
+                incrementBasket();
+                $('#basket-aero').remove();
+
+            })
+        });
+
+    })
+
+    function incrementBasket(){
+        var count = $('#basket-count').text(); 
+        if(count == ''){
+            count = 0;
+        }
+        
+        count++;
+
+        $('#basket-count').text(count);
+    }
+
+</script>
 </body>
 </html>
