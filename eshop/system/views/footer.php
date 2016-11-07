@@ -1,0 +1,1 @@
+&copy; 2016 Jan Polak

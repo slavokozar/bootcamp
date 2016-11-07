@@ -1,0 +1,24 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+#page, #header, #topmenu, #footer, #content  {
+  margin: 1em;
+  padding: 1em;
+  border: 1px solid #cccccc;
+  overflow: auto;
+}
+#page {
+  border-color: black;
+}
+#header {
+  border-color: green;
+}
+#topmenu {
+  border-color: blue;
+}
+#footer {
+  border-color: blueviolet;
+}
+#content {
+  border-color: red;
+}
