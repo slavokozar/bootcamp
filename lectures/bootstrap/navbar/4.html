@@ -9,10 +9,12 @@
     <meta name="description" content="CodeLeague">
     <title>Coding Bootcamp</title>
     <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/font-awesome.min.css">
 </head>
 <body>
-    <nav class="navbar navbar-default">
+<nav class="navbar navbar-inverse">
         <div class="container">
+
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header">
             <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse" aria-expanded="false">
@@ -33,14 +35,34 @@
             </ul>
             <ul class="nav navbar-nav navbar-right">
                 <li><a href="#">Link 1</a></li>
-                <li><a href="#">Link 2</a></li>
+
+                <li class="dropdown">
+                    <a id="dLabel" class="" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Dropdown trigger
+                        <span class="caret"></span>
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="dLabel">
+                        <li><a href="#">Linka</a></li>
+                        <li><a href="#">Linka</a></li>
+                        <li><a href="#">Linka</a></li>
+                    </ul>
+                </li>
+
+
             </ul>
 
             </div><!-- /.navbar-collapse -->
+
         </div><!-- /.container-fluid -->
-    </nav>
+        </nav>
 
 
+<div class="container">
+    <!--<a class="btn btn-success" href="#">My other page!</a>-->
+    <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+    <i class="fa fa-home" aria-hidden="true"></i>
+
+</div>
 
 <script src="../js/jquery.min.js"></script>
 <script src="../js/bootstrap.min.js"></script>
