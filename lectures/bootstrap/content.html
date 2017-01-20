@@ -1,0 +1,413 @@
+<section>
+<h3>Boostrap grid</h3>
+
+<p>See the Bootstrap grid on the Bootstrap's website in action.</p>
+
+http://getbootstrap.com/examples/grid/
+http://getbootstrap.com/css/#grid
+
+
+<h4>Bootstrap grid rules</h4>
+
+<ul>
+<li>Rows must be placed within a .container (fixed-width) or .container-fluid (full-width) for proper alignment and padding.</li>
+<li>Use rows to create horizontal groups of columns.</p>
+<li>Content should be placed within columns, and only columns may be immediate children of rows.</p>
+<li>Grid columns are created by specifying the number of twelve available columns you wish to span. For example, three equal columns would use three .col-xs-4.</p>
+<li>If more than 12 columns are placed within a single row, each group of extra columns will, as one unit, wrap onto a new line.</p>
+<li>Grid classes apply to devices with screen widths greater than or equal to the breakpoint sizes, and override grid classes targeted at smaller devices. Therefore, e.g. applying any .col-md-* class to an element will not only affect its styling on medium devices but also on large devices if a .col-lg-* class is not present.</li>
+</p>
+
+<p>Try it for yourself.</p>
+<p>Try out all the possibilities it offers.</p>
+</section>
+<section>
+Bootstrap themes
+
+https://startbootstrap.com/
+</section>
+<section>
+<h3>Bootstrap Jumbotron</h3>
+<p>Jumbotron - <a href="https://upload.wikimedia.org/wikipedia/commons/a/a8/ABC_-_Good_Morning_America.jpg">large screen created by SONY</a></p>
+
+<p>Jumbotron  is simple element calling extra attention to featured content or information.</p>
+<code data-mode="html">
+&lt;div class="jumbotron"&gt;
+  &lt;h1&gt;Hello, world!&lt;/h1&gt;
+    &lt;p&gt;&lt;a class="btn btn-primary btn-lg" href="#" role="button"&gt;Learn more&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="jumbotron"&gt;
+  &lt;div class="container"&gt;
+    ...
+  &lt;/div&gt;
+&lt;/div&gt;
+</code>
+</section>
+<section>
+<h3>Responsive Utilities</h3>
+
+<a href="http://getbootstrap.com/css/#responsive-utilities">http://getbootstrap.com/css/#responsive-utilities</a>
+
+Bootstrap colors & helper classes
+<code data-mode="html">
+&lt;p class="text-muted"&gt;...&lt;/p&gt;
+&lt;p class="text-primary"&gt;...&lt;/p&gt;
+&lt;p class="text-success"&gt;...&lt;/p&gt;
+&lt;p class="text-info"&gt;...&lt;/p&gt;
+&lt;p class="text-warning"&gt;...&lt;/p&gt;
+&lt;p class="text-danger"&gt;...&lt;/p&gt;
+</code>
+</section>
+<section>
+<h3>Bootstrap navigation</h3>
+<h4>Navbar</h4>
+<p>Navbar is simple horizontal navigation bar at the top of the page. Nowadays this layout of page with navbar on top suits for most of modern designes (with only few exeptions - eshops, blogs…).</p>
+
+<h4>Features of Bootstrap Navbar</h4>
+<code data-mode="html">
+&lt;nav class="navbar navbar-default"&gt;
+  &lt;div class="container-fluid"&gt;
+    &lt;!-- Brand and toggle get grouped for better mobile display --&gt;
+    &lt;div class="navbar-header"&gt;
+      &lt;button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse" aria-expanded="false"&gt;
+        &lt;span class="sr-only"&gt;Toggle navigation&lt;/span&gt;
+        &lt;span class="icon-bar"&gt;&lt;/span&gt;
+        &lt;span class="icon-bar"&gt;&lt;/span&gt;
+        &lt;span class="icon-bar"&gt;&lt;/span&gt;
+      &lt;/button&gt;
+      &lt;a class="navbar-brand" href="#"&gt;Brand&lt;/a&gt;
+    &lt;/div&gt;
+
+    &lt;!-- Collect the nav links, forms, and other content for toggling --&gt;
+    &lt;div class="collapse navbar-collapse" id="navbar-collapse"&gt;
+
+      &lt;ul class="nav navbar-nav"&gt;
+        &lt;li class="active"&gt;&lt;a href="#"&gt;Link&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href="#"&gt;Link&lt;/a&gt;&lt;/li&gt;
+      &lt;/ul&gt;
+      &lt;ul class="nav navbar-nav navbar-right"&gt;
+        &lt;li&gt;&lt;a href="#"&gt;Link 1&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href="#"&gt;Link 2&lt;/a&gt;&lt;/li&gt;
+      &lt;/ul&gt;
+      
+    &lt;/div&gt;&lt;!-- /.navbar-collapse --&gt;
+  &lt;/div&gt;&lt;!-- /.container-fluid --&gt;
+&lt;/nav&gt;
+</code>
+
+<strong>Responsivity</strong>
+<p>How can navbar be responsive? Solution is simple. Bootstrap navbar will collapse into singe button - called hamburger - at viewports with width less than certain width.</p>
+
+<p>In other viewports you can use bootstrap responsive utilities.</p>
+
+<strong>Width of Bootstrap Navbar</strong>
+<p>Use <kbd>.container</kbd> / <kbd>.container-fluid</kbd></p>
+<strong>Colors of  Bootstrap Navbar</strong>
+
+<kbd>.navbar-default</kbd> / <kbd>.navbar-inverse</kbd>
+<h3>Button</h3>
+
+Use the button classes on an <kbd>&lt;a&gt;</kbd>, <kbd>&lt;button&gt;</kbd>, or <kbd>&lt;input&gt;</kbd>element to create button. 
+<code data-mode="html">
+&lt;a class="btn btn-default" href="#" role="button"&gt;Link&lt;/a&gt;
+&lt;button class="btn btn-default" type="submit"&gt;Button&lt;/button&gt;
+&lt;input class="btn btn-default" type="button" value="Input"&gt;
+&lt;input class="btn btn-default" type="submit" value="Submit"&gt;
+</code>
+<p>Buttons can be also created in default bootstrap colors + <kbd>.btn-link</kbd> creates button looking like basic link. </p>
+<code data-mode="html">
+
+&lt;!-- Standard button --&gt;
+&lt;button type="button" class="btn btn-default"&gt;Default&lt;/button&gt;
+
+&lt;!-- Provides extra visual weight and identifies the primary action in a set of buttons --&gt;
+&lt;button type="button" class="btn btn-primary"&gt;Primary&lt;/button&gt;
+
+&lt;!-- Indicates a successful or positive action --&gt;
+&lt;button type="button" class="btn btn-success"&gt;Success&lt;/button&gt;
+
+&lt;!-- Contextual button for informational alert messages --&gt;
+&lt;button type="button" class="btn btn-info"&gt;Info&lt;/button&gt;
+
+&lt;!-- Indicates caution should be taken with this action --&gt;
+&lt;button type="button" class="btn btn-warning"&gt;Warning&lt;/button&gt;
+
+&lt;!-- Indicates a dangerous or potentially negative action --&gt;
+&lt;button type="button" class="btn btn-danger"&gt;Danger&lt;/button&gt;
+
+&lt;!-- Deemphasize a button by making it look like a link while maintaining button behavior --&gt;
+&lt;button type="button" class="btn btn-link"&gt;Link&lt;/button&gt;
+</code>
+
+
+<h4>Dropdown</h4>
+<code data-mode="html">
+&lt;div class="dropdown"&gt;
+  &lt;button id="dLabel" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"&gt;
+    Dropdown trigger
+    &lt;span class="caret"&gt;&lt;/span&gt;
+  &lt;/button&gt;
+  &lt;ul class="dropdown-menu" aria-labelledby="dLabel"&gt;
+    ...
+  &lt;/ul&gt;
+&lt;/div&gt;
+</code>
+</section>
+
+<section>
+<h3>Bootstrap forms</h3>
+<code data-mode="html">
+&lt;form&gt;
+  &lt;div class="form-group"&gt;
+    &lt;label for="exampleInputEmail1"&gt;Email address&lt;/label&gt;
+    &lt;input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email"&gt;
+  &lt;/div&gt;
+  &lt;div class="form-group"&gt;
+    &lt;label for="exampleInputPassword1"&gt;Password&lt;/label&gt;
+    &lt;input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password"&gt;
+  &lt;/div&gt;
+  &lt;div class="checkbox"&gt;
+    &lt;label&gt;
+      &lt;input type="checkbox"&gt; Check me out
+    &lt;/label&gt;
+  &lt;/div&gt;
+  &lt;button type="submit" class="btn btn-default"&gt;Submit&lt;/button&gt;
+&lt;/form&gt;
+</code>
+<p>
+All input, textarea and select tags, with class .form-control are wrapper in .form-group with theire labels. Bootstrap will wrap controlls and labels for optimum spacing
+</p>
+
+<h4>Inline form</h4>
+<p>left-aligned and inline-block controls - applies only for viewports that are at least 768px wide.</p>
+<code data-mode="html">
+&lt;form class="form-inline"&gt;
+  &lt;div class="form-group"&gt;
+    &lt;label for="exampleInputName2"&gt;Name&lt;/label&gt;
+    &lt;input type="text" class="form-control" id="exampleInputName2" placeholder="Jane Doe"&gt;
+  &lt;/div&gt;
+  &lt;div class="form-group"&gt;
+    &lt;label for="exampleInputEmail2"&gt;Email&lt;/label&gt;
+    &lt;input type="email" class="form-control" id="exampleInputEmail2" placeholder="jane.doe@example.com"&gt;
+  &lt;/div&gt;
+  &lt;button type="submit" class="btn btn-default"&gt;Send invitation&lt;/button&gt;
+&lt;/form&gt;
+</code>
+<h4>Horizontal form</h4>
+<p>every <kbd>.form-group</kbd> behaves also like <kbd>.row</kbd> - you can use grid classes to align labels and controls</p>
+<code data-mode="html">
+&lt;form class="form-horizontal"&gt;
+  &lt;div class="form-group"&gt;
+    &lt;label for="inputEmail3" class="col-sm-2 control-label"&gt;Email&lt;/label&gt;
+    &lt;div class="col-sm-10"&gt;
+      &lt;input type="email" class="form-control" id="inputEmail3" placeholder="Email"&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class="form-group"&gt;
+    &lt;label for="inputPassword3" class="col-sm-2 control-label"&gt;Password&lt;/label&gt;
+    &lt;div class="col-sm-10"&gt;
+      &lt;input type="password" class="form-control" id="inputPassword3" placeholder="Password"&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class="form-group"&gt;
+    &lt;div class="col-sm-offset-2 col-sm-10"&gt;
+      &lt;div class="checkbox"&gt;
+        &lt;label&gt;
+          &lt;input type="checkbox"&gt; Remember me
+        &lt;/label&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class="form-group"&gt;
+    &lt;div class="col-sm-offset-2 col-sm-10"&gt;
+      &lt;button type="submit" class="btn btn-default"&gt;Sign in&lt;/button&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/form&gt;
+</code>
+</section>
+<section>
+<h3>Controls</h3>
+<h4>Input</h4>
+<p>(Inputs will only be fully styled if their type is properly declared - text, password, datetime, datetime-local, date, month, time, week, number, email, url, search, tel, and color)</p>
+<code data-mode="html">
+&lt;input type="text" class="form-control" placeholder="Text input"&gt;
+Textarea
+&lt;textarea class="form-control" rows="3"&gt;&lt;/textarea&gt;
+Checkboxes and radios - stacked
+&lt;div class="checkbox"&gt;
+  &lt;label&gt;
+    &lt;input type="checkbox" value=""&gt;
+    Option one is this and that&mdash;be sure to include why it's great
+  &lt;/label&gt;
+&lt;/div&gt;
+&lt;div class="checkbox disabled"&gt;
+  &lt;label&gt;
+    &lt;input type="checkbox" value="" disabled&gt;
+    Option two is disabled
+  &lt;/label&gt;
+&lt;/div&gt;
+</code>
+<code data-mode="html">
+&lt;div class="radio"&gt;
+  &lt;label&gt;
+    &lt;input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked&gt;
+    Option one is this and that&mdash;be sure to include why it's great
+  &lt;/label&gt;
+&lt;/div&gt;
+&lt;div class="radio"&gt;
+  &lt;label&gt;
+    &lt;input type="radio" name="optionsRadios" id="optionsRadios2" value="option2"&gt;
+    Option two can be something else and selecting it will deselect option one
+  &lt;/label&gt;
+&lt;/div&gt;
+&lt;div class="radio disabled"&gt;
+  &lt;label&gt;
+    &lt;input type="radio" name="optionsRadios" id="optionsRadios3" value="option3" disabled&gt;
+    Option three is disabled
+  &lt;/label&gt;
+&lt;/div&gt;
+</code>
+<h4>Checkboxes and radios - inline</h4>
+<code data-mode="html">
+&lt;label class="checkbox-inline"&gt;
+  &lt;input type="checkbox" id="inlineCheckbox1" value="option1"&gt; 1
+&lt;/label&gt;
+&lt;label class="checkbox-inline"&gt;
+  &lt;input type="checkbox" id="inlineCheckbox2" value="option2"&gt; 2
+&lt;/label&gt;
+&lt;label class="checkbox-inline"&gt;
+  &lt;input type="checkbox" id="inlineCheckbox3" value="option3"&gt; 3
+&lt;/label&gt;
+</code>
+<code data-mode="html">
+&lt;label class="radio-inline"&gt;
+  &lt;input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1"&gt; 1
+&lt;/label&gt;
+&lt;label class="radio-inline"&gt;
+  &lt;input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2"&gt; 2
+&lt;/label&gt;
+&lt;label class="radio-inline"&gt;
+  &lt;input type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3"&gt; 3
+&lt;/label&gt;
+</code>
+<p>for more and more.. http://getbootstrap.com/css/#forms</p>
+</section>
+<section>
+<h3>Bootstrap components<h3>
+<h4>glyphicons</h4>
+<code data-mode="html">
+&lt;span class="glyphicon glyphicon-search" aria-hidden="true"&gt;&lt;/span&gt;
+</code>
+
+<h4>font-awesome</h4>
+<kbd>http://fontawesome.io/icons/</kbd>
+<code data-mode="html">
+&lt;i class="fa fa-envira" aria-hidden="true"&gt;&lt;/i&gt;
+</code>
+<h4>labels + badges</h4>
+<code data-mode="html">
+&lt;span class="label label-default"&gt;Default&lt;/span&gt;
+&lt;span class="label label-primary"&gt;Primary&lt;/span&gt;
+&lt;span class="label label-success"&gt;Success&lt;/span&gt;
+&lt;span class="label label-info"&gt;Info&lt;/span&gt;
+&lt;span class="label label-warning"&gt;Warning&lt;/span&gt;
+&lt;span class="label label-danger"&gt;Danger&lt;/span&gt;
+</code>
+<code data-mode="html">
+&lt;a href="#"&gt;Inbox &lt;span class="badge"&gt;42&lt;/span&gt;&lt;/a&gt;
+</code>
+
+<h4>alerts</h4>
+<p>no default, no primary</p>
+<code data-mode="html">
+&lt;div class="alert alert-success" role="alert"&gt;...&lt;/div&gt;
+&lt;div class="alert alert-info" role="alert"&gt;...&lt;/div&gt;
+&lt;div class="alert alert-warning" role="alert"&gt;...&lt;/div&gt;
+&lt;div class="alert alert-danger" role="alert"&gt;...&lt;/div&gt;
+</code>
+
+<h4>panels</h4>
+<code data-mode="html">
+&lt;div class="panel panel-default"&gt;
+  &lt;div class="panel-heading"&gt;
+    &lt;h3 class="panel-title"&gt;Panel title&lt;/h3&gt;
+  &lt;/div&gt;
+  &lt;div class="panel-body"&gt;
+    Panel content
+  &lt;/div&gt;
+&lt;/div&gt;
+</code>
+<h4>tooltips & popovers</h4>
+<p>Tooltips are small helper titles shown when mouse hovers over element.</p>
+<p>Popovers works the same way as titles, but they are bigger and can carry more data. </p>
+<p>
+You must initialize them yourself:
+<code data-mode="html">
+&lt;script&gt;
+$(function () {
+    $('[data-toggle="tooltip"]').tooltip()
+    $('[data-toggle="popover"]').popover()
+})
+&lt;/script&gt;
+</code>
+</p>
+<code data-mode="html">
+&lt;button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="bottom" title="Tooltip on bottom"&gt;Tooltip on bottom&lt;/button&gt;
+</code>
+
+<code data-mode="html">
+&lt;button type="button" class="btn btn-lg btn-danger" data-toggle="popover" title="Popover title" data-content="And here's some amazing content. It's very engaging. Right?"&gt;Click to toggle popover&lt;/button&gt;
+</code>
+<h4>tabs</h4>
+<code data-mode="html">
+&lt;div&gt;
+
+  &lt;!-- Nav tabs --&gt;
+  &lt;ul class="nav nav-tabs" role="tablist"&gt;
+    &lt;li role="presentation" class="active"&gt;&lt;a href="#home" aria-controls="home" role="tab" data-toggle="tab"&gt;Home&lt;/a&gt;&lt;/li&gt;
+    &lt;li role="presentation"&gt;&lt;a href="#profile" aria-controls="profile" role="tab" data-toggle="tab"&gt;Profile&lt;/a&gt;&lt;/li&gt;
+    &lt;li role="presentation"&gt;&lt;a href="#messages" aria-controls="messages" role="tab" data-toggle="tab"&gt;Messages&lt;/a&gt;&lt;/li&gt;
+    &lt;li role="presentation"&gt;&lt;a href="#settings" aria-controls="settings" role="tab" data-toggle="tab"&gt;Settings&lt;/a&gt;&lt;/li&gt;
+  &lt;/ul&gt;
+
+  &lt;!-- Tab panes --&gt;
+  &lt;div class="tab-content"&gt;
+    &lt;div role="tabpanel" class="tab-pane active" id="home"&gt;...&lt;/div&gt;
+    &lt;div role="tabpanel" class="tab-pane" id="profile"&gt;...&lt;/div&gt;
+    &lt;div role="tabpanel" class="tab-pane" id="messages"&gt;...&lt;/div&gt;
+    &lt;div role="tabpanel" class="tab-pane" id="settings"&gt;...&lt;/div&gt;
+  &lt;/div&gt;
+
+&lt;/div&gt;
+</code>
+<h4>modals</h4>
+<p>Modals are dialog prompts with the minimum required functionality and smart defaults.</p>
+<code data-mode="html">
+&lt;!-- Modal --&gt;
+&lt;div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"&gt;
+  &lt;div class="modal-dialog" role="document"&gt;
+    &lt;div class="modal-content"&gt;
+      &lt;div class="modal-header"&gt;
+        &lt;button type="button" class="close" data-dismiss="modal" aria-label="Close"&gt;&lt;span aria-hidden="true"&gt;&times;&lt;/span&gt;&lt;/button&gt;
+        &lt;h4 class="modal-title" id="myModalLabel"&gt;Modal title&lt;/h4&gt;
+      &lt;/div&gt;
+      &lt;div class="modal-body"&gt;
+        ...
+      &lt;/div&gt;
+      &lt;div class="modal-footer"&gt;
+        &lt;button type="button" class="btn btn-default" data-dismiss="modal"&gt;Close&lt;/button&gt;
+        &lt;button type="button" class="btn btn-primary"&gt;Save changes&lt;/button&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+</code>
+<p>Modals can be triggered by button. Othor options of triggering modals are going to be discussed on other lections dedicated to JavaScript and jQuery.</p>
+<code data-mode="html">
+&lt;!-- Button trigger modal --&gt;
+&lt;button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal"&gt;
+  Launch demo modal
+&lt;/button&gt;
+</code>
+</section>
