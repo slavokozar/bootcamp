@@ -2,35 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6c3588d1-509f-4ef3-a890-c67a5436b9bc" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lectures/bootstrap/fonts/FontAwesome.otf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lectures/bootstrap/fonts/fontawesome-webfont.eot" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lectures/bootstrap/fonts/fontawesome-webfont.ttf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lectures/bootstrap/fonts/fontawesome-webfont.woff" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lectures/bootstrap/fonts/fontawesome-webfont.woff2" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.gitignore" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bootstrap-project/grid.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lectures/bootstrap/css/font-awesome.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lectures/bootstrap/css/font-awesome.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lectures/bootstrap/fonts/fontawesome-webfont.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lectures/bootstrap/grid/70.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lectures/bootstrap/grid/ebay.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lectures/bootstrap/grid/facebook.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lectures/bootstrap/navbar/4.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/lectures/bootstrap/jumbotron 08.57.26.html" afterPath="$PROJECT_DIR$/lectures/bootstrap/jumbotron.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bootstrap-project/fonts/FontAwesome.otf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bootstrap-project/fonts/fontawesome-webfont.eot" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bootstrap-project/fonts/fontawesome-webfont.ttf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bootstrap-project/fonts/fontawesome-webfont.woff" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bootstrap-project/fonts/fontawesome-webfont.woff2" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bootstrap-project/css/font-awesome.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bootstrap-project/fonts/fontawesome-webfont.svg" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bootstrap-project/grid.html" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bootstrap-project/index.html" afterPath="$PROJECT_DIR$/bootstrap-project/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lectures/bootstrap/dropdown.html" afterPath="$PROJECT_DIR$/lectures/bootstrap/dropdown.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lectures/bootstrap/grid/1.html" afterPath="$PROJECT_DIR$/lectures/bootstrap/grid/1.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lectures/bootstrap/grid/2.html" afterPath="$PROJECT_DIR$/lectures/bootstrap/grid/2.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lectures/bootstrap/index.html" afterPath="$PROJECT_DIR$/lectures/bootstrap/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lectures/bootstrap/labels.html" afterPath="$PROJECT_DIR$/lectures/bootstrap/labels.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lectures/bootstrap/modals.html" afterPath="$PROJECT_DIR$/lectures/bootstrap/modals.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lectures/bootstrap/navbar/1.html" afterPath="$PROJECT_DIR$/lectures/bootstrap/navbar/1.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lectures/bootstrap/navbar/2.html" afterPath="$PROJECT_DIR$/lectures/bootstrap/navbar/2.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lectures/bootstrap/navbar/3.html" afterPath="$PROJECT_DIR$/lectures/bootstrap/navbar/3.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lectures/bootstrap/panels.html" afterPath="$PROJECT_DIR$/lectures/bootstrap/panels.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lectures/bootstrap/tabs.html" afterPath="$PROJECT_DIR$/lectures/bootstrap/tabs.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lectures/bootstrap/tooltips.html" afterPath="$PROJECT_DIR$/lectures/bootstrap/tooltips.html" />
     </list>
     <ignored path="bootcamp.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -52,29 +32,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lectures/bootstrap/index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="441" column="71" selection-start-line="441" selection-start-column="71" selection-end-line="441" selection-end-column="71" />
-              <folding>
-                <element signature="n#style#0;n#iframe#0;n#div#0;n#div#0;n#div#0;n#section#18;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#iframe#0;n#div#0;n#div#0;n#section#20;n#body#0;n#html#0;n#!!top" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="horizontal.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lectures/bootstrap/forms/horizontal.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="13" column="0" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="4.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lectures/bootstrap/navbar/4.html">
           <provider selected="true" editor-type-id="text-editor">
@@ -145,12 +102,35 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
+      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
+            <state vertical-scroll-proportion="-0.0">
               <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="font-awesome.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/bootstrap-project/css/font-awesome.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-0.0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/bootstrap-project/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.3277635">
+              <caret line="15" column="55" selection-start-line="15" selection-start-column="55" selection-end-line="15" selection-end-column="55" />
+              <folding>
+                <element signature="n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -177,7 +157,6 @@
         <option value="$PROJECT_DIR$/lectures/bootstrap/forms/login.html" />
         <option value="$PROJECT_DIR$/lectures/bootstrap/js/holder.js" />
         <option value="$PROJECT_DIR$/lectures/bootstrap/examples/index.html" />
-        <option value="$PROJECT_DIR$/bootstrap-project/index.html" />
         <option value="$PROJECT_DIR$/bootstrap-project/grid.html" />
         <option value="$PROJECT_DIR$/lectures/bootstrap/grid/1.html" />
         <option value="$PROJECT_DIR$/lectures/bootstrap/grid/2.html" />
@@ -196,6 +175,7 @@
         <option value="$PROJECT_DIR$/lectures/bootstrap/tooltips.html" />
         <option value="$PROJECT_DIR$/lectures/bootstrap/tabs.html" />
         <option value="$PROJECT_DIR$/lectures/bootstrap/modals.html" />
+        <option value="$PROJECT_DIR$/bootstrap-project/index.html" />
       </list>
     </option>
   </component>
@@ -252,6 +232,84 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bootcamp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bootcamp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="fonts" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bootcamp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bootcamp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="css" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bootcamp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bootcamp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bootstrap-project" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bootcamp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bootcamp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bootstrap-project" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="fonts" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bootcamp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bootcamp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bootstrap-project" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="css" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
       <pane id="Scope" />
@@ -269,19 +327,19 @@
     <property name="FullScreen" value="true" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/lectures/bootstrap/navbar" />
-      <recent name="$PROJECT_DIR$/lectures/bootstrap/grid" />
-      <recent name="$PROJECT_DIR$/bootstrap-project" />
-      <recent name="$PROJECT_DIR$/lectures/bootstrap/js" />
-      <recent name="$PROJECT_DIR$/lectures/bootstrap" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/lectures/bootstrap" />
       <recent name="$PROJECT_DIR$/lectures/javascript" />
       <recent name="$PROJECT_DIR$/lectures/jquery" />
       <recent name="$PROJECT_DIR$/lectures/ajax" />
       <recent name="$PROJECT_DIR$" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/bootstrap-project/css" />
+      <recent name="$PROJECT_DIR$/bootstrap-project/fonts" />
+      <recent name="$PROJECT_DIR$/lectures/bootstrap/navbar" />
+      <recent name="$PROJECT_DIR$/lectures/bootstrap/grid" />
+      <recent name="$PROJECT_DIR$/bootstrap-project" />
     </key>
   </component>
   <component name="RunManager" selected="JavaScript Debug.index.html">
@@ -570,20 +628,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/bootstrap-project/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-22.23077">
-          <caret line="143" column="40" selection-start-line="143" selection-start-column="40" selection-end-line="143" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/bootstrap-project/grid.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-12.269231">
-          <caret line="33" column="0" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/lectures/bootstrap/grid/1.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-13.9375">
@@ -695,8 +739,8 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="441" column="71" selection-start-line="441" selection-start-column="71" selection-end-line="441" selection-end-column="71" />
           <folding>
-            <element signature="n#style#0;n#iframe#0;n#div#0;n#div#0;n#div#0;n#section#18;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#iframe#0;n#div#0;n#div#0;n#section#20;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#iframe#0;n#div#0;n#div#0;n#div#0;n#section#18;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#iframe#0;n#div#0;n#div#0;n#section#20;n#body#0;n#html#0;n#!!top" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -770,6 +814,25 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bootstrap-project/css/font-awesome.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bootstrap-project/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.3277635">
+          <caret line="15" column="55" selection-start-line="15" selection-start-column="55" selection-end-line="15" selection-end-column="55" />
+          <folding>
+            <element signature="n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
