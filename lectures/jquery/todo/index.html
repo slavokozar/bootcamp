@@ -16,7 +16,9 @@
             <section class="main">
                 <input class="toggle-all" type="checkbox">
                 <label for="toggle-all">Mark all as complete</label>
-                <ul class="todo-list"></ul>
+                <ul class="todo-list">
+
+                </ul>
                 <footer class="footer">
                     <span class="todo-count"></span>
                     <div class="filters">
@@ -36,7 +38,98 @@
             <p>Part of <a href="http://todomvc.com">TodoMVC</a></p>
         </footer>
 
+        <script src="http://code.jquery.com/jquery-2.2.4.min.js"
+                integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+                crossorigin="anonymous"></script>
+
         <script>
+            /*
+             Template:
+
+                place into .todo-list
+
+             <li>
+                <div class="view">
+                    <input class="toggle" type="checkbox">
+                    <label>aaa</label>
+                    <button class="destroy"></button>
+                </div>
+             </li>
+             */
+
+
+            $('.filters a').click(function(event){
+                event.target;   // javascript dom object containing element,
+                                // which triggered event
+
+                var $link = $(event.target); //jquery object from javascript dom object
+
+                $('.filters a.selected').removeClass('selected');
+                $link.addClass('selected');
+
+                var href = $link.attr('href');
+
+                //use .show() / .hide() jquery functions
+
+                if(href == '#/'){
+                    //show all of the tasks
+                    $('.todo-list li').show();
+
+                }else if(href == '#/active'){
+                    //show only tasks without class="completed"
+
+                    $('.todo-list li').filter('.completed').hide();
+                    $('.todo-list li').not('.completed').show();
+
+                }else if(href == '#/completed'){
+                    //show only tasks with class="completed"
+
+                    $('.todo-list li').not('.completed').hide();
+                    $('.todo-list li').filter('.completed').show();
+                }
+
+                console.log($link, href);
+            });
+
+            $('.clear-completed').click(function(){
+                $('.todo-list li').filter('.completed').remove();
+            });
+
+            $('.new-todo').keyup(function(event){
+                var $input = $(event.target);
+
+                if(event.key == "Enter"){
+                    if($input.val().length > 0){
+                        console.log($input.val());
+
+                        var html =
+                            '<li>'+
+                                '<div class="view">'+
+                                    '<input class="toggle" type="checkbox">'+
+                                    '<label>' + $input.val() + '</label>'+
+                                    '<button class="destroy"></button>'+
+                                '</div>'+
+                            '</li>';
+
+                        $('.todo-list').append(html);
+                    }
+
+                    $input.val('');
+                }
+
+            });
+
+            $(document).on('click','.toggle',function(event){
+                var $check = $(event.target);
+                $check.closest('li').toggleClass('completed');
+            });
+
+            $(document).on('click','.destroy',function(event){
+                var $button = $(event.target);
+                $button.closest('li').remove();
+            });
+
+
             var state = {
                 todos: [
                     { text: 'Hi', completed: true  },
@@ -46,17 +139,32 @@
                 filter: 'all'
             };
 
-            /*
-            Template:
-            
-            <li>
-                <div class="view">
-                    <input class="toggle" type="checkbox">
-                    <label>aaa</label>
-                    <button class="destroy"></button>
-                </div>
-            </li>
-            */
+            for(var i = 0; i < state.todos.length; i++){
+                console.log(state.todos[i]);
+
+                var checked = '';
+                if(state.todos[i].completed){
+                    checked = 'checked="true"';
+                }
+
+                var className = '';
+                if(state.todos[i].completed){
+                    className = 'class="completed"';
+                }
+                var html =
+                    '<li ' + className + '>'+
+                        '<div class="view">'+
+                            '<input class="toggle" type="checkbox" ' + checked + '>'+
+                            '<label>' + state.todos[i].text + '</label>'+
+                            '<button class="destroy"></button>'+
+                        '</div>'+
+                    '</li>';
+
+                $('.todo-list').append(html);
+            }
+
+
+
         </script>
 
     </body>

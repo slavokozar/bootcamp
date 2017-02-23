@@ -2,7 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6c3588d1-509f-4ef3-a890-c67a5436b9bc" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lectures/jquery/examples/eshop.html" afterPath="$PROJECT_DIR$/lectures/jquery/examples/eshop.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lectures/jquery/examples/template.html" afterPath="$PROJECT_DIR$/lectures/jquery/examples/template.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lectures/jquery/index.html" afterPath="$PROJECT_DIR$/lectures/jquery/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lectures/jquery/todo/index.html" afterPath="$PROJECT_DIR$/lectures/jquery/todo/index.html" />
     </list>
     <ignored path="bootcamp.iws" />
@@ -28,7 +31,7 @@
       <file leaf-file-name="dom.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lectures/javascript/examples/dom.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
+            <state vertical-scroll-proportion="-12.333333">
               <caret line="23" column="6" selection-start-line="0" selection-start-column="0" selection-end-line="28" selection-end-column="7" />
               <folding />
             </state>
@@ -48,8 +51,8 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lectures/jquery/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-17.451612">
-              <caret line="909" column="7" selection-start-line="909" selection-start-column="7" selection-end-line="909" selection-end-column="7" />
+            <state vertical-scroll-proportion="3.2">
+              <caret line="562" column="0" selection-start-line="562" selection-start-column="0" selection-end-line="562" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -58,7 +61,7 @@
       <file leaf-file-name="form.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lectures/jquery/examples/form.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-4.354839">
+            <state vertical-scroll-proportion="0.32258064">
               <caret line="36" column="0" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
               <folding />
             </state>
@@ -68,21 +71,9 @@
       <file leaf-file-name="form2.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lectures/jquery/examples/form2.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-8.612904">
+            <state vertical-scroll-proportion="0.3030303">
               <caret line="36" column="0" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="eshop.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lectures/jquery/examples/eshop.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-17.838709">
-              <caret line="103" column="0" selection-start-line="103" selection-start-column="0" selection-end-line="103" selection-end-column="0" />
-              <folding>
-                <marker date="1487835357000" expanded="true" signature="5571:5634" placeholder="..." />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -90,18 +81,18 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lectures/ajax/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-18.548388">
+            <state vertical-scroll-proportion="0.32258064">
               <caret line="377" column="19" selection-start-line="377" selection-start-column="19" selection-end-line="377" selection-end-column="19" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="template.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="template.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lectures/jquery/examples/template.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.3268945">
-              <caret line="10" column="36" selection-start-line="10" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+            <state vertical-scroll-proportion="-3.5333333">
+              <caret line="27" column="21" selection-start-line="27" selection-start-column="21" selection-end-line="27" selection-end-column="21" />
               <folding>
                 <element signature="n#style#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
@@ -109,11 +100,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/lectures/jquery/todo/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-9.32258">
-              <caret line="47" column="0" selection-start-line="47" selection-start-column="0" selection-end-line="47" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.46348733">
+              <caret line="125" column="0" selection-start-line="125" selection-start-column="0" selection-end-line="125" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -185,13 +176,13 @@
         <option value="$PROJECT_DIR$/lectures/javascript/examples/dom.html" />
         <option value="$PROJECT_DIR$/lectures/javascript/examples/events.html" />
         <option value="$PROJECT_DIR$/lectures/javascript/teaser.html" />
-        <option value="$PROJECT_DIR$/lectures/jquery/index.html" />
         <option value="$PROJECT_DIR$/lectures/ajax/index.html" />
-        <option value="$PROJECT_DIR$/lectures/jquery/examples/eshop.html" />
         <option value="$PROJECT_DIR$/lectures/jquery/examples/form.html" />
         <option value="$PROJECT_DIR$/lectures/jquery/examples/form2.html" />
-        <option value="$PROJECT_DIR$/lectures/jquery/todo/index.html" />
+        <option value="$PROJECT_DIR$/lectures/jquery/index.html" />
+        <option value="$PROJECT_DIR$/lectures/jquery/examples/eshop.html" />
         <option value="$PROJECT_DIR$/lectures/jquery/examples/template.html" />
+        <option value="$PROJECT_DIR$/lectures/jquery/todo/index.html" />
       </list>
     </option>
   </component>
@@ -477,7 +468,7 @@
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20759289" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.14701131" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -823,14 +814,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lectures/javascript/examples/dom.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="23" column="6" selection-start-line="0" selection-start-column="0" selection-end-line="28" selection-end-column="7" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/lectures/javascript/teaser.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -853,61 +836,69 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/lectures/ajax/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-18.548388">
+        <state vertical-scroll-proportion="0.32258064">
           <caret line="377" column="19" selection-start-line="377" selection-start-column="19" selection-end-line="377" selection-end-column="19" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lectures/jquery/examples/eshop.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-17.838709">
-          <caret line="103" column="0" selection-start-line="103" selection-start-column="0" selection-end-line="103" selection-end-column="0" />
-          <folding>
-            <marker date="1487835357000" expanded="true" signature="5571:5634" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/lectures/jquery/examples/form.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-4.354839">
+        <state vertical-scroll-proportion="0.32258064">
           <caret line="36" column="0" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lectures/jquery/examples/form2.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-8.612904">
-          <caret line="36" column="0" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lectures/jquery/todo/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-9.32258">
-          <caret line="47" column="0" selection-start-line="47" selection-start-column="0" selection-end-line="47" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/lectures/jquery/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-17.451612">
-          <caret line="909" column="7" selection-start-line="909" selection-start-column="7" selection-end-line="909" selection-end-column="7" />
+        <state vertical-scroll-proportion="3.2">
+          <caret line="562" column="0" selection-start-line="562" selection-start-column="0" selection-end-line="562" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lectures/javascript/examples/dom.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-12.333333">
+          <caret line="23" column="6" selection-start-line="0" selection-start-column="0" selection-end-line="28" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lectures/jquery/examples/eshop.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.7511177">
+          <caret line="11" column="39" selection-start-line="11" selection-start-column="39" selection-end-line="11" selection-end-column="39" />
+          <folding>
+            <marker date="1487853774000" expanded="true" signature="5588:5651" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lectures/jquery/examples/form2.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.3030303">
+          <caret line="36" column="0" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/lectures/jquery/examples/template.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.3268945">
-          <caret line="10" column="36" selection-start-line="10" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+        <state vertical-scroll-proportion="-3.5333333">
+          <caret line="27" column="21" selection-start-line="27" selection-start-column="21" selection-end-line="27" selection-end-column="21" />
           <folding>
             <element signature="n#style#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lectures/jquery/todo/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.46348733">
+          <caret line="125" column="0" selection-start-line="125" selection-start-column="0" selection-end-line="125" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
