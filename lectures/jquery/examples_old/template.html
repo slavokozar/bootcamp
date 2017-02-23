@@ -46,6 +46,67 @@
 <script src="../js/jquery.min.js"></script>
 <script>
 
+    // $('#element1').animate({'margin-top':'100px'}, 10000);
+    
+    var basket_position = $('#btn3').offset();
+
+
+    $('#product').animate({
+        'left' : basket_position.left,
+        'top' : basket_position.top
+    }, 1000, function(){
+        $('#product').fadeOut('fast');
+    })
+
+    // var stop = false;
+
+    // function pulse(){
+    //     $('#element1').slideUp(1000, function(){
+    //         $('#element1').slideDown(1000, function(){
+    //             if(!stop){
+    //                 pulse();
+    //             }
+    //         });
+    //     });
+    // }
+    
+    // pulse();
+
+    // $('#element2').hide(5000);
+    
+    // $('#btn1').click(function(){
+    //     console.log("clicked button 1");
+    //     $('#element1').hide();
+    // });
+
+    // $('#btn2').click(function(){
+    //     console.log("clicked button 2");
+    //     $('#element2').hide();
+    // });
+
+    // $('#btn3').click(function(){
+    //     console.log("clicked button 3");
+    //     $('#element1, #element2').show();
+    // });
+
+    // var $container = $('.row.text-center');
+    // var $btns = $container.find('.btn'); 
+    
+    // $btns.first().css('color','#f00');
+    // $btns.eq(1).css('color','#0f0');
+    // $btns.last().css('color','#00f');
+
+    // $btns.not('.btn-danger').hide();
+
+    // $('.btn-danger').click(function(){
+    //     $btns.not('.btn-danger').show();
+
+    //     $btns.filter('.btn-danger').hide();
+    // })
+
+    // function selector(){
+    //     return '.btn-danger';
+    // }
 </script>
 </body>
 </html>

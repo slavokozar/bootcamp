@@ -1,0 +1,55 @@
+<html>
+<head>
+    <style>
+        #content{
+            position: absolute;
+            background: #f00;
+            left: 100px;
+            top: 100px;
+            width:100px;
+            height:100px;
+        }
+    </style>
+
+
+
+</head>
+<body>
+<div id="content"></div>
+
+<script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+crossorigin="anonymous"></script>
+
+<script>
+    var colors = ['#f00','#0f0','#00f', '#000'];
+    var positions = [
+        {
+            top: 100,
+            left: 100,
+        },{
+            top: 100,
+            left: document.body.clientWidth - 200
+        },{
+            top: document.body.clientHeight - 200,
+            left: document.body.clientWidth - 200
+        },{
+            top: document.body.clientHeight - 200,
+            left: 100
+        }
+    ];
+
+    var i = 0;
+    $('#content').click(function(){
+        i = (i + 1) % 4;
+
+        $(this).animate(positions[i], 500, function(){
+            $(this).css({
+                background: colors[i]
+            })
+        });
+    })
+
+</script>
+
+</body>
+</html>

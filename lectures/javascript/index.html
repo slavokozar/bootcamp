@@ -8,15 +8,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="CodeLeague">
     <title>Coding Bootcamp</title>
-    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../css/bootstrap.min.css">
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,200i,300,300i,400,400i,600,600i,700,700i,900,900i&subset=latin-ext"
           rel="stylesheet">
 
-    <link rel="stylesheet" href="css/font-awesome.css">
-    <link rel="stylesheet" href="css/prezi.css">
-    
+    <link rel="stylesheet" href="../../css/font-awesome.css">
+    <link rel="stylesheet" href="../../css/prezi.css">
+
 </head>
 <body>
+
+
 <section>
     <div class="container wrapper">
         <div class="content">
@@ -40,6 +42,37 @@
 
 <section>
     <div class="container wrapper">
+        <div class="content text-center">
+            <img src="atm.jpg"  style="width:500px"/>
+        </div>
+        <div class="footer"></div>
+    </div>
+</section>
+
+
+<section>
+    <div class="container wrapper">
+        <div class="content text-center">
+
+                    <img src="bus.jpg" style="width:500px"/>
+
+        </div>
+        <div class="footer"></div>
+    </div>
+</section>
+
+<section>
+    <div class="container wrapper">
+        <div class="content text-center">
+            <img src="station.jpg"  style="width:800px"/>
+        </div>
+        <div class="footer"></div>
+    </div>
+</section>
+
+
+<section>
+    <div class="container wrapper">
         <div class="content">
             <h1>Where to place JavaScript code?</h1>
                 <p>JavaScript can be placed anywhere in &lt;head&gt; or &lt;body&gt;.</p>
@@ -54,33 +87,6 @@ JavaScript in an external file
 &lt; script src="main.js" &gt;&lt;/script&gt;
 </pre>
 </p>             
-        </div>
-        <div class="footer"></div>
-    </div>
-</section>
-
-<section>
-    <div class="container wrapper">
-        <div class="content">
-            <h1>JavaScript Output</h1>
-                
-<p>
-Writing into an window alert box
-<pre>
-alert('HelloWorld');
-</pre></p>
-
-
-<p>Writing into the browser console
-<pre>
-console.log('HelloWorld');
-</pre></p>
-
-<p>Writing into an HTML element
-<pre>
-element.innerHTML = "HelloWorld";
-</pre></p>
-                
         </div>
         <div class="footer"></div>
     </div>
@@ -114,97 +120,104 @@ element.innerHTML = "HelloWorld";
     </div>
 </section>
 
-
-
-
 <section>
     <div class="container wrapper">
         <div class="content">
-            <h1>DOM manipulation ... </h1>
-               
-<p>When a web page is loaded, the browser creates a Document Object Model of the page.</p>
-
-
-<p>The HTML DOM model is constructed as a tree of Objects</p>                
-        </div>
-        <div class="footer"></div>
-    </div>
-</section>
-
-<section>
-    <div class="container wrapper">
-        <div class="content">
-            <p class="text-center">
-                <img src="http://www.w3schools.com/js/pic_htmltree.gif" style="width: 80%;"/>
-            </p>     
-        </div>
-        <div class="footer"></div>
-    </div>
-</section>
-
-<section>
-    <div class="container wrapper">
-        <div class="content">
-            <h1>... DOM manipulation</h1>
-                <p>With the object model, JavaScript gets all the power it needs to create dynamic HTML</p>
-                <p>JavaScript can change HTML elements, attributes, CSS styles and react to existing or new HTML events in the page. 
-
+            <h1>JavaScript Output</h1>
                 
-        </div>
-        <div class="footer"></div>
-    </div>
-</section>
-
-<section>
-    <div class="container wrapper">
-        <div class="content">
-            <h1>Traverse DOM by JavaScript</h1>
-<pre>
-document.getElementById(id);
-document.getElementsByTagName(name);
-document.getElementsByClassName(name);
-</pre>                
-                
-        </div>
-        <div class="footer"></div>
-    </div>
-</section>
-<section>
-    <div class="container wrapper">
-        <div class="content">
-            <h1>Change DOM elements</h1>
-<pre>
-element.innerHTML = new_html_content;
-element.attribute = new_value;	
-element.setAttribute(attribute, value);
-element.style.property = new style;
-</pre>                
-                
-        </div>
-        <div class="footer"></div>
-    </div>
-</section>
-<section>
-    <div class="container wrapper">
-        <div class="content">
-            <h1>Modifiing DOM Tree</h1>
 <p>
+Writing into an window alert box
 <pre>
-document.createElement(name);
+alert('HelloWorld');
+</pre></p>
+<p>Writing into the browser console
+<pre>
+console.log('HelloWorld');
+</pre></p>
+
+<p>Writing into an HTML element
+<pre>
+element.innerHTML = "HelloWorld";
+</pre></p>
+                
+        </div>
+        <div class="footer"></div>
+    </div>
+</section>
+
+<section>
+    <div class="container wrapper">
+        <div class="content">
+            <h1>JavaScript Input</h1>
+                
+<p>
+Prompting user for answer
+<pre>
+var res = prompt("Where do you want to go?", "Bar!");
+</pre></p>
+
+<p>Read content of an HTML element
+<pre>
+var res = element.innerHTML;
+</pre></p>
+                
+        </div>
+        <div class="footer"></div>
+    </div>
+</section>
+
+
+
+<section>
+    <div class="container wrapper">
+        <div class="content">
+            <h1>Strings</h1>
+            <h3>concatenate</h3>
+
+<pre>
+&lt;script&gt;
+var str1 = "Visit";
+var str2 = "Pub!"
+var res = str1 + " " + str2;
+&lt;/script&gt;
 </pre>
-The createElement() method creates an Element Node with the specified name.
-</p>
-<p>
-This function does not inset element into the document.
-</p>
+<p>The result of res will be:<br/>Visit CodingBootcamp!</p>
+</div>
+        <div class="footer"></div>
+    </div>
+</section>
 
-<p>
+<section>
+    <div class="container wrapper">
+        <div class="content">
+            <h1>Strings</h1>
+            <h3>replace()</h3>
+
 <pre>
-document.appendChild(newChild);
-document.removeChild(child);
-document.replaceChild(newChild, oldChild);
+&lt;script&gt;
+var str = "Visit Pub!";
+var res = str.replace("Pub", "CodingBootcamp");
+&lt;/script&gt;
 </pre>
-</p>
+<p>The result of res will be:<br/>Visit CodingBootcamp!</p>
+</div>
+        <div class="footer"></div>
+    </div>
+</section>
+
+<section>
+    <div class="container wrapper">
+        <div class="content">
+            <h1>Strings</h1>
+<h3>split()</h3>
+<pre>
+&lt;script&gt;
+var str = "How are you doing today?";
+var res = str.split(" ");
+&lt;/script&gt;
+</pre>
+<p>The result of res will be an array with the values:<br/>How,are,you,doing,today?</p>
+<p>... more string functions visit <a href="http://www.w3schools.com/jsref/jsref_obj_string.asp" target="_blank">reference</a></p>
         </div>
         <div class="footer"></div>
     </div>
@@ -817,6 +830,98 @@ person.hello();
     </div>
 </section>
 
+<section>
+    <div class="container wrapper">
+        <div class="content">
+            <h1>DOM manipulation ... </h1>
+               
+<p>When a web page is loaded, the browser creates a Document Object Model of the page.</p>
+
+
+<p>The HTML DOM model is constructed as a tree of Objects</p>                
+        </div>
+        <div class="footer"></div>
+    </div>
+</section>
+
+<section>
+    <div class="container wrapper">
+        <div class="content">
+            <p class="text-center">
+                <img src="http://www.w3schools.com/js/pic_htmltree.gif" style="width: 80%;"/>
+            </p>     
+        </div>
+        <div class="footer"></div>
+    </div>
+</section>
+
+<section>
+    <div class="container wrapper">
+        <div class="content">
+            <h1>... DOM manipulation</h1>
+                <p>With the object model, JavaScript gets all the power it needs to create dynamic HTML</p>
+                <p>JavaScript can change HTML elements, attributes, CSS styles and react to existing or new HTML events in the page. 
+
+                
+        </div>
+        <div class="footer"></div>
+    </div>
+</section>
+
+<section>
+    <div class="container wrapper">
+        <div class="content">
+            <h1>Traverse DOM by JavaScript</h1>
+<pre>
+document.getElementById(id);
+document.getElementsByTagName(name);
+document.getElementsByClassName(name);
+</pre>                
+                
+        </div>
+        <div class="footer"></div>
+    </div>
+</section>
+<section>
+    <div class="container wrapper">
+        <div class="content">
+            <h1>Change DOM elements</h1>
+<pre>
+element.innerHTML = new_html_content;
+element.attribute = new_value;  
+element.setAttribute(attribute, value);
+element.style.property = new style;
+</pre>                
+                
+        </div>
+        <div class="footer"></div>
+    </div>
+</section>
+<section>
+    <div class="container wrapper">
+        <div class="content">
+            <h1>Modifiing DOM Tree</h1>
+<p>
+<pre>
+document.createElement(name);
+</pre>
+The createElement() method creates an Element Node with the specified name.
+</p>
+<p>
+This function does not inset element into the document.
+</p>
+
+<p>
+<pre>
+document.appendChild(newChild);
+document.removeChild(child);
+document.replaceChild(newChild, oldChild);
+</pre>
+</p>
+        </div>
+        <div class="footer"></div>
+    </div>
+</section>
 
 <section>
     <div class="container wrapper">
@@ -871,33 +976,6 @@ person.hello();
 </section>
 
 
-<section>
-    <div class="container wrapper">
-        <div class="content">
-            <h1>Strings</h1>
-            <h3>replace()</h3>
-
-<pre>
-&lt;script&gt;
-var str = "Visit Pub!";
-var res = str.replace("Pub", "CodingBootcamp");
-&lt;/script&gt;
-</pre>
-<p>The result of res will be:<br/>Visit CodingBootcamp!</p>
-
-<h3>split()</h3>
-<pre>
-&lt;script&gt;
-var str = "How are you doing today?";
-var res = str.split(" ");
-&lt;/script&gt;
-</pre>
-<p>The result of res will be an array with the values:<br/>How,are,you,doing,today?</p>
-<p>... more string functions visit <a href="http://www.w3schools.com/jsref/jsref_obj_string.asp" target="_blank">reference</a></p>
-        </div>
-        <div class="footer"></div>
-    </div>
-</section>
 
 
 <section>
@@ -1369,7 +1447,7 @@ document.getElementById("demo").innerHTML = firstName + " " + lastName
 
 <p>It’s common, to start JS functions after whole page was loaded:
 <pre>
-&gt;script
+&lt;script&gt;
 window.onload = downScripts;
 
 function downScripts() {
@@ -1377,7 +1455,7 @@ function downScripts() {
     element.src = "myScript.js";
     document.body.appendChild(element);
 }
-&gt;/script&lt;
+&lt;/script&gt;
 </pre>
 
         </div>
@@ -1385,8 +1463,8 @@ function downScripts() {
     </div>
 </section>
 
-<script src="js/jquery.min.js"></script>
-<script src="js/bootstrap.min.js"></script>
+<script src="../../js/jquery.min.js"></script>
+<script src="../../js/bootstrap.min.js"></script>
 <script>
 $(function () {
     $('[data-toggle="tooltip"]').tooltip()

@@ -35,6 +35,51 @@
 <script src="../js/jquery.min.js"></script>
 <script>
 
+    $('.form-control').change(function(){
+        var type = $(this).attr('type');
+
+        console.log(type);
+        if(type == "email"){
+            validateEmail($(this));
+        }else if(type == "number"){
+            validateNumber($(this));
+        }
+    })
+
+
+    
+    $('.form-control').keyup(function(e){
+        var type = $(this).attr('type');
+
+        console.log(type);
+        if(type == "email"){
+            validateEmail($(this));
+        }else if(type == "number"){
+            validateNumber($(this));
+        }
+    });
+
+    $('form').submit(function(e){
+        var valid = true; 
+
+        //some validation logic 
+        $(this).find('.form-control').each(function(){
+
+            var type = $(this).attr('type');
+
+             if(type == "email"){
+                valid = validateEmail($(this)) && valid;
+            }else if(type == "number"){
+                valid = validateNumber($(this)) && valid;
+            }
+             
+        })
+
+        if(!valid){
+            e.preventDefault()
+        }
+    })
+
     function validateEmail($element){
         var val = $element.val();
         

@@ -35,6 +35,34 @@
 <script src="../js/jquery.min.js"></script>
 <script>
 
+    $('.form-control').change(function(){
+        var type = $(this).data('type');
+
+        validate[type]($(this));        
+    })
+
+
+    
+    $('.form-control').keyup(function(e){
+        var type = $(this).data('type');
+        console.log(type);
+        validate[type]($(this));
+    });
+
+    $('form').submit(function(e){
+        var valid = true; 
+
+        $(this).find('.form-control').each(function(){
+
+            var type = $(this).data('type');
+            valid = validate[type]($(this)) && valid;             
+        })
+
+        if(!valid){
+            e.preventDefault()
+        }
+    })
+
     var validate = {
         'email' : function($element){
             var val = $element.val();

@@ -1,0 +1,98 @@
+<html>
+<head>
+
+</head>
+<body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+    //1) ask your user how many children does she/he has
+    //1.1) keep asking until you get proper data - number from range <0; 100>
+
+    //2) ask for name of all of his/her kids.
+    //3) alert 'say hi to {name1}, {name2}
+
+
+
+
+
+    var children = prompt('How many children do you have?');
+
+    while (isNaN(children) || children < 0 || children > 100) {
+        children = prompt('How many children do you have? (enter number in range 0 - 100)');
+    }
+    
+
+    if (children != 0) {
+        var names = [];
+
+        for (var i = 0; i < children; i++) {
+
+            var order = 'th';
+            if (i == 0) order = 'st';
+            else if (i == 1) order = 'nd';
+            else if (i == 2) order = 'rd';
+
+            //creating temp variables
+            var uniqueName;
+            var tempName;
+
+            //getting unique name
+            do{
+
+
+
+                tempName = prompt('What is the name of your ' + (i + 1) + order + ' kid?');
+
+                //check for unique name
+
+                //iterate through set names and compare them with currently read name
+//                uniqueName = true;
+//                for(var j = 0; j < i; j++){
+//                    if(tempName == names[j]){
+//                        uniqueName = false;
+//                    }
+//                }
+
+                //check whether name is unique
+                uniqueName = (names.indexOf(tempName) == -1);
+
+
+            }while(!uniqueName);  //repeat until name is unique
+
+            //saving the name into array
+            names[i] = tempName;
+        }
+
+//        var greeting = ""
+//        for (var i = 0; i < children; i++) {
+//            if (i == (children - 1)) {
+//                greeting += name[i] + '.';
+//            } else {
+//                greeting += name[i] + ', ';
+//            }
+//        }
+
+        var greeting = names.join(', ') + '.';
+
+        alert('say hi to ' + greeting);
+    }
+</script>
+
+</body>
+</html>
