@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Mobirise Free Bootstrap Template, https://mobirise.com -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="generator" content="SlavoKozar.sk">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="CodeLeague">
+    <title>Coding Bootcamp</title>
+    <link rel="stylesheet" href="../../../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../../css/font-awesome.css">
+    <style>
+        #products .row{
+            border-bottom:1px solid #ddd;
+        }
+        #products .row:last-of-type{
+            border-bottom:none;
+        }
+
+        #products h2{
+            border-bottom:2px solid #ddd;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="jumbotron">
+        <div class="row">
+            <div class="col-md-12">
+                <h1>Eshop</h1>
+            </div>
+        </div>
+    </div>
+
+
+    <section id="products">
+        <h2>Products</h2>
+
+        <div class="row">
+            <div class="col-md-10"><h3>Notebook</h3></div>
+            <div class="col-md-2">2000 &euro;</div>
+        </div>
+        <div class="row">
+            <div class="col-md-10"><h3>Mobile phone</h3></div>
+            <div class="col-md-2">200 &euro;</div>
+        </div>
+    </section>
+    <div class="row">
+        <div class="col-md-12 text-center">
+            <button id="load" class="btn btn-primary">Load next Products</button>
+        </div>
+    </div>
+</div>
+
+<script src="../../../js/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+<script>
+    var products = 2;
+
+    $('#load').click(function(){
+
+        $.ajax({
+            'url': 'products.php',
+            'method': 'post',
+            'data': {
+                'id' : products
+            }
+        }).done(function(data){
+            var data = JSON.parse(data);
+            console.log(data);
+            var product =
+                '<div class="row">'+
+                    '<div class="col-md-10"><h3>' + data.product.name + '</h3></div>'+
+                    '<div class="col-md-2">' + data.product.price + '</div>'+
+                '</div>';
+
+            $('#products').append(product);
+            products++;
+
+            if(products >= data.count){
+                $('#load').remove();
+            }
+        })
+    })
+
+</script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
