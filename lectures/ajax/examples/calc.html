@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Mobirise Free Bootstrap Template, https://mobirise.com -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="generator" content="SlavoKozar.sk">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="CodeLeague">
+    <title>Coding Bootcamp</title>
+    <link rel="stylesheet" href="../../../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../../css/font-awesome.css">
+</head>
+<body>
+
+<div class="container">
+    <div class="row text-center" style="margin-top:100px">
+        <div class="col-md-3">
+            <input class="form-control" id="number1" type="number">
+        </div>
+        <div class="col-md-3">
+            <select class="form-control" id="operand">
+                <option value="+">+</option>
+                <option value="-">-</option>
+            </select>
+        </div>
+        <div class="col-md-3">
+            <input class="form-control" id="number2" type="number">
+        </div>
+        <div class="col-md-3">
+            <input class="form-control" id="result" type="number" disabled>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+            <button class="btn btn-primary pull-right" id="calculate">Calculate</button>
+        </div>
+    </div>
+
+
+</div>
+
+<script src="../../../js/jquery.min.js"></script>
+<script>
+    $('#btn1').click(function () {
+
+//        create ajax call for url : 'test.php'
+        //create ajax call for url : 'test.php' method : 'post'
+
+        $('#spinner').removeClass('hidden');
+
+        $.ajax({
+            'url': 'test.php',
+            'method': 'post',
+            'data': {
+                'a': 10,
+                'b': 20
+            }
+        })
+        .done(function(data){
+            console.log(data);
+        })
+        .fail(function(){
+            alert('Something went wrong, come back in a minute or two. :/');
+        })
+        .always(function(){
+            $('#spinner').addClass('hidden');
+        });
+
+    });
+</script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
