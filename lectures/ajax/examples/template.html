@@ -63,11 +63,10 @@
 
 
 <script src="../../../js/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
 <script>
     $('#btn1').click(function () {
-
-//        create ajax call for url : 'test.php'
-        //create ajax call for url : 'test.php' method : 'post'
 
         $('#spinner').removeClass('hidden');
 
@@ -81,6 +80,12 @@
         })
         .done(function(data){
             console.log(data);
+
+            var parsed = JSON.parse(data);
+
+            console.log(parsed.result);
+
+            console.log(JSON.stringify(parsed))
         })
         .fail(function(){
             alert('Something went wrong, come back in a minute or two. :/');
@@ -90,6 +95,29 @@
         });
 
     });
+
+    $('#btn3').click(function(){
+        loadModal('modal.html');
+    });
+
+
+    function loadModal(url){
+        $.ajax({
+            'url': url,
+            'method': 'get'
+        }).done(function(data){
+            var $modal = $(data);
+            $('body').append($modal);
+
+            $modal.modal('show');
+
+            $modal.on('hidden.bs.modal', function (e) {
+                $modal.remove();
+                $('.modal-backdrop').remove();
+            })
+        });
+    }
+
 </script>
 </body>
 </html>
