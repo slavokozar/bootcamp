@@ -42,30 +42,45 @@
 
 <script src="../../../js/jquery.min.js"></script>
 <script>
-    $('#btn1').click(function () {
+    $('#calculate').click(function(){
+        var number1 = $('#number1').val();
+        var number2 = $('#number2').val();
 
-//        create ajax call for url : 'test.php'
-        //create ajax call for url : 'test.php' method : 'post'
+        if(number1 == ''){
+            number1 = 0;
+            $('#number1').val(0)
+        }
 
-        $('#spinner').removeClass('hidden');
+        if(number2 == ''){
+            number2 = 0;
+            $('#number2').val(0)
+        }
+
+        var operand = $('#operand').val();
 
         $.ajax({
-            'url': 'test.php',
+            'url': 'calc.php',
             'method': 'post',
             'data': {
-                'a': 10,
-                'b': 20
+                'n1': number1,
+                'n2': number2,
+                'op': operand
             }
+        }).done(function(data){
+            $('#result').val(data);
+        }).fail(function(){
+            alert('your computation failed, try again later...');
         })
-        .done(function(data){
-            console.log(data);
-        })
-        .fail(function(){
-            alert('Something went wrong, come back in a minute or two. :/');
-        })
-        .always(function(){
-            $('#spinner').addClass('hidden');
-        });
+
+
+        //        parseInt();
+//        parseFloat();
+
+//        if(operand == '+'){
+//            $('#result').val(parseInt(number1) + parseInt(number2));
+//        }else if(operand == '-'){
+//            $('#result').val(parseInt(number1) - parseInt(number2));
+//        }
 
     });
 </script>
