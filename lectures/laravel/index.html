@@ -1,0 +1,1371 @@
+<!DOCTYPE html>
+<p lang="en">
+<head>
+    <!-- Mobirise Free Bootstrap Template, https://mobirise.com -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="generator" content="SlavoKozar.sk">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="CodeLeague">
+    <title>Coding Bootcamp</title>
+    <link rel="stylesheet" href="../../css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,200i,300,300i,400,400i,600,600i,700,700i,900,900i&subset=latin-ext"
+          rel="stylesheet">
+
+    <link rel="stylesheet" href="../../css/font-awesome.css">
+    <link rel="stylesheet" href="../../css/prezi.css">
+    
+</head>
+<body>
+
+<section>
+    <div class="container wrapper">
+        <div class="content">
+            <h1>Laravel</h1>
+            <h3>Slavo Kožár</h3>
+        </div>
+        <div class="footer"></div>
+    </div>
+</section>
+
+
+<section>
+    <div class="container wrapper">
+        <div class="content">
+            <h1>Laravel Eloquent</h1>
+
+        </div>
+        <div class="footer"></div>
+    </div>
+</section>
+
+<section>
+    <div class="container wrapper">
+        <div class="content">
+<h2>Introduction</h2>
+<p>The Eloquent ORM included with Laravel provides a beautiful, simple ActiveRecord implementation for working with your database. Each database table has a corresponding "Model" which is used to interact with that table. Models allow you to query for data in your tables, as well as insert new records into the table.</p>
+        </div>
+        <div class="footer"></div>
+    </div>
+</section>
+
+
+
+<section>
+    <div class="container wrapper">
+        <div class="content">
+<h2>Defining Models</h2>
+<p>The easiest way to create a model instance is using the make:model Artisan command:
+<pre>php artisan make:model User</pre>
+</p>
+<p>If you would like to generate a database migration when you generate the model, you may use the --migration or -m option:
+<pre>
+php artisan make:model User --migration
+php artisan make:model User -m
+</pre>
+        </div>
+        <div class="footer"></div>
+    </div>
+</section>
+
+
+
+<section>
+    <div class="container wrapper">
+        <div class="content">
+<h2>Eloquent Model Conventions</h2>
+<p>Now, let's look at an example Flight model, which we will use to retrieve and store information from our flights database table:
+<pre>
+&lt;?php
+    namespace App;
+    use Illuminate\Database\Eloquent\Model;
+
+    class Flight extends Model
+    {
+       //
+    }
+</pre>
+</p>
+        </div>
+        <div class="footer"></div>
+    </div>
+</section>
+
+
+
+<section>
+    <div class="container wrapper">
+        <div class="content">
+<h2>Table Names</h2>
+<p>Note that we did not tell Eloquent which table to use for our Flight model. By convention, the "snake case", plural name of the class will be used as the table name unless another name is explicitly specified. So, in this case, Eloquent will assume the Flight model stores records in the flights table. You may specify a custom table by defining a table property on your model:
+<pre>
+&lt;?php
+    namespace App;
+    use Illuminate\Database\Eloquent\Model;
+
+    class Flight extends Model
+    {
+        /**
+         * The table associated with the model.
+         *
+         * @var string
+         */
+        protected $table = 'my_flights';
+    }
+</pre>
+        </div>
+        <div class="footer"></div>
+    </div>
+</section>
+
+
+
+<section>
+    <div class="container wrapper">
+        <div class="content">
+<h2>Primary Keys</h2>
+<p>Eloquent will also assume that each table has a primary key column named id. You may define a $primaryKey property to override this convention.</p>
+        </div>
+        <div class="footer"></div>
+    </div>
+</section>
+
+
+
+<section>
+    <div class="container wrapper">
+        <div class="content">
+<h2>Timestamps</h2>
+<p>By default, Eloquent expects created_at and updated_at columns to exist on your tables. If you do not wish to have these columns automatically managed by Eloquent, set the $timestamps property on your model to false.</p>
+        </div>
+        <div class="footer"></div>
+    </div>
+</section>
+
+
+
+<section>
+    <div class="container wrapper">
+        <div class="content">
+<h2>Retrieving Models</h2>
+<p>Once you have created a model and its associated database table, you are ready to start retrieving data from your database. Think of each Eloquent model as a powerful query builder allowing you to fluently query the database table associated with the model.
+<pre>
+&lt;?php
+
+use App\Flight;
+
+$flights = App\Flight::all();
+
+foreach ($flights as $flight) {
+    echo $flight->name;
+}
+</pre>
+</p>
+        </div>
+        <div class="footer"></div>
+    </div>
+</section>
+
+
+
+<section>
+    <div class="container wrapper">
+        <div class="content">
+<h2>Adding Additional Constraints</h2>
+<p>The Eloquent all method will return all of the results in the model's table. Since each Eloquent model serves as a query builder, you may also add constraints to queries, and then use the getmethod to retrieve the results:
+<pre>
+$flights = App\Flight::where('active', 1)
+    ->orderBy('name', 'desc')
+    ->take(10)
+    ->get();
+</pre>
+<p>Since Eloquent models are query builders, you should review all of the methods available on the query builder. You may use any of these methods in your Eloquent queries.</p>
+        </div>
+        <div class="footer"></div>
+    </div>
+</section>
+
+
+
+<section>
+    <div class="container wrapper">
+        <div class="content">
+<h2>Collections</h2>
+<p>For Eloquent methods like all and get which retrieve multiple results, an instance of Illuminate\Database\Eloquent\Collection will be returned. The Collection class provides a variety of helpful methods for working with your Eloquent results:
+<pre>
+$flights = $flights->reject(function ($flight) {
+    return $flight->cancelled;
+});
+</pre>
+</p>
+<p>Of course, you may also simply loop over the collection like an array:
+<pre>
+foreach ($flights as $flight) {
+    echo $flight->name;
+}
+</pre>
+</p>
+        </div>
+        <div class="footer"></div>
+    </div>
+</section>
+
+
+
+<section>
+    <div class="container wrapper">
+        <div class="content">
+<h2>Retrieving Single Models</h2>
+<p>Of course, in addition to retrieving all of the records for a given table, you may also retrieve single records using find and first. Instead of returning a collection of models, these methods return a single model instance:
+<pre>
+// Retrieve a model by its primary key...
+$flight = App\Flight::find(1);
+</pre>
+<pre>
+// Retrieve the first model matching the query constraints...
+$flight = App\Flight::where('active', 1)->first();
+</pre>
+</p>
+<p>You may also call the find method with an array of primary keys, which will return a collection of the matching records:
+<pre>$flights = App\Flight::find([1, 2, 3]);</pre>
+</p>
+        </div>
+        <div class="footer"></div>
+    </div>
+</section>
+
+
+
+<section>
+    <div class="container wrapper">
+        <div class="content">
+<h2>Not Found Exceptions</h2>
+<p>Sometimes you may wish to throw an exception if a model is not found. This is particularly useful in routes or controllers. The findOrFail and firstOrFail methods will retrieve the first result of the query; however, if no result is found, a Illuminate\Database\Eloquent\ModelNotFoundException will be thrown:
+<pre>$model = App\Flight::findOrFail(1);</pre>
+<pre>$model = App\Flight::where('legs', '>', 100)->firstOrFail();</pre>
+</p>
+<p>If the exception is not caught, a 404 HTTP response is automatically sent back to the user. It is not necessary to write explicit checks to return 404 responses when using these methods:
+<pre>
+Route::get('/api/flights/{id}', function ($id) {
+    return App\Flight::findOrFail($id);
+});
+</pre>
+</p>
+        </div>
+        <div class="footer"></div>
+    </div>
+</section>
+
+
+
+<section>
+    <div class="container wrapper">
+        <div class="content">
+<h2>Retrieving Aggregates</h2>
+<p>You may also use the count, sum, max, and other aggregate methods provided by the query builder. These methods return the appropriate scalar value instead of a full model instance:
+<pre>
+$count = App\Flight::where('active', 1)->count();
+$max = App\Flight::where('active', 1)->max('price');
+</pre>
+</p>
+        </div>
+        <div class="footer"></div>
+    </div>
+</section>
+
+
+
+<section>
+    <div class="container wrapper">
+        <div class="content">
+<h2>Inserts</h2>
+<p>To create a new record in the database, simply create a new model instance, set attributes on the model, then call the save method:
+<pre>
+&lt;?php
+
+    $flight = new Flight;
+
+    $flight->name = $request->name;
+
+    $flight->save();
+</pre>
+        </div>
+        <div class="footer"></div>
+    </div>
+</section>
+
+
+
+<section>
+    <div class="container wrapper">
+        <div class="content">
+<h2>Updates</h2>
+<p>The save method may also be used to update models that already exist in the database. To update a model, you should retrieve it, set any attributes you wish to update, and then call the savemethod. Again, the updated_at timestamp will automatically be updated, so there is no need to manually set its value:
+<pre>
+&lt;?php
+    $flight = App\Flight::find(1);
+
+    $flight->name = 'New Flight Name';
+
+    $flight->save();
+</pre>
+</p>
+        </div>
+        <div class="footer"></div>
+    </div>
+</section>
+
+
+
+<section>
+    <div class="container wrapper">
+        <div class="content">
+<h2>Mass Assignment</h2>
+<p>You may also use the create method to save a new model in a single line. The inserted model instance will be returned to you from the method. However, before doing so, you will need to specify either a fillable or guarded attribute on the model, as all Eloquent models protect against mass-assignment by default.</p>
+<p>So, to get started, you should define which model attributes you want to make mass assignable. You may do this using the $fillable property on the model. For example, let's make the name attribute of our Flight model mass assignable:
+<pre>
+&lt;?php
+    namespace App;
+    use Illuminate\Database\Eloquent\Model;
+
+    class Flight extends Model
+    {
+        /**
+         * The attributes that are mass assignable.
+         *
+         * @var array
+         */
+        protected $fillable = ['name'];
+    }
+</pre>
+</p>
+        </div>
+        <div class="footer"></div>
+    </div>
+</section>
+
+
+
+<section>
+    <div class="container wrapper">
+        <div class="content">
+<p>Once we have made the attributes mass assignable, we can use the create method to insert a new record in the database. The create method returns the saved model instance:
+<pre>$flight = App\Flight::create(['name' => 'Flight 10']);</pre>
+</p>
+<p>
+If you already have a model instance, you may use the fill method to populate it with an array of attributes:
+<pre>$flight->fill(['name' => 'Flight 22']);</pre>
+</pre>
+        </div>
+        <div class="footer"></div>
+    </div>
+</section>
+
+
+
+<section>
+    <div class="container wrapper">
+        <div class="content">
+<h2>Guarding Attributes</h2>
+<p>While $fillable serves as a "white list" of attributes that should be mass assignable, you may also choose to use $guarded. The $guarded property should contain an array of attributes that you do not want to be mass assignable. All other attributes not in the array will be mass assignable. So, $guarded functions like a "black list". Of course, you should use either $fillable or $guarded - not both. In the example below, all attributes except for price will be mass assignable:
+<pre>
+&lt;?php
+    namespace App;
+    use Illuminate\Database\Eloquent\Model;
+
+    class Flight extends Model
+    {
+        /**
+         * The attributes that aren't mass assignable.
+         *
+         * @var array
+         */
+        protected $guarded = ['price'];
+    }
+</pre>
+</p>
+        </div>
+        <div class="footer"></div>
+    </div>
+</section>
+
+
+
+<section>
+    <div class="container wrapper">
+        <div class="content">
+<p>If you would like to make all attributes mass assignable, you may define the $guarded property as an empty array:
+<pre>
+    /**
+     * The attributes that aren't mass assignable.
+     *
+     * @var array
+     */
+    protected $guarded = [];
+</pre>
+</p>
+        </div>
+        <div class="footer"></div>
+    </div>
+</section>
+
+
+
+<section>
+    <div class="container wrapper">
+        <div class="content">
+<h2>Deleting Models</h2>
+<p>To delete a model, call the delete method on a model instance:
+<pre>
+$flight = App\Flight::find(1);
+
+$flight->delete();
+</pre>
+        </div>
+        <div class="footer"></div>
+    </div>
+</section>
+
+
+
+<section>
+    <div class="container wrapper">
+        <div class="content">
+<h2>Deleting An Existing Model By Key</h2>
+<p>In the example above, we are retrieving the model from the database before calling the delete method. However, if you know the primary key of the model, you may delete the model without retrieving it. To do so, call the destroy method:
+<pre>
+App\Flight::destroy(1);
+
+App\Flight::destroy([1, 2, 3]);
+
+App\Flight::destroy(1, 2, 3);
+</pre>
+</p>
+        </div>
+        <div class="footer"></div>
+    </div>
+</section>
+
+
+
+<section>
+    <div class="container wrapper">
+        <div class="content">
+<h2>Soft Deleting</h2>
+<a href="https://laravel.com/docs/5.4/eloquent#soft-deleting" target="_blank">https://laravel.com/docs/5.4/eloquent#soft-deleting</a>
+        </div>
+        <div class="footer"></div>
+    </div>
+</section>
+
+
+
+<section>
+    <div class="container wrapper">
+        <div class="content">
+<h2>Local Query Scopes</h2>
+<p>Local scopes allow you to define common sets of constraints that you may easily re-use throughout your application. For example, you may need to frequently retrieve all users that are considered "popular". To define a scope, simply prefix an Eloquent model method with scope.</p>
+        </div>
+        <div class="footer"></div>
+    </div>
+</section>
+
+
+
+<section>
+    <div class="container wrapper">
+        <div class="content">
+<p>Scopes should always return a query builder instance:
+<pre>
+&lt;?php
+    namespace App;
+    use Illuminate\Database\Eloquent\Model;
+
+    class User extends Model
+    {
+        /**
+         * Scope a query to only include popular users.
+         *
+         * @param \Illuminate\Database\Eloquent\Builder $query
+         * @return \Illuminate\Database\Eloquent\Builder
+         */
+        public function scopePopular($query)
+        {
+            return $query->where('votes', '>', 100);
+        }
+
+        /**
+        * Scope a query to only include active users.
+        *
+        * @param \Illuminate\Database\Eloquent\Builder $query
+        * @return \Illuminate\Database\Eloquent\Builder
+        */
+        public function scopeActive($query)
+        {
+            return $query->where('active', 1);
+        }
+    }
+</pre>
+</p>
+        </div>
+        <div class="footer"></div>
+    </div>
+</section>
+
+
+
+<section>
+    <div class="container wrapper">
+        <div class="content">
+<h2>Utilizing A Local Scope</h2>
+<p>Once the scope has been defined, you may call the scope methods when querying the model. However, you do not need to include the scope prefix when calling the method. You can even chain calls to various scopes, for example:
+<pre>$users = App\User::popular()->active()->orderBy('created_at')->get();</pre>
+</p>
+        </div>
+        <div class="footer"></div>
+    </div>
+</section>
+
+
+
+<section>
+    <div class="container wrapper">
+        <div class="content">
+<h1>Relationships</h1>
+<h2>Introduction</h2>
+<ul>
+    <li>One To One</li>
+    <li>One To Many</li>
+    <li>Many To Many</li>
+    <li>*Has Many Through</li>
+    <li>*Polymorphic Relations</li>
+    <li>*Many To Many Polymorphic Relations</li>
+</ul>
+<p>Eloquent relationships are defined as methods on your Eloquent model classes.
+<pre>$user->posts()->where('active', 1)->get();</pre>
+</p>
+        </div>
+        <div class="footer"></div>
+    </div>
+</section>
+
+
+
+<section>
+    <div class="container wrapper">
+        <div class="content">
+<h2>One To One</h2>
+<p>A one-to-one relationship is a very basic relation. For example, a User model might be associated with one Phone.
+<pre>
+&lt;?php
+    namespace App;
+    use Illuminate\Database\Eloquent\Model;
+
+    class User extends Model
+    {
+        /**
+         * Get the phone record associated with the user.
+         */
+        public function phone()
+        {
+            return $this->hasOne('App\Phone');
+        }
+    }
+</pre>
+
+<p>
+The first argument passed to the hasOne method is the name of the related model. Once the relationship is defined, we may retrieve the related record using Eloquent's dynamic properties.
+<pre>$phone = User::find(1)->phone;</pre>
+</p>
+        </div>
+        <div class="footer"></div>
+    </div>
+</section>
+
+
+
+<section>
+    <div class="container wrapper">
+        <div class="content">
+<p>Eloquent determines the foreign key of the relationship based on the model name. In this case, the Phone model is automatically assumed to have a user_id foreign key.</p>
+<p>You may also override the foreign and local keys by passing additional arguments to the hasOne method:
+<pre>
+return $this->hasOne('App\Phone', 'foreign_key');
+return $this->hasOne('App\Phone', 'foreign_key', 'local_key');
+</pre>
+</p>
+        </div>
+        <div class="footer"></div>
+    </div>
+</section>
+
+
+
+<section>
+    <div class="container wrapper">
+        <div class="content">
+<h2>Defining The Inverse Of The Relationship</h2>
+<pre>
+&lt;?php
+    namespace App;
+    use Illuminate\Database\Eloquent\Model;
+
+    class Phone extends Model
+    {
+        /**
+         * Get the user that owns the phone.
+         */
+        public function user()
+        {
+            return $this->belongsTo('App\User');
+        }
+    }
+</pre>
+        </div>
+        <div class="footer"></div>
+    </div>
+</section>
+
+
+
+<section>
+    <div class="container wrapper">
+        <div class="content">
+<h2>One To Many</h2>
+<p>For example, a blog post may have an infinite number of comments.
+<pre>
+&lt;?php
+    namespace App;
+    use Illuminate\Database\Eloquent\Model;
+
+    class Post extends Model
+    {
+        /**
+         * Get the comments for the blog post.
+         */
+        public function comments()
+        {
+            return $this->hasMany('App\Comment');
+        }
+    }
+</pre>
+</p>
+        </div>
+        <div class="footer"></div>
+    </div>
+</section>
+
+
+
+<section>
+    <div class="container wrapper">
+        <div class="content">
+<p>Remember, Eloquent will automatically determine the proper foreign key column on the Commentmodel. So, for this example, Eloquent will assume the foreign key on the Comment model is post_id.</p>
+<pre>$comments = App\Post::find(1)->comments;</pre>
+<pre>
+foreach ($comments as $comment) {
+    //
+}
+</pre>
+<pre>
+$comments = App\Post::find(1)->comments()->where('title', 'foo')->first();
+</pre>
+        </div>
+        <div class="footer"></div>
+    </div>
+</section>
+
+
+
+<section>
+    <div class="container wrapper">
+        <div class="content">
+<p>Like the hasOne method, you may also override the foreign and local keys by passing additional arguments to the hasMany method:
+<pre>
+return $this->hasMany('App\Comment', 'foreign_key');
+
+return $this->hasMany('App\Comment', 'foreign_key', 'local_key');
+</pre>
+        </div>
+        <div class="footer"></div>
+    </div>
+</section>
+
+
+
+<section>
+    <div class="container wrapper">
+        <div class="content">
+<h2>One To Many (Inverse)</h2>
+<p>To define the inverse of a hasMany relationship, define a relationship function on the child model which calls the belongsTo method:
+<pre>
+&lt;?php
+    namespace App;
+    use Illuminate\Database\Eloquent\Model;
+
+    class Comment extends Model
+    {
+        /**
+         * Get the post that owns the comment.
+         */
+        public function post()
+        {
+            return $this->belongsTo('App\Post');
+        }
+    }
+</pre>
+<pre>
+$comment = App\Comment::find(1);
+echo $comment->post->title;
+</pre>
+        </div>
+        <div class="footer"></div>
+    </div>
+</section>
+
+
+
+<section>
+    <div class="container wrapper">
+        <div class="content">
+<h2>Many To Many</h2>
+<p>An example of such a relationship is a user with many roles, where the roles are also shared by other users.</p>
+<p>For example, many users may have the role of "Admin". To define this relationship, three database tables are needed: users, roles, and role_user. The role_user table is derived from the alphabetical order of the related model names, and contains the user_id and role_id columns.
+<pre>
+&lt;?php
+    namespace App;
+    use Illuminate\Database\Eloquent\Model;
+
+    class User extends Model
+    {
+        /**
+         * The roles that belong to the user.
+         */
+        public function roles()
+        {
+            return $this->belongsToMany('App\Role');
+        }
+    }
+</pre>
+</p>
+        </div>
+        <div class="footer"></div>
+    </div>
+</section>
+
+
+
+<section>
+    <div class="container wrapper">
+        <div class="content">
+<p>Once the relationship is defined, you may access the user's roles using the roles dynamic property:
+<pre>
+$user = App\User::find(1);
+
+foreach ($user->roles as $role) {
+    //
+}
+</pre>
+</p>
+<p>Of course, like all other relationship types, you may call the roles method to continue chaining query constraints onto the relationship:
+<pre>$roles = App\User::find(1)->roles()->orderBy('name')->get();</pre>
+</p>
+        </div>
+        <div class="footer"></div>
+    </div>
+</section>
+
+
+
+<section>
+    <div class="container wrapper">
+        <div class="content">
+<h2>Defining The Inverse Of The Relationship</h2>
+<p>To define the inverse of a many-to-many relationship, you simply place another call to belongsToMany on your related model. To continue our user roles example, let's define the usersmethod on the Role model:
+<pre>
+&lt;?php
+    namespace App;
+    use Illuminate\Database\Eloquent\Model;
+
+    class Role extends Model
+    {
+        /**
+         * The users that belong to the role.
+         */
+        public function users()
+        {
+            return $this->belongsToMany('App\User');
+        }
+    }
+</pre>
+<p>As you can see, the relationship is defined exactly the same as its User counterpart, with the exception of simply referencing the App\User model. Since we're reusing the belongsToManymethod, all of the usual table and key customization options are available when defining the inverse of many-to-many relationships.</p>
+        </div>
+        <div class="footer"></div>
+    </div>
+</section>
+
+
+
+<section>
+    <div class="container wrapper">
+        <div class="content">
+<h1>Inserting & Updating Related Models</h1>
+        </div>
+        <div class="footer"></div>
+    </div>
+</section>
+
+
+
+<section>
+    <div class="container wrapper">
+        <div class="content">
+<h2>The Save Method</h2>
+<pre>
+$comment = new App\Comment(['message' => 'A new comment.']);
+
+$post = App\Post::find(1);
+
+$post->comments()->save($comment);
+</pre>
+<p>If you need to save multiple related models, you may use the saveMany method:
+<pre>
+$post = App\Post::find(1);
+
+$post->comments()->saveMany([
+    new App\Comment(['message' => 'A new comment.']),
+    new App\Comment(['message' => 'Another comment.']),
+]);
+</pre>
+</p>
+        </div>
+        <div class="footer"></div>
+    </div>
+</section>
+
+
+
+<section>
+    <div class="container wrapper">
+        <div class="content">
+<h2>The Create Method</h2>
+<p>In addition to the save and saveMany methods, you may also use the create method, which accepts an array of attributes, creates a model, and inserts it into the database. Again, the difference between save and create is that save accepts a full Eloquent model instance while create accepts a plain PHP array:
+<pre>
+$post = App\Post::find(1);
+
+$comment = $post->comments()->create([
+    'message' => 'A new comment.',
+]);
+</pre>
+</p>
+        </div>
+        <div class="footer"></div>
+    </div>
+</section>
+
+
+
+<section>
+    <div class="container wrapper">
+        <div class="content">
+<h2>Belongs To Relationships</h2>
+<p>When updating a belongsTo relationship, you may use the associate method. This method will set the foreign key on the child model:
+<pre>
+$account = App\Account::find(10);
+
+$user->account()->associate($account);
+
+$user->save();
+</pre>
+</p>
+
+
+<p>When removing a belongsTo relationship, you may use the dissociate method. This method will set the relationship's foreign key to null:
+<pre>
+$user->account()->dissociate();
+
+$user->save();
+</pre>
+</p>
+        </div>
+        <div class="footer"></div>
+    </div>
+</section>
+
+
+
+<section>
+    <div class="container wrapper">
+        <div class="content">
+<h1>Many To Many Relationships</h1>
+<h2>Attaching / Detaching</h2>
+<p>Eloquent also provides a few additional helper methods to make working with related models more convenient. For example, let's imagine a user can have many roles and a role can have many users. To attach a role to a user by inserting a record in the intermediate table that joins the models, use the attach method:
+<pre>
+$user = App\User::find(1);
+
+// Detach a single role to the user...
+$user->roles()->attach($roleId);
+</pre>
+</p>
+        </div>
+        <div class="footer"></div>
+    </div>
+</section>
+
+
+
+<section>
+    <div class="container wrapper">
+        <div class="content">
+<p>Of course, sometimes it may be necessary to remove a role from a user. To remove a many-to-many relationship record, use the detach method. The detach method will remove the appropriate record out of the intermediate table; however, both models will remain in the database:
+<pre>
+// Detach a single role from the user...
+$user->roles()->detach($roleId);
+
+// Detach all roles from the user...
+$user->roles()->detach();
+</pre>
+</p>
+
+<p>For convenience, attach and detach also accept arrays of IDs as input:
+<pre>
+$user = App\User::find(1);
+
+$user->roles()->detach([1, 2, 3]);
+
+$user->roles()->attach([1, 2, 3]);
+</pre>
+</p>
+        </div>
+        <div class="footer"></div>
+    </div>
+</section>
+
+
+
+<section>
+    <div class="container wrapper">
+        <div class="content">
+<h2>Syncing Associations</h2>
+
+<p>You may also use the sync method to construct many-to-many associations. The sync method accepts an array of IDs to place on the intermediate table. Any IDs that are not in the given array will be removed from the intermediate table. So, after this operation is complete, only the IDs in the given array will exist in the intermediate table:
+<pre>$user->roles()->sync([1, 2, 3]);</pre>
+</p>
+
+        </div>
+        <div class="footer"></div>
+    </div>
+</section>
+
+
+
+<section>
+    <div class="container wrapper">
+        <div class="content">
+
+<h1>Validation</h1>
+<p>Laravel provides several different approaches to validate your application's incoming data. By default, Laravel's base controller class uses a ValidatesRequests trait which provides a convenient method to validate incoming HTTP request with a variety of powerful validation rules.</p>
+
+<p>The validate method accepts an incoming HTTP request and a set of validation rules. If the validation rules pass, your code will keep executing normally; however, if validation fails, an exception will be thrown and the proper error response will automatically be sent back to the user. In the case of a traditional HTTP request, a redirect response will be generated, while a JSON response will be sent for AJAX requests.</p>
+        </div>
+        <div class="footer"></div>
+    </div>
+</section>
+
+
+
+<section>
+    <div class="container wrapper">
+        <div class="content">
+<h2>Writing The Validation Logic</h2>
+
+<p>To get a better understanding of the validate method, let's jump back into the store method:
+<pre>
+/**
+* Store a new blog post.
+*
+* @param  Request  $request
+* @return Response
+*/
+public function store(Request $request)
+{
+    $this->validate($request, [
+        'title' => 'required|unique:posts|max:255',
+        'body' => 'required',
+    ]);
+
+    // The blog post is valid, store in database...
+}
+</pre></p>
+<a href="https://laravel.com/docs/5.4/validation#available-validation-rules" target="_blank">https://laravel.com/docs/5.4/validation#available-validation-rules</a>
+        </div>
+        <div class="footer"></div>
+    </div>
+</section>
+
+
+
+<section>
+    <div class="container wrapper">
+        <div class="content">
+<h2>Displaying The Validation Errors</h2>
+<p>So, what if the incoming request parameters do not pass the given validation rules? As mentioned previously, Laravel will automatically redirect the user back to their previous location. In addition, all of the validation errors will automatically be flashed to the session.</p>
+<pre>
+&lt;!-- /resources/views/post/create.blade.php --&gt;
+
+&lt;h1&gt;Create Post&lt;/h1&gt;
+
+@if (count($errors) &gt; 0)
+    &lt;div class="alert alert-danger"&gt;
+        &lt;ul&gt;
+            @foreach ($errors-&gt;all() as $error)
+            &lt;li&gt;{{ $error }}&lt;/li&gt;
+            @endforeach
+        &lt;/ul&gt;
+    &lt;/div&gt;
+@endif
+
+&lt;!-- Create Post Form --&gt;
+</pre>
+        </div>
+        <div class="footer"></div>
+    </div>
+</section>
+
+
+
+<section>
+    <div class="container wrapper">
+        <div class="content">
+            <h2>Creating Form Requests</h2>
+<p>For more complex validation scenarios, you may wish to create a "form request". Form requests are custom request classes that contain validation logic. To create a form request class, use the  make:request Artisan CLI command:
+<pre>php artisan make:request StoreBlogPost</pre>
+</p>
+<p>The generated class will be placed in the app/Http/Requests directory.</p>
+
+        </div>
+        <div class="footer"></div>
+    </div>
+</section>
+
+
+
+<section>
+    <div class="container wrapper">
+        <div class="content">
+<p>New created request class
+<pre>
+/**
+ * Get the validation rules that apply to the request.
+ *
+ * @return array
+ */
+public function rules()
+{
+    return [
+        'title' => 'required|unique:posts|max:255',
+        'body' => 'required',
+    ];
+}
+</pre>
+</p>
+<p>Controller using created request
+<pre>
+/**
+ * Store the incoming blog post.
+ *
+ * @param  StoreBlogPost  $request
+ * @return Response
+ */
+public function store(StoreBlogPost $request)
+{
+    // The incoming request is valid...
+}
+</pre>
+</p>
+
+
+        </div>
+        <div class="footer"></div>
+    </div>
+</section>
+
+<section>
+    <div class="container wrapper">
+        <div class="content">
+
+
+
+
+<h2>Working With Error Messages</h2>
+
+
+<p>To retrieve the first error message for a given field, use the first method:
+<pre>
+$errors = $validator->errors();
+
+echo $errors->first('email');
+</pre>
+</p>
+
+
+<p>If you need to retrieve an array of all the messages for a given field, use the get method:
+<pre>
+foreach ($errors->get('email') as $message) {
+    //
+}
+</pre>
+</p>
+
+        </div>
+        <div class="footer"></div>
+    </div>
+</section>
+
+
+
+<section>
+    <div class="container wrapper">
+        <div class="content">
+
+
+
+
+        <p>To retrieve an array of all messages for all fields, use the all method:
+<pre>
+foreach ($errors->all() as $message) {
+    //
+}
+</pre>
+</p>
+
+<p>The has method may be used to determine if any error messages exist for a given field:
+<pre>
+if ($errors->has('email')) {
+    //
+}
+</pre>
+</p>
+
+
+
+
+
+        </div>
+        <div class="footer"></div>
+    </div>
+</section>
+
+
+
+<section>
+    <div class="container wrapper">
+        <div class="content">
+
+
+
+<h1>Middlewares</h1>
+<p>Middleware provide a convenient mechanism for filtering and pre-processing HTTP requests entering your application.</p>
+        </div>
+        <div class="footer"></div>
+    </div>
+</section>
+
+
+
+<section>
+    <div class="container wrapper">
+        <div class="content">
+<h2>Authentication</h2>
+<a href="https://laravel.com/docs/5.4/authentication" target="_blank">https://laravel.com/docs/5.4/authentication</a>
+        </div>
+        <div class="footer"></div>
+    </div>
+</section>
+
+
+
+<section>
+    <div class="container wrapper">
+        <div class="content">
+<h2>Defining Middleware</h2>
+<p>To create a new middleware, use the make:middleware Artisan command:
+<pre>php artisan make:middleware CheckAge</pre>
+</p>
+
+<p>This command will place a new CheckAge class within your app/Http/Middleware directory. In this middleware, we will only allow access to the route if the supplied age is greater than 200. Otherwise, we will redirect the users back to the home URI.</p>
+<p>It's best to envision middleware as a series of "layers" HTTP requests must pass through before they hit your application. Each layer can examine the request and even reject it entirely.</p>
+        </div>
+        <div class="footer"></div>
+    </div>
+</section>
+
+
+
+<section>
+    <div class="container wrapper">
+        <div class="content">
+<pre>
+&lt;?php
+    namespace App\Http\Middleware;
+    use Closure;
+
+    class CheckAge
+    {
+        /**
+         * Handle an incoming request.
+         *
+         * @param  \Illuminate\Http\Request  $request
+         * @param  \Closure  $next
+         * @return mixed
+         */
+        public function handle($request, Closure $next)
+        {
+            if ($request->age <= 200) {
+                return redirect('home');
+            }
+
+            return $next($request);
+        }
+    }
+</pre>
+        </div>
+        <div class="footer"></div>
+    </div>
+</section>
+
+
+
+<section>
+    <div class="container wrapper">
+        <div class="content">
+<h2>Registering Middleware</h2>
+
+<p>If you want a middleware to run during every HTTP request to your application, simply list the middleware class in the $middleware property of your app/Http/Kernel.php class.</p>
+        </div>
+        <div class="footer"></div>
+    </div>
+</section>
+
+
+
+<section>
+    <div class="container wrapper">
+        <div class="content">
+
+<h2>Assigning Middleware To Routes</h2>
+<p>If you would like to assign middleware to specific routes, you should first assign the middleware a key in your app/Http/Kernel.php file. By default, the $routeMiddleware property of this class contains entries for the middleware included with Laravel. To add your own, simply append it to this list and assign it a key of your choosing. For example:
+<pre>
+// Within App\Http\Kernel Class...
+
+protected $routeMiddleware = [
+    'auth' => \Illuminate\Auth\Middleware\Authenticate::class,
+    'auth.basic' => \Illuminate\Auth\Middleware\AuthenticateWithBasicAuth::class,
+    'bindings' => \Illuminate\Routing\Middleware\SubstituteBindings::class,
+    'can' => \Illuminate\Auth\Middleware\Authorize::class,
+    'guest' => \App\Http\Middleware\RedirectIfAuthenticated::class,
+    'throttle' => \Illuminate\Routing\Middleware\ThrottleRequests::class,
+];
+</pre>
+</p>
+        </div>
+        <div class="footer"></div>
+    </div>
+</section>
+
+
+
+<section>
+    <div class="container wrapper">
+        <div class="content">
+
+<p>Once the middleware has been defined in the HTTP kernel, you may use the middleware method to assign middleware to a route:
+<pre>
+Route::get('admin/profile', function () {
+    //
+})->middleware('auth');
+</pre>
+</p>
+
+<p>You may also assign multiple middleware to the route:
+<pre>
+Route::get('/', function () {
+//
+})->middleware('first', 'second');
+</pre>
+</p>
+
+        </div>
+        <div class="footer"></div>
+    </div>
+</section>
+
+
+
+<section>
+    <div class="container wrapper">
+        <div class="content">
+<h2>Controller Middleware</h2>
+<p>Middleware may be assigned to the controller's routes in your route files:
+<pre>Route::get('profile', 'UserController@show')->middleware('auth');</pre>
+</p>
+
+<p>However, it is more convenient to specify middleware within your controller's constructor:
+<pre>
+class UserController extends Controller
+{
+    /**
+    * Instantiate a new controller instance.
+    *
+    * @return void
+    */
+    public function __construct()
+    {
+        $this->middleware('auth');
+
+        $this->middleware('log')->only('index');
+
+        $this->middleware('subscribed')->except('store');
+    }
+}
+</pre>
+</p>
+        </div>
+        <div class="footer"></div>
+    </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<section>
+    <div class="container wrapper">
+        <div class="content">
+            <h1>THX</h1>
+        </div>
+        <div class="footer"></div>
+    </div>
+</section>
+
+<script src="../../js/jquery.min.js"></script>
+<script src="../../js/bootstrap.min.js"></script>
+<script src="../../js/prezi.js"></script>
+
+</body>
+</html>

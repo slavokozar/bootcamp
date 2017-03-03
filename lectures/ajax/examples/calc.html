@@ -32,6 +32,13 @@
         </div>
     </div>
     <div class="row">
+        <div class="col-md-12" id="tlacitka">
+            <button data-number="1">1</button>
+            <button data-number="2">2</button>
+            <button data-number="3">3</button>
+        </div>
+    </div>
+    <div class="row">
         <div class="col-md-12">
             <button class="btn btn-primary pull-right" id="calculate">Calculate</button>
         </div>
@@ -42,6 +49,20 @@
 
 <script src="../../../js/jquery.min.js"></script>
 <script>
+
+    <div class="col-md-12" id="tlacitka">
+            <button data-number="1">1</button>
+            <button data-number="2">2</button>
+            <button data-number="3">3</button>
+    </div>
+
+    $('#tlacitka button').click(function(event){
+        var $button = $(event.target);
+        var number = $button.data('number')
+
+        $('#number1').val($('#number1').val() + number);
+    });
+
     $('#calculate').click(function(){
         var number1 = $('#number1').val();
         var number2 = $('#number2').val();
