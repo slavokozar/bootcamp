@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6c3588d1-509f-4ef3-a890-c67a5436b9bc" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/index.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lectures/ajax/examples/calc.html" afterPath="$PROJECT_DIR$/lectures/ajax/examples/calc.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lectures/ajax/examples/eshop.html" afterPath="$PROJECT_DIR$/lectures/ajax/examples/eshop.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/index.html" />
     </list>
     <ignored path="bootcamp.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -59,16 +56,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="modals.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lectures/bootstrap/modals.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="43" column="15" selection-start-line="20" selection-start-column="0" selection-end-line="43" selection-end-column="15" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="modal.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lectures/ajax/examples/modal.html">
           <provider selected="true" editor-type-id="text-editor">
@@ -102,9 +89,19 @@
         </entry>
       </file>
       <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.9375813">
+              <caret line="43" column="7" selection-start-line="43" selection-start-column="7" selection-end-line="43" selection-end-column="7" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lectures/laravel/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.8659218">
+            <state vertical-scroll-proportion="-7.2093024">
               <caret line="1130" column="0" selection-start-line="1130" selection-start-column="0" selection-end-line="1130" selection-end-column="0" />
               <folding />
             </state>
@@ -139,7 +136,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/lectures/bootstrap/forms/inline.html" />
         <option value="$PROJECT_DIR$/lectures/bootstrap/forms/login.html" />
         <option value="$PROJECT_DIR$/lectures/bootstrap/js/holder.js" />
         <option value="$PROJECT_DIR$/lectures/bootstrap/examples/index.html" />
@@ -190,6 +186,7 @@
         <option value="$PROJECT_DIR$/lectures/ajax/examples/calc.html" />
         <option value="$PROJECT_DIR$/index.php" />
         <option value="$PROJECT_DIR$/lectures/laravel/index.html" />
+        <option value="$PROJECT_DIR$/index.html" />
       </list>
     </option>
   </component>
@@ -316,19 +313,19 @@
     <property name="FullScreen" value="true" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/lectures/ajax/examples" />
+      <recent name="$PROJECT_DIR$/lectures/javascript/examples" />
+      <recent name="$PROJECT_DIR$/bootstrap-project/css" />
+      <recent name="$PROJECT_DIR$/bootstrap-project/fonts" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/lectures/bootstrap" />
       <recent name="$PROJECT_DIR$/lectures/javascript" />
       <recent name="$PROJECT_DIR$/lectures/jquery" />
       <recent name="$PROJECT_DIR$/lectures/ajax" />
       <recent name="$PROJECT_DIR$" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/lectures/ajax/examples" />
-      <recent name="$PROJECT_DIR$/lectures/javascript/examples" />
-      <recent name="$PROJECT_DIR$/bootstrap-project/css" />
-      <recent name="$PROJECT_DIR$/bootstrap-project/fonts" />
-      <recent name="$PROJECT_DIR$/lectures/bootstrap/navbar" />
     </key>
   </component>
   <component name="RunManager" selected="JavaScript Debug.index.html">
@@ -443,13 +440,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/lectures/bootstrap/grid/facebook.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-6.785714">
-          <caret line="43" column="107" selection-start-line="43" selection-start-column="28" selection-end-line="43" selection-end-column="107" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/lectures/bootstrap/grid/ebay.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.87573963">
@@ -803,6 +793,14 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/lectures/laravel/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-7.2093024">
+          <caret line="1130" column="0" selection-start-line="1130" selection-start-column="0" selection-end-line="1130" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/index.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-3.6046512">
@@ -811,10 +809,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lectures/laravel/index.html">
+    <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.8659218">
-          <caret line="1130" column="0" selection-start-line="1130" selection-start-column="0" selection-end-line="1130" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.9375813">
+          <caret line="43" column="7" selection-start-line="43" selection-start-column="7" selection-end-line="43" selection-end-column="7" />
           <folding />
         </state>
       </provider>
