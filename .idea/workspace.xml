@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6c3588d1-509f-4ef3-a890-c67a5436b9bc" name="Default" comment="" />
+    <list default="true" id="6c3588d1-509f-4ef3-a890-c67a5436b9bc" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lectures/laravel/index.html" afterPath="$PROJECT_DIR$/lectures/laravel/index.html" />
+    </list>
     <ignored path="bootcamp.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path=".idea/dataSources.local.xml" />
@@ -99,8 +101,8 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/lectures/laravel/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="51.140186">
-              <caret line="1368" column="7" selection-start-line="1368" selection-start-column="0" selection-end-line="1368" selection-end-column="7" />
+            <state vertical-scroll-proportion="0.5981308">
+              <caret line="23" column="100" selection-start-line="23" selection-start-column="100" selection-end-line="23" selection-end-column="100" />
               <folding />
             </state>
           </provider>
@@ -809,8 +811,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/lectures/laravel/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="51.140186">
-          <caret line="1368" column="7" selection-start-line="1368" selection-start-column="0" selection-end-line="1368" selection-end-column="7" />
+        <state vertical-scroll-proportion="0.5981308">
+          <caret line="23" column="100" selection-start-line="23" selection-start-column="100" selection-end-line="23" selection-end-column="100" />
           <folding />
         </state>
       </provider>
