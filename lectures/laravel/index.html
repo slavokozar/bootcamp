@@ -283,7 +283,7 @@ $max = App\Flight::where('active', 1)->max('price');
 <pre>
 &lt;?php
 
-    $flight = new Flight;
+    $flight = new Flight();
 
     $flight->name = $request->name;
 
