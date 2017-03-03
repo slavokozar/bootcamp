@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6c3588d1-509f-4ef3-a890-c67a5436b9bc" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lectures/laravel/index.html" afterPath="$PROJECT_DIR$/lectures/laravel/index.html" />
-    </list>
+    <list default="true" id="6c3588d1-509f-4ef3-a890-c67a5436b9bc" name="Default" comment="" />
     <ignored path="bootcamp.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path=".idea/dataSources.local.xml" />
