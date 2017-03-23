@@ -1,0 +1,23 @@
+<html>
+<head>
+
+</head>
+<body>
+
+<form action="/lectures/payments/pay.php" method="POST">
+    <script src="https://checkout.stripe.com/checkout.js" class="stripe-button"
+        data-key="pk_test_rUhvFz5tzoulLtrW7ZEcjLpD"
+        data-amount="10" data-name="Site name" data-description="Product name"
+        data-image="https://stripe.com/img/documentation/checkout/marketplace.png"
+        data-locale="auto" data-currency="czk"></script>
+
+    <input type="hidden" name="amount" value="1"/>
+    <input type="hidden" name="price" value="123"/>
+</form>
+
+</body>
+</html>
+
+
+
+

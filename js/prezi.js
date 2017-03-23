@@ -14,6 +14,7 @@
         $(document).keydown(function(e) {
             var page = Math.round($(document).scrollTop() / $('section').height());
             var $sections = $('section');
+            console.log(e);
             if(e.keyCode == 39){
                 if(page < ($sections.length -1))
                 $('html, body').animate({
