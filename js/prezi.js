@@ -14,17 +14,19 @@
         $(document).keydown(function(e) {
             var page = Math.round($(document).scrollTop() / $('section').height());
             var $sections = $('section');
-            console.log(e);
-            if(e.keyCode == 39){
+            console.log(e.key);
+            if(e.key == "PageDown" || e.key == "ArrowDown" || e.key == "ArrowRight"){
+                console.log('down');
                 if(page < ($sections.length -1))
                 $('html, body').animate({
                     scrollTop: $sections.eq(page).next().offset().top
-                }, 500);
-            }else if(e.keyCode == 37){
+                }, 300);
+            }else if(e.key == "PageUp" || e.key == "ArrowUp" || e.key == "ArrowLeft"){
+                console.log('up');
                 if(page > 0)
                 $('html, body').animate({
                     scrollTop: $sections.eq(page).prev().offset().top
-                }, 500);
+                }, 300);
             }
         });
 
