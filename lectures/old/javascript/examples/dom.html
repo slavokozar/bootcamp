@@ -1,0 +1,29 @@
+<html>
+<head>
+
+</head>
+<body>
+
+    <div id="menu"></div>
+    <div id="content">First Content</div>
+
+
+
+<script>
+
+    var element = document.getElementById('content');
+
+    element.innerHTML = "JavaScript modified content, cool yeah?!";
+    element.style.color = "#0f0";
+    element.className = "class";
+
+    var newElement = document.createElement('div');
+
+    document.getElementsByTagName('body')[0].appendChild(newElement);
+//    prependChild(newElement);
+//    appendChild();
+
+</script>
+
+</body>
+</html>

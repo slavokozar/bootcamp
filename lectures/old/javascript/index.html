@@ -1,0 +1,1525 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Mobirise Free Bootstrap Template, https://mobirise.com -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="generator" content="SlavoKozar.sk">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="CodeLeague">
+    <title>Coding Bootcamp</title>
+    <link rel="stylesheet" href="../../css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,200i,300,300i,400,400i,600,600i,700,700i,900,900i&subset=latin-ext"
+          rel="stylesheet">
+
+    <link rel="stylesheet" href="../../css/font-awesome.css">
+    <link rel="stylesheet" href="../../css/prezi.css">
+
+</head>
+<body>
+
+
+<section>
+    <div class="container wrapper">
+        <div class="content">
+            <h1>JavaScript</h1>
+            <h3>Slavo Kožár</h3>
+        </div>
+        <div class="footer"></div>
+    </div>
+</section>
+
+<section>
+    <div class="container wrapper">
+        <div class="content">
+            <h1>JavaScript</h1>
+            <p>What has JavaScript and Java in common?</p>
+            <p>What for is JavaScript suitable for?</p>
+        </div>
+        <div class="footer"></div>
+    </div>
+</section>
+
+<section>
+    <div class="container wrapper">
+        <div class="content text-center">
+            <img src="atm.jpg"  style="width:500px"/>
+        </div>
+        <div class="footer"></div>
+    </div>
+</section>
+
+
+<section>
+    <div class="container wrapper">
+        <div class="content text-center">
+
+                    <img src="bus.jpg" style="width:500px"/>
+
+        </div>
+        <div class="footer"></div>
+    </div>
+</section>
+
+<section>
+    <div class="container wrapper">
+        <div class="content text-center">
+            <img src="station.jpg"  style="width:800px"/>
+        </div>
+        <div class="footer"></div>
+    </div>
+</section>
+
+
+<section>
+    <div class="container wrapper">
+        <div class="content">
+            <h1>Where to place JavaScript code?</h1>
+                <p>JavaScript can be placed anywhere in &lt;head&gt; or &lt;body&gt;.</p>
+<pre>
+&lt;script&gt;
+	JavaScript Code...
+&lt;/script&gt;
+</pre>
+<p>
+JavaScript in an external file
+<pre>
+&lt; script src="main.js" &gt;&lt;/script&gt;
+</pre>
+</p>             
+        </div>
+        <div class="footer"></div>
+    </div>
+</section>
+
+<section>
+    <div class="container wrapper">
+        <div class="content">
+            <h1>Comments</h1>
+<pre>            
+//alert('HelloWorld');
+</pre>
+
+<pre>
+/*
+    alert('HelloWorld');
+    alert('HelloWorld');  
+*/
+</pre>
+
+
+<h1>Variables</h1>
+<pre>
+    var a;
+</pre> 
+</h1>
+                
+                
+        </div>
+        <div class="footer"></div>
+    </div>
+</section>
+
+<section>
+    <div class="container wrapper">
+        <div class="content">
+            <h1>JavaScript Output</h1>
+                
+<p>
+Writing into an window alert box
+<pre>
+alert('HelloWorld');
+</pre></p>
+<p>Writing into the browser console
+<pre>
+console.log('HelloWorld');
+</pre></p>
+
+<p>Writing into an HTML element
+<pre>
+element.innerHTML = "HelloWorld";
+</pre></p>
+                
+        </div>
+        <div class="footer"></div>
+    </div>
+</section>
+
+<section>
+    <div class="container wrapper">
+        <div class="content">
+            <h1>JavaScript Input</h1>
+                
+<p>
+Prompting user for answer
+<pre>
+var res = prompt("Where do you want to go?", "Bar!");
+</pre></p>
+
+<p>Read content of an HTML element
+<pre>
+var res = element.innerHTML;
+</pre></p>
+                
+        </div>
+        <div class="footer"></div>
+    </div>
+</section>
+
+
+
+<section>
+    <div class="container wrapper">
+        <div class="content">
+            <h1>Strings</h1>
+            <h3>concatenate</h3>
+
+<pre>
+&lt;script&gt;
+var str1 = "Visit";
+var str2 = "Pub!"
+var res = str1 + " " + str2;
+&lt;/script&gt;
+</pre>
+<p>The result of res will be:<br/>Visit CodingBootcamp!</p>
+</div>
+        <div class="footer"></div>
+    </div>
+</section>
+
+<section>
+    <div class="container wrapper">
+        <div class="content">
+            <h1>Strings</h1>
+            <h3>replace()</h3>
+
+<pre>
+&lt;script&gt;
+var str = "Visit Pub!";
+var res = str.replace("Pub", "CodingBootcamp");
+&lt;/script&gt;
+</pre>
+<p>The result of res will be:<br/>Visit CodingBootcamp!</p>
+</div>
+        <div class="footer"></div>
+    </div>
+</section>
+
+<section>
+    <div class="container wrapper">
+        <div class="content">
+            <h1>Strings</h1>
+<h3>split()</h3>
+<pre>
+&lt;script&gt;
+var str = "How are you doing today?";
+var res = str.split(" ");
+&lt;/script&gt;
+</pre>
+<p>The result of res will be an array with the values:<br/>How,are,you,doing,today?</p>
+<p>... more string functions visit <a href="http://www.w3schools.com/jsref/jsref_obj_string.asp" target="_blank">reference</a></p>
+        </div>
+        <div class="footer"></div>
+    </div>
+</section>
+
+
+<section>
+    <div class="container wrapper">
+        <div class="content">
+            <h1>Conditions</h1>
+            <p>Conditions are features which allows us to run different program according to value of provided logical statements.</p>
+<pre>
+&lt;script&gt;
+    if( statement ){
+        code to execute, if statement is true
+    }
+&lt;/script&gt;
+</pre>
+                
+        </div>
+        <div class="footer"></div>
+    </div>
+</section>
+<section>
+    <div class="container wrapper">
+        <div class="content">
+            <h1>Comparison</h1>
+<p>Comparison operators are used in logical statements to determine equality or difference between variables or values.</p>
+<table>
+
+<tr>
+    <td style="width:20%">==</td>
+    <td>equal to</td>
+</tr>
+<tr>
+    <td>===</td>
+    <td>equal value and equal type</td>
+</tr>
+<tr>
+    <td>!=</td>
+    <td>not equal</td>
+</tr>
+<tr>
+    <td>!==</td>
+    <td>not equal value or not equal type</td>
+</tr>
+<tr>
+    <td>></td>
+    <td>greater than</td>
+</tr>
+<tr>
+    <td><</td>
+    <td>less than</td>
+</tr>
+<tr>
+    <td>>=</td>
+    <td>greater than or equal to</td>
+</tr>
+<tr>
+    <td><=</td>
+    <td>less than or equal to</td>
+</tr>
+</table>                
+    </div>
+    <div class="footer"></div>
+    </div>
+</section>
+
+
+<section>
+    <div class="container wrapper">
+        <div class="content">
+            <h1>Comparison</h1>
+<pre>
+&lt;script&gt;
+    if(number % 2 == 0){
+        console.log('number is even');
+    }
+&lt;/script&gt;
+</pre>
+<p>Nice, isn't it? However, what if number if odd?</p>
+        </div>
+        <div class="footer"></div>
+    </div>
+</section>
+
+
+<section>
+    <div class="container wrapper">
+        <div class="content">
+            <h1>Comparison</h1>
+<pre>
+&lt;script&gt;
+    if(number % 2 == 0){
+        console.log('number is even');
+    }else{
+        console.log('number is odd');
+    }
+&lt;/script&gt;
+</pre>
+<p>Better, but what about 0? Is 0 even or odd? This question does not have a clear answer.</p>
+                
+        </div>
+        <div class="footer"></div>
+    </div>
+</section>
+
+
+<section>
+    <div class="container wrapper">
+        <div class="content">
+            <h1>Comparison</h1>
+<p>Best approach is to handle 0 by its own message.</p>
+<pre>
+&lt;script&gt;
+    if(number == 0){
+        console.log('number is zero');
+    }else{
+        if(number % 2 == 0){
+            console.log('number is even');
+        }else{
+            console.log('number is odd');
+        }
+    }
+&lt;/script&gt;
+</pre>
+
+                
+        </div>
+        <div class="footer"></div>
+    </div>
+</section>
+
+
+<section>
+    <div class="container wrapper">
+        <div class="content">
+            <h1>Comparison</h1>
+<p>which can be also written as </p>
+<pre>
+&lt;script&gt;
+    if(number == 0){
+        console.log('number is zero');
+    }else if(number % 2 == 0){
+        console.log('number is even');
+    }else{
+        console.log('number is odd');
+
+    }
+&lt;/script&gt;
+</pre>   
+        </div>
+        <div class="footer"></div>
+    </div>
+</section>
+
+
+ <section>
+    <div class="container wrapper">
+        <div class="content">
+            <h1>Loops and Arrays</h1>
+            <h2>Arrays</h2>
+<p>Arrays are used to store multiple values in a single variable.</p>
+<pre>
+var cars = ["Saab", "Volvo", "BMW"];
+</pre>
+
+           
+                
+        </div>
+        <div class="footer"></div>
+    </div>
+</section>
+
+
+<section>
+    <div class="container wrapper">
+        <div class="content">
+            <h1>Using Array</h1>
+                
+               <p>You refer to an array element by referring to the index number.</p>
+
+<p>This statement accesses the value of the first element in cars:
+<pre>
+var name = cars[0];
+</pre>
+</p>
+
+<p>This statement modifies the first element in cars:
+<pre>
+cars[0] = "Opel";
+</pre>
+</p>
+
+
+<p>The real strength of JavaScript arrays are the built-in array properties and methods:
+
+<pre>
+var x = cars.length;
+var y = cars.sort();
+</pre>
+</p> 
+        </div>
+        <div class="footer"></div>
+    </div>
+</section>
+
+
+<section>
+    <div class="container wrapper">
+        <div class="content">
+            <h1>Loops</h1>
+<p>We have declared array with three different car vendors.</p> 
+<p>Imagine, we want to print this vendors in rows:
+
+<pre>
+text += cars[0] + "&lt;br&gt;"; 
+text += cars[1] + "&lt;br&gt;"; 
+text += cars[2] + "&lt;br&gt;"; 
+</pre>
+
+... it be also written as:
+
+<pre>
+for (i = 0; i < cars.length; i++) { 
+    text += cars[i] + "&lt;br&gt;";
+}   
+</pre>
+</p>
+        </div>
+        <div class="footer"></div>
+    </div>
+</section>
+
+
+
+
+
+
+<section>
+    <div class="container wrapper">
+        <div class="content">
+            <h1>Types of loops</h1>
+            <ul>
+                <li>Loops with unknown number of iterations
+                    <ul>
+                        <li>Loop with condition in the beginning</li>
+                        <li>Loop with condition in the end</li>
+                    </ul>
+                </li>
+                <li>Loops with known number of iterations</li>
+            </ul>
+        </div>
+        <div class="footer"></div>
+    </div>
+</section>
+
+
+<section>
+    <div class="container wrapper">
+        <div class="content">
+            <h1>Loops with unknown number of iteration</h1>
+            <h3>Loop with condition in the beginning</h3>
+
+<pre>
+while(condition){
+	code_to_execute
+}
+</pre>
+
+<p>While loop checkes, if condition is true and run code. If condition is false, loop ends.</p> 
+<h3>Loop with condition in the end</h3>
+<pre>
+do{
+	code_to_execute
+}while(condition)
+</pre>
+<p>Do-While loop run code and then check the condition. If condition is false, loop ends.</p>                 
+        </div>
+        <div class="footer"></div>
+    </div>
+</section>
+
+
+
+<section>
+    <div class="container wrapper">
+        <div class="content">
+            <h1>Loops flowchart</h1>
+            <p class="text-center">
+                <img src="https://www.cs.uic.edu/~jbell/CourseNotes/C_Programming/Whiles.jpg" style="width: 80%;"/>
+            </p>
+        </div>
+        <div class="footer"></div>
+    </div>
+</section>
+
+
+
+<section>
+    <div class="container wrapper">
+        <div class="content">
+            <h1>Loop with known number of iterations</h1>
+                
+            
+
+<p>for - loops through a block of code a number of times</p>
+
+<pre>
+for (statement 1; statement 2; statement 3) {
+    code block to be executed
+}
+</pre>
+
+<p>
+Statement 1 is executed before the loop (the code block) starts.<br/>
+Statement 2 defines the condition for running the loop (the code block).<br/>
+Statement 3 is executed each time after the loop (the code block) has been executed.<br/>
+</p>
+<p>example
+<pre>
+for (i = 0; i < 5; i++) {
+    text += "The number is " + i + "&lt;br&gt;";
+}
+</pre></p>
+
+        </div>
+        <div class="footer"></div>
+    </div>
+</section>
+
+
+
+
+<section>
+    <div class="container wrapper">
+        <div class="content">
+            <h1>Function</h1>
+            <p>
+                A function is a block of code designed to perform a particular task, is executed when "something" calls it.
+            </p>
+<pre>
+function name(parameter1, parameter2, parameter3) {
+    code to be executed
+}    
+</pre>                
+        </div>
+        <div class="footer"></div>
+    </div>
+</section>
+
+
+
+<section>
+    <div class="container wrapper">
+        <div class="content">
+            <h1>Calling function</h1>
+            <p>function is called by using its name and "()".</p>
+
+<pre>
+&lt;script&gt; 
+    function hello(){
+        return "Hello World!";
+    }
+
+
+    console.log(hello);
+    console.log(hello());
+&lt;/script&gt;
+</pre>
+<p>Calling functions with parameters
+<pre>
+&lt;script&gt; 
+    function f(a,b){
+        return a+b;
+    }
+
+
+    console.log(f);
+    console.log(f(10,5));
+&lt;/script&gt;
+</pre>
+</p>         
+        </div>
+        <div class="footer"></div>
+    </div>
+</section>
+
+
+
+<section>
+    <div class="container wrapper">
+        <div class="content">
+            <h1>Scope</h1>
+                <p>In JavaScript, scope is the set of variables, objects, and functions you have access to.</p>
+
+
+<p>Global variable is a variable defined outside of any function.</p> 
+<pre>
+&lt;script&gt;
+var name = "Slavo";
+
+// code here can use name
+
+function myFunction() {
+    // code here can use name
+}
+
+// code here can use name
+&lt;script&gt;
+</pre>
+
+
+
+                
+        </div>
+        <div class="footer"></div>
+    </div>
+</section>
+
+
+<section>
+    <div class="container wrapper">
+        <div class="content">
+            <h1>Local variables</h1>
+
+<p>Local variable is variable defined inside function.</p> 
+<p>This function can be used only inside of the function.</p>
+<pre>
+&lt;script&gt;
+// code here can not use name
+
+function myFunction() {
+    var name = "Slavo";
+
+    // code here can use name
+}
+
+// code here can not use name
+&lt;script&gt;
+</pre>                
+                
+        </div>
+        <div class="footer"></div>
+    </div>
+</section>
+
+
+
+<section>
+    <div class="container wrapper">
+        <div class="content">
+            <h1>Local variables</h1>
+<p>If a variable is used inside function, but it is not defined inside this function, the variable is global.</p> 
+<pre>
+&lt;script&gt;
+function myFunction() {
+    name = "Slavo";
+
+    // code here can use name
+}
+
+myFunction();
+// code here can use name
+
+&lt;script&gt;   
+</pre>                
+        </div>
+        <div class="footer"></div>
+    </div>
+</section>
+
+<section>
+    <div class="container wrapper">
+        <div class="content">
+            <h1>Local variables</h1> 
+<pre>
+&lt;script&gt;
+var name = "Slavo"
+function myFunction() {
+    var name = "Kozar";
+    alert(name);
+}
+
+myFunction();
+alert(name);
+
+&lt;script&gt;   
+</pre>    
+<p>vs</p>
+<pre>
+&lt;script&gt;
+var name = "Slavo"
+function myFunction() {
+    name = "Kozar";
+    alert(name);
+}
+
+myFunction();
+alert(name);
+
+&lt;script&gt;   
+</pre>                  
+        </div>
+        <div class="footer"></div>
+    </div>
+</section>
+
+
+<section>
+    <div class="container wrapper">
+        <div class="content">
+            <h1>Objects</h1>
+            <p>In JavaScript, objects are king. If you understand objects, you understand JavaScript.</p>
+
+
+        <p>Object is cointainer storing multiple values called parameters.</p>
+<pre>
+&lt;script&gt;
+var person = {
+    firstName:"Slavo",
+    lastName:"Kozar",
+    age:23,
+    eyeColor:"brown"
+};
+&lt;/script&gt;
+</pre>         
+
+        </div>
+        <div class="footer"></div>
+    </div>
+</section>
+
+<section>
+    <div class="container wrapper">
+        <div class="content">
+            <h1>Accessing parameters of object</h1>
+            
+
+<pre>
+&lt;script&gt;
+var person = {
+    firstName:"Slavo",
+    lastName:"Kozar",
+    age:23,
+    eyeColor:"brown"
+};
+
+console.log( person.firstName );
+console.log( person["firstName"] );
+
+var param = "firstName";
+console.log( person[param] );
+
+&lt;/script&gt;
+</pre>
+        </div>
+        <div class="footer"></div>
+    </div>
+</section>
+
+
+<section>
+    <div class="container wrapper">
+        <div class="content">
+            <h1>Object can contain also method.</h1>
+<pre>
+&lt;script&gt;
+var person = {
+    firstName:"Slavo",
+    lastName:"Kozar",
+    age:23,
+    eyeColor:"brown"
+    hello: function(){
+        alert('Hey, You!');
+    }
+};
+
+person.hello();
+&lt;/script&gt;
+</pre>
+        </div>
+        <div class="footer"></div>
+    </div>
+</section>
+
+
+<section>
+    <div class="container wrapper">
+        <div class="content">
+            <h1>Magic word <i>this</i></h1>
+            <p>Local variable this contains reference to the actual object.</p>
+<pre>
+&lt;script&gt;
+var person = {
+    firstName:"Slavo",
+    lastName:"Kozar",
+    age:23,
+    eyeColor:"brown"
+    hello: function(){
+        alert('Hey, ' + this.firstName + '!');
+    }
+};
+
+person.hello();
+&lt;/script&gt;
+</pre>
+        </div>
+        <div class="footer"></div>
+    </div>
+</section>
+
+<section>
+    <div class="container wrapper">
+        <div class="content">
+            <h1>DOM manipulation ... </h1>
+               
+<p>When a web page is loaded, the browser creates a Document Object Model of the page.</p>
+
+
+<p>The HTML DOM model is constructed as a tree of Objects</p>                
+        </div>
+        <div class="footer"></div>
+    </div>
+</section>
+
+<section>
+    <div class="container wrapper">
+        <div class="content">
+            <p class="text-center">
+                <img src="http://www.w3schools.com/js/pic_htmltree.gif" style="width: 80%;"/>
+            </p>     
+        </div>
+        <div class="footer"></div>
+    </div>
+</section>
+
+<section>
+    <div class="container wrapper">
+        <div class="content">
+            <h1>... DOM manipulation</h1>
+                <p>With the object model, JavaScript gets all the power it needs to create dynamic HTML</p>
+                <p>JavaScript can change HTML elements, attributes, CSS styles and react to existing or new HTML events in the page. 
+
+                
+        </div>
+        <div class="footer"></div>
+    </div>
+</section>
+
+<section>
+    <div class="container wrapper">
+        <div class="content">
+            <h1>Traverse DOM by JavaScript</h1>
+<pre>
+document.getElementById(id);
+document.getElementsByTagName(name);
+document.getElementsByClassName(name);
+</pre>                
+                
+        </div>
+        <div class="footer"></div>
+    </div>
+</section>
+<section>
+    <div class="container wrapper">
+        <div class="content">
+            <h1>Change DOM elements</h1>
+<pre>
+element.innerHTML = new_html_content;
+element.attribute = new_value;  
+element.setAttribute(attribute, value);
+element.style.property = new style;
+</pre>                
+                
+        </div>
+        <div class="footer"></div>
+    </div>
+</section>
+<section>
+    <div class="container wrapper">
+        <div class="content">
+            <h1>Modifiing DOM Tree</h1>
+<p>
+<pre>
+document.createElement(name);
+</pre>
+The createElement() method creates an Element Node with the specified name.
+</p>
+<p>
+This function does not inset element into the document.
+</p>
+
+<p>
+<pre>
+document.appendChild(newChild);
+document.removeChild(child);
+document.replaceChild(newChild, oldChild);
+</pre>
+</p>
+        </div>
+        <div class="footer"></div>
+    </div>
+</section>
+
+<section>
+    <div class="container wrapper">
+        <div class="content">
+            <h1>Events</h1> 
+            <p>Event is action in web browser.</p> 
+            <p>Event listener is a function, which is called, when this event occurs.</p>
+            
+        </div>
+        <div class="footer"></div>
+    </div>
+</section>
+
+
+<section>
+    <div class="container wrapper">
+        <div class="content">
+            <h1>How to register event listeners?</h1>            
+            <p>Inline JavaScript - not recommended</p>
+<pre>
+&lt;button id="btn" onclick="myFunction()"&gt;Click me!&lt;/button&gt;
+</pre>
+            <p>Much better way</p>
+<pre>
+&lt;button id="btn"&gt;Click me!&lt;/button&gt;
+&lt;script&gt;
+    document.getElementById('btn').onclick = myFunction();
+&lt;/script&gt;
+</pre>
+
+        </div>
+        <div class="footer"></div>
+    </div>
+</section>
+
+
+<section>
+    <div class="container wrapper">
+        <div class="content">
+            <h1>Most popular events:</h1>
+            <ul>
+                <li>onchange</li>
+                <li>onclick</li>
+                <li>onmouseover</li>
+                <li>onmouseout</li>
+                <li>onkeydown</li>
+                <li>onload</li>
+            </ul>
+        </div>
+        <div class="footer"></div>
+    </div>
+</section>
+
+
+
+
+<section>
+    <div class="container wrapper">
+        <div class="content">
+            <h1>Numbers and Math functions</h1>
+            <p>There is only one type of numbers in Javascript.</p> 
+<p>This number can be with and also without decimals.</p> 
+
+<pre>
+&lt;script&gt;
+var x = 34.00;
+var y = 34;
+var x = 123e5;    // 12300000
+var y = 123e-5;   // 0.00123
+&lt;/script&gt;
+</pre>
+        </div>
+        <div class="footer"></div>
+    </div>
+</section>
+
+
+<section>
+    <div class="container wrapper">
+        <div class="content">
+            <h1>Arithmetics</h1>
+            <p>All basic arithmetics, can be done, with numbers.</p>
+<pre> 
+&lt;script&gt;
+    var a = 5; 
+    var b = 3; 
+    console.log( a + b );   //output 8
+    console.log( a - b );   //output 2
+    console.log( a * b );   //output 15
+    console.log( a / b );   //output 1.6666666666666667
+    console.log( a % b );   //output 2
+&lt;/script&gt;
+</pre>            
+        </div>
+        <div class="footer"></div>
+    </div>
+</section>
+
+
+<section>
+    <div class="container wrapper">
+        <div class="content">
+            <h1>Math library</h1>
+            <p>JavaScript provides rich Math library.</p>
+
+            <p>Here are mentioned some of most common functions, all other function can be found at <a href="http://www.w3schools.com/jsref/jsref_obj_math.asp" target="_blank">reference</a></p> 
+
+<pre>
+&lt;script&gt;
+    console.log( Math.round(2.5) );   //output 2
+    console.log( Math.abs(-2.5) );    //output 2.5
+    console.log( Math.sqrt(4) );      //output 2    
+&lt;/script&gt;
+</pre>
+
+        </div>
+        <div class="footer"></div>
+    </div>
+</section>
+
+
+<section>
+    <div class="container wrapper">
+        <div class="content">
+            <h1>NaN - Not a Number</h1>
+            
+<p>NaN is a JavaScript reserved word indicating that a number is not a legal number.</p>
+
+
+<p>Trying to do arithmetic with a non-numeric string will result in NaN (Not a Number):
+
+<pre>
+&lt;script&gt;
+var x = 100 / "Apple";  
+&lt;/script&gt;
+</pre>
+x will be NaN (Not a Number)
+</p>
+<p>JavaScript also provides isNaN() function, which return true, if value of variable is not a number.</p> 
+
+        </div>
+        <div class="footer"></div>
+    </div>
+</section>
+
+
+<section>
+    <div class="container wrapper">
+        <div class="content">
+            <h1>Dates</h1>
+            
+            <p>The Date object lets us work with dates.</p>
+            <p>A date consists of a year, a month, a day, an hour, a minute, a second, and milliseconds.</p>
+
+        </div>
+        <div class="footer"></div>
+    </div>
+</section>
+
+
+<section>
+    <div class="container wrapper">
+        <div class="content">
+            <h1>Initiating a date:</h1>
+<pre>
+&lt;script&gt;
+//current date
+var date = new Date()
+
+
+//zero date (1. 1. 1970) + number miliseconds
+var date = new Date(number)
+
+
+// dateString in format "October 13, 2014 11:13:00"
+var date = new Date(dateString)
+
+
+//specify all values
+var date = new Date(year, month, day, hours, minutes, seconds, milliseconds)
+&lt;/script&gt;
+</pre>
+        </div>
+        <div class="footer"></div>
+    </div>
+</section>
+
+
+<section>
+    <div class="container wrapper">
+        <div class="content">
+            <h1>Date to String</h1>
+
+<pre>
+&lt;script&gt;
+d = new Date();
+document.getElementById("demo").innerHTML = d.toString();
+&lt;/script&gt;
+</pre>
+<pre>
+&lt;script&gt;
+d = new Date();
+document.getElementById("demo").innerHTML = d.toUTCString();
+&lt;/script&gt;
+</pre>
+        </div>
+        <div class="footer"></div>
+    </div>
+</section>
+
+
+<section>
+    <div class="container wrapper">
+        <div class="content">
+            <h1>Get functions</h1>
+            <table>
+                
+<tr><td style="width:30%">getDate()</td><td>Get the day as a number (1-31)</td></tr>
+<tr><td>getDay()</td><td>Get the weekday as a number (0-6)</td></tr>
+<tr><td>getFullYear()</td><td>Get the four digit year (yyyy)</td></tr>
+<tr><td>getHours()</td><td>Get the hour (0-23)</td></tr>
+<tr><td>getMilliseconds()</td><td>Get the milliseconds (0-999)</td></tr>
+<tr><td>getMinutes()</td><td>Get the minutes (0-59)</td></tr>
+<tr><td>getMonth()</td><td>Get the month (0-11)</td></tr>
+<tr><td>getSeconds()</td><td>Get the seconds (0-59)</td></tr>
+<tr><td>getTime()</td><td>Get the time (milliseconds since January 1, 1970)</td></tr>
+    </table>
+
+</p>
+        </div>
+        <div class="footer"></div>
+    </div>
+</section>
+
+
+<section>
+    <div class="container wrapper">
+        <div class="content">
+            <h1>Set functions</h1>
+
+
+<table>
+                
+<tr><td style="width:30%">setDate()</td><td>Set the day as a number (1-31)</td></tr>
+<tr><td>setFullYear()</td><td>Set the four digit year (yyyy)</td></tr>
+<tr><td>setHours()</td><td>Set the hour (0-23)</td></tr>
+<tr><td>setMilliseconds()</td><td>Set the milliseconds (0-999)</td></tr>
+<tr><td>setMinutes()</td><td>Set the minutes (0-59)</td></tr>
+<tr><td>setMonth()</td><td>Set the month (0-11)</td></tr>
+<tr><td>setSeconds()</td><td>Set the seconds (0-59)</td></tr>
+<tr><td>setTime()</td><td>Set the time (milliseconds since January 1, 1970)</td></tr>
+    </table>
+        </div>
+        <div class="footer"></div>
+    </div>
+</section>
+
+
+<section>
+    <div class="container wrapper">
+        <div class="content">
+            <h1>Working with cookies</h1>
+            <h3>What are Cookies?</h3>
+            <p>Cookies are data, stored in small text files, on your computer.</p>
+            <p>When a web server has sent a web page to a browser, the connection is shut down, and the server forgets everything about the user.</p>
+            <p>Cookies were invented to solve the problem "how to remember information about the user".</p>
+        </div>
+        <div class="footer"></div>
+    </div>
+</section>
+
+
+<section>
+    <div class="container wrapper">
+        <div class="content">
+            <h1>Create cookie</h1>
+            <p>document.cookie = "username=John Doe; expires=Thu, 18 Dec 2013 12:00:00 UTC";</p>
+
+<pre>
+&lt;script&gt;
+function setCookie(cname, cvalue, exdays) {
+    var d = new Date();
+    d.setTime(d.getTime() + (exdays*24*60*60*1000));
+    var expires = "expires="+ d.toUTCString();
+    document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
+}
+&lt;/script&gt;
+</pre>
+        </div>
+        <div class="footer"></div>
+    </div>
+</section>
+
+
+
+<section>
+    <div class="container wrapper">
+        <div class="content">
+            <h1>Read cookie</h1>
+<pre>            
+&lt;script&gt;
+var x = document.cookie;
+&lt;/script&gt;
+</pre>
+<p>document.cookie will return all cookies in one string much like: cookie1=value; cookie2=value; cookie3=value;</p>
+<pre>
+&lt;script&gt;
+function str_obj(str) {
+    str = str.split(', ');
+    var result = {};
+    for (var i = 0; i &lt; str.length; i++) {
+        var cur = str[i].split('=');
+        result[cur[0]] = cur[1];
+    }
+    return result;
+}
+&lt;/script&gt;
+</pre>
+        </div>
+        <div class="footer"></div>
+    </div>
+</section>
+
+
+<section>
+    <div class="container wrapper">
+        <div class="content">
+            <h1>Change cookie</h1>
+            <p>Change cookie the same way as create - old one, will be overwritten</p>
+        </div>
+        <div class="footer"></div>
+    </div>
+</section>
+
+
+
+<section>
+    <div class="container wrapper">
+        <div class="content">
+            <h1>Delete cookie</h1>
+            
+<p>Set cookie expiration time to allready expired value</p>
+
+<pre>
+&lt;script&gt;
+    document.cookie = "username=; expires=Thu, 01 Jan 1970 00:00:00 UTC";
+&lt;/script&gt;
+</pre>
+        </div>
+        <div class="footer"></div>
+    </div>
+</section>
+
+
+<section>
+    <div class="container wrapper">
+        <div class="content">
+            <h1>Error handling</h1>
+
+            <p>Errors are handled by exceptions. If error occurs outside of any try block, error in browser will occur.</p> 
+            <p>Errors in browser console are unacceptable. That’s why, we are trying to catch a handle theese errors.</p> 
+
+        </div>
+        <div class="footer"></div>
+    </div>
+</section>
+
+<section>
+    <div class="container wrapper">
+        <div class="content">
+            <h1>Exceptions</h1>
+
+<pre>
+try {
+    Block of code to try
+}
+catch(err) {
+    Block of code to handle errors
+} 
+finally {
+    Block of code to be executed regardless of the try / catch result
+}
+</pre>
+<p>JavaScript throws standard error like "function f not defined". You can also throw your own error.</p>
+<pre>
+throw "my_error";   // throw a string 
+throw 500;          // throw a number
+</pre>
+
+        </div>
+        <div class="footer"></div>
+    </div>
+</section>
+
+<section>
+    <div class="container wrapper">
+        <div class="content">
+            <h1>Debugging</h1>
+<pre>            
+console.log();
+</pre>
+<p>The debugger keyword stops the execution of JavaScript, and calls (if available) the debugging function.</p>
+<p>If no debugging is available, the debugger statement has no effect.</p>
+<p>With the debugger turned on, this code will stop executing before it executes the third line.</p>
+
+<pre>
+&lt;script&gt;
+var x = 15 * 5;
+debugger;
+document.getElementbyId("demo").innerHTML = x;
+&lt;script&gt;
+</pre>
+        </div>
+        <div class="footer"></div>
+    </div>
+</section>
+
+<section>
+    <div class="container wrapper">
+        <div class="content">
+            <h1>Performance</h1>
+            <h2>Reduce Activity in Loops</h2>
+<p>Bad</p>
+<pre>
+var i;
+for (i = 0; i < arr.length; i++) ...
+</pre>
+<p>Better Code</p>
+<pre>
+var i;
+var l = arr.length;
+for (i = 0; i < l; i++) ...
+</pre>
+
+        </div>
+        <div class="footer"></div>
+    </div>
+</section>
+
+<section>
+    <div class="container wrapper">
+        <div class="content">
+            <h1>Performance</h1>
+            <h2>Reduce DOM Access</h2>
+
+<pre>
+var obj;
+obj = document.getElementById("demo");
+obj.innerHTML = "Hello";
+obj.style.color = "#ff0";
+</pre>
+        </div>
+        <div class="footer"></div>
+    </div>
+</section>
+
+<section>
+    <div class="container wrapper">
+        <div class="content">
+            <h1>Performance</h1>
+
+            <h2>Reduce DOM Size</h2>
+            
+
+<p>Keep the number of elements in the HTML DOM small.</p>
+
+<p>This will always improve page loading, and speed up rendering (page display), especially on smaller devices.</p>
+
+<p>Every attempt to search the DOM (like getElementsByTagName) will benefit from a smaller DOM.</p>
+
+<pre>
+    &lt;div&gt;
+        &lt;div&gt;
+            &lt;div&gt;
+                &lt;span&gt;Content&lt;/span&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+</pre>      
+        </div>
+        <div class="footer"></div>
+    </div>
+</section>
+
+
+<section>
+    <div class="container wrapper">
+        <div class="content">
+                        <h1>Performance</h1>
+
+            <h2>Avoid Unnecessary Variables</h2>
+
+<p>Don't create new variables if you don't plan to save values.</p>
+
+<p>Often you can replace code like this:
+<pre>
+var fullName = firstName + " " + lastName;
+document.getElementById("demo").innerHTML = fullName;
+</pre>
+</p>
+<p>
+With this:
+<pre>
+document.getElementById("demo").innerHTML = firstName + " " + lastName
+</pre>
+</p>
+
+        </div>
+        <div class="footer"></div>
+    </div>
+</section>
+
+
+<section>
+    <div class="container wrapper">
+        <div class="content">
+                        <h1>Performance</h1>
+
+            <h2>Delay JavaScript Loading</h2>
+            
+<p>It is recommended, to include JavaScript files at the end of html document. Browser will start loading JS after page is loaded.</p> 
+
+
+<p>It’s common, to start JS functions after whole page was loaded:
+<pre>
+&lt;script&gt;
+window.onload = downScripts;
+
+function downScripts() {
+    var element = document.createElement("script");
+    element.src = "myScript.js";
+    document.body.appendChild(element);
+}
+&lt;/script&gt;
+</pre>
+
+        </div>
+        <div class="footer"></div>
+    </div>
+</section>
+
+<script src="../../js/jquery.min.js"></script>
+<script src="../../js/bootstrap.min.js"></script>
+<script>
+$(function () {
+    $('[data-toggle="tooltip"]').tooltip()
+	$('[data-toggle="popover"]').popover()
+})
+</script>
+<script>
+$(function () {
+    var $sections = $('section');
+    var count = $sections.length; 
+    for(var i = 0; i < count; i++){
+        $($sections[i]).find('.footer').html(
+            '<a href="prev">&lt;&lt;</a>'+
+            '&nbsp;'+
+            '<span class="pagination">'+ (i + 1) + '/' + count +'</span>'+
+            '&nbsp;'+
+            '<a href="next">&gt;&gt;</a>'
+        );
+    }
+
+    $(document).keydown(function(e) {
+        var page = Math.round($(document).scrollTop() / $('section').height());
+        var $sections = $('section');
+        if(e.keyCode == 39){
+            if(page < ($sections.length -1))
+            $('html, body').animate({
+                scrollTop: $sections.eq(page).next().offset().top
+            }, 500);
+        }else if(e.keyCode == 37){
+            if(page > 0)
+            $('html, body').animate({
+                scrollTop: $sections.eq(page).prev().offset().top
+            }, 500);
+        }
+    });
+
+    $('.footer a').click(function(e){
+        e.preventDefault();
+        var href = $(this).attr('href');
+        var $section = $(this).closest('section');
+        
+        if(href == 'next'){
+            $('html, body').animate({
+                scrollTop: $section.next().offset().top
+            }, 500);
+        }else if(href == "prev"){
+            $('html, body').animate({
+                scrollTop: $section.prev().offset().top
+            }, 500);
+        }
+        
+        
+    });
+    
+});
+</script>
+</body>
+</html>

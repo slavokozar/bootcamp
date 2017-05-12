@@ -24,6 +24,69 @@
         <div class="content">
             <h1>JavaScript</h1>
             <h3>Slavo Kožár</h3>
+            <p>slavo.kozar@gmail.com</p>
+            <p>slavokozar.github.io/bootcamp/</p>
+            <p>https://github.com/slavokozar/bootcamp</p>
+        </div>
+        <div class="footer"></div>
+    </div>
+</section>
+
+<section>
+    <div class="container wrapper">
+        <div class="content">
+            <h1>Themes</h1>
+            <ul>
+                <li>Browser-side programming</li>
+                <li>JavaScript, jQuery</li>
+            </ul>
+            <h2>Goals</h2>
+            <ul>
+                <li>Create simple JavaScript code</li>
+                <li>Start using jQuery in applications</li>
+            </ul>
+        </div>
+        <div class="footer"></div>
+    </div>
+</section>
+
+<section>
+    <div class="container wrapper">
+        <div class="content">
+            <h1>Schedule</h1>
+            <div class="row">
+                <div class="col-md-6">
+                    <h2>9.00 - 10.20</h2>
+                    <ul>
+                        <li>Introduction to JavaScript</li>
+                    </ul>
+
+                    <h2 class="text-danger">10.20 - 10.30 Break</h2>
+
+                    <h2>10.30 - 12.00</h2>
+                    <ul>
+                        <li>JavaScript functions, events</li>
+                    </ul>
+                    <h2 class="text-danger">12.00 - 13.00 Lunch</h2>
+                </div>
+                <div class="col-md-6">
+                    <h2>13.00 - 15.00</h2>
+                    <ul>
+                        <li>jQuery</li>
+                    </ul>
+                    <h2 class="text-danger">15.00 - 15.15 Break</h2>
+
+                    <h2>15.15 - 17.00</h2>
+                    <ul>
+                        <li>practising jQuery</li>
+                    </ul>
+                </div>
+            </div>
+
+
+
+
+
         </div>
         <div class="footer"></div>
     </div>
@@ -452,71 +515,6 @@ for (i = 0; i < cars.length; i++) {
     </div>
 </section>
 
-
-
-
-
-
-<section>
-    <div class="container wrapper">
-        <div class="content">
-            <h1>Types of loops</h1>
-            <ul>
-                <li>Loops with unknown number of iterations
-                    <ul>
-                        <li>Loop with condition in the beginning</li>
-                        <li>Loop with condition in the end</li>
-                    </ul>
-                </li>
-                <li>Loops with known number of iterations</li>
-            </ul>
-        </div>
-        <div class="footer"></div>
-    </div>
-</section>
-
-
-<section>
-    <div class="container wrapper">
-        <div class="content">
-            <h1>Loops with unknown number of iteration</h1>
-            <h3>Loop with condition in the beginning</h3>
-
-<pre>
-while(condition){
-	code_to_execute
-}
-</pre>
-
-<p>While loop checkes, if condition is true and run code. If condition is false, loop ends.</p> 
-<h3>Loop with condition in the end</h3>
-<pre>
-do{
-	code_to_execute
-}while(condition)
-</pre>
-<p>Do-While loop run code and then check the condition. If condition is false, loop ends.</p>                 
-        </div>
-        <div class="footer"></div>
-    </div>
-</section>
-
-
-
-<section>
-    <div class="container wrapper">
-        <div class="content">
-            <h1>Loops flowchart</h1>
-            <p class="text-center">
-                <img src="https://www.cs.uic.edu/~jbell/CourseNotes/C_Programming/Whiles.jpg" style="width: 80%;"/>
-            </p>
-        </div>
-        <div class="footer"></div>
-    </div>
-</section>
-
-
-
 <section>
     <div class="container wrapper">
         <div class="content">
@@ -730,50 +728,10 @@ alert(name);
 <section>
     <div class="container wrapper">
         <div class="content">
-            <h1>Objects</h1>
-            <p>In JavaScript, objects are king. If you understand objects, you understand JavaScript.</p>
+            <h1>Events</h1>
+            <p>Event is action in web browser.</p>
+            <p>Event listener is a function, which is called, when this event occurs.</p>
 
-
-        <p>Object is cointainer storing multiple values called parameters.</p>
-<pre>
-&lt;script&gt;
-var person = {
-    firstName:"Slavo",
-    lastName:"Kozar",
-    age:23,
-    eyeColor:"brown"
-};
-&lt;/script&gt;
-</pre>         
-
-        </div>
-        <div class="footer"></div>
-    </div>
-</section>
-
-<section>
-    <div class="container wrapper">
-        <div class="content">
-            <h1>Accessing parameters of object</h1>
-            
-
-<pre>
-&lt;script&gt;
-var person = {
-    firstName:"Slavo",
-    lastName:"Kozar",
-    age:23,
-    eyeColor:"brown"
-};
-
-console.log( person.firstName );
-console.log( person["firstName"] );
-
-var param = "firstName";
-console.log( person[param] );
-
-&lt;/script&gt;
-</pre>
         </div>
         <div class="footer"></div>
     </div>
@@ -783,22 +741,19 @@ console.log( person[param] );
 <section>
     <div class="container wrapper">
         <div class="content">
-            <h1>Object can contain also method.</h1>
-<pre>
+            <h1>How to register event listeners?</h1>
+            <p>Inline JavaScript - not recommended</p>
+            <pre>
+&lt;button id="btn" onclick="myFunction()"&gt;Click me!&lt;/button&gt;
+</pre>
+            <p>Much better way</p>
+            <pre>
+&lt;button id="btn"&gt;Click me!&lt;/button&gt;
 &lt;script&gt;
-var person = {
-    firstName:"Slavo",
-    lastName:"Kozar",
-    age:23,
-    eyeColor:"brown"
-    hello: function(){
-        alert('Hey, You!');
-    }
-};
-
-person.hello();
+    document.getElementById('btn').onclick = myFunction();
 &lt;/script&gt;
 </pre>
+
         </div>
         <div class="footer"></div>
     </div>
@@ -808,23 +763,15 @@ person.hello();
 <section>
     <div class="container wrapper">
         <div class="content">
-            <h1>Magic word <i>this</i></h1>
-            <p>Local variable this contains reference to the actual object.</p>
-<pre>
-&lt;script&gt;
-var person = {
-    firstName:"Slavo",
-    lastName:"Kozar",
-    age:23,
-    eyeColor:"brown"
-    hello: function(){
-        alert('Hey, ' + this.firstName + '!');
-    }
-};
-
-person.hello();
-&lt;/script&gt;
-</pre>
+            <h1>Most popular events:</h1>
+            <ul>
+                <li>onchange</li>
+                <li>onclick</li>
+                <li>onmouseover</li>
+                <li>onmouseout</li>
+                <li>onkeydown</li>
+                <li>onload</li>
+            </ul>
         </div>
         <div class="footer"></div>
     </div>
@@ -897,39 +844,13 @@ element.style.property = new style;
         <div class="footer"></div>
     </div>
 </section>
-<section>
-    <div class="container wrapper">
-        <div class="content">
-            <h1>Modifiing DOM Tree</h1>
-<p>
-<pre>
-document.createElement(name);
-</pre>
-The createElement() method creates an Element Node with the specified name.
-</p>
-<p>
-This function does not inset element into the document.
-</p>
 
-<p>
-<pre>
-document.appendChild(newChild);
-document.removeChild(child);
-document.replaceChild(newChild, oldChild);
-</pre>
-</p>
-        </div>
-        <div class="footer"></div>
-    </div>
-</section>
 
 <section>
     <div class="container wrapper">
         <div class="content">
-            <h1>Events</h1> 
-            <p>Event is action in web browser.</p> 
-            <p>Event listener is a function, which is called, when this event occurs.</p>
-            
+            <h1>jQuery</h1>
+            <h3>Slavo Kožár</h3>
         </div>
         <div class="footer"></div>
     </div>
@@ -939,36 +860,15 @@ document.replaceChild(newChild, oldChild);
 <section>
     <div class="container wrapper">
         <div class="content">
-            <h1>How to register event listeners?</h1>            
-            <p>Inline JavaScript - not recommended</p>
-<pre>
-&lt;button id="btn" onclick="myFunction()"&gt;Click me!&lt;/button&gt;
-</pre>
-            <p>Much better way</p>
-<pre>
-&lt;button id="btn"&gt;Click me!&lt;/button&gt;
-&lt;script&gt;
-    document.getElementById('btn').onclick = myFunction();
-&lt;/script&gt;
-</pre>
-
-        </div>
-        <div class="footer"></div>
-    </div>
-</section>
-
-
-<section>
-    <div class="container wrapper">
-        <div class="content">
-            <h1>Most popular events:</h1>
+            <h1>What is jQuery</h1>
+            <p>jQuery is a lightweight, "write less, do more", JavaScript library.</p>
             <ul>
-                <li>onchange</li>
-                <li>onclick</li>
-                <li>onmouseover</li>
-                <li>onmouseout</li>
-                <li>onkeydown</li>
-                <li>onload</li>
+                <li>HTML/DOM manipulation</li>
+                <li>CSS manipulation</li>
+                <li>HTML event methods</li>
+                <li>Effects and animations</li>
+                <li>AJAX</li>
+                <li>Utilities</li>
             </ul>
         </div>
         <div class="footer"></div>
@@ -976,22 +876,85 @@ document.replaceChild(newChild, oldChild);
 </section>
 
 
+<section>
+    <div class="container wrapper">
+        <div class="content">
+            <h1>Why jQuery</h1>
+            <p>Many of the biggest companies on the Web use jQuery, such as:
+            <ul>
+                <li>Google</li>
+                <li>Microsoft</li>
+                <li>IBM</li>
+                <li>Netflix</li>
+            </ul>
+            </p>
+        </div>
+        <div class="footer"></div>
+    </div>
+</section>
 
 
 <section>
     <div class="container wrapper">
         <div class="content">
-            <h1>Numbers and Math functions</h1>
-            <p>There is only one type of numbers in Javascript.</p> 
-<p>This number can be with and also without decimals.</p> 
+            <h1>Intro</h1>
 
-<pre>
-&lt;script&gt;
-var x = 34.00;
-var y = 34;
-var x = 123e5;    // 12300000
-var y = 123e-5;   // 0.00123
-&lt;/script&gt;
+            <p>jQuery was create in order to provide unified and simplified system of queries.</p>
+            <p>What kind of queries?</p>
+            <p>DOM queries using css selectors.</p>
+
+            <p>The first version of jQuery provided magic function “jQuery” and transformed
+            <pre>
+document.getElementsByName("name");
+document.getElementById(“name”);
+</pre>
+            into
+            <pre>
+jQuery(“name”);
+jQuery(“#name”);
+</pre>
+            </p>
+
+            <p>Pretty amazing, isn’t it?</p>
+        </div>
+        <div class="footer"></div>
+    </div>
+</section>
+
+
+<section>
+    <div class="container wrapper">
+        <div class="content">
+            <h1>... intro</h1>
+
+            <p>However, that is alsao too long, for typing. So function $(“”)  was introduced.</p>
+
+            <p>
+                Now, we know, $() is a function, which can be used to find anything in DOM using CSS selectors:
+
+            <pre>
+$(“body”)
+$(“#my-element”)
+$(“.my-elements”)
+</pre>
+            </p>
+        </div>
+        <div class="footer"></div>
+    </div>
+</section>
+
+
+<section>
+    <div class="container wrapper">
+        <div class="content">
+            <h1>using jQuery</h1>
+            <p>There are several ways to start using jQuery on your web site. You can:
+            <h3>Download the jQuery library from jQuery.com</h3>
+
+            <p>Production version - this is for your live website because it has been minified and compressed.</p>
+            <p>Development version - this is for testing and development (uncompressed and readable code).</p>
+            <pre>
+&lt;script src="jquery.js"&gt;&lt;/script&gt;
 </pre>
         </div>
         <div class="footer"></div>
@@ -1002,66 +965,24 @@ var y = 123e-5;   // 0.00123
 <section>
     <div class="container wrapper">
         <div class="content">
-            <h1>Arithmetics</h1>
-            <p>All basic arithmetics, can be done, with numbers.</p>
-<pre> 
-&lt;script&gt;
-    var a = 5; 
-    var b = 3; 
-    console.log( a + b );   //output 8
-    console.log( a - b );   //output 2
-    console.log( a * b );   //output 15
-    console.log( a / b );   //output 1.6666666666666667
-    console.log( a % b );   //output 2
-&lt;/script&gt;
-</pre>            
-        </div>
-        <div class="footer"></div>
-    </div>
-</section>
+            <h1>using jQuery</h1>
 
+            <h3>jQuery CDN</h3>
+            <p>If you don't want to download and host jQuery yourself, you can include it from a CDN (Content Delivery Network).</p>
 
-<section>
-    <div class="container wrapper">
-        <div class="content">
-            <h1>Math library</h1>
-            <p>JavaScript provides rich Math library.</p>
-
-            <p>Here are mentioned some of most common functions, all other function can be found at <a href="http://www.w3schools.com/jsref/jsref_obj_math.asp" target="_blank">reference</a></p> 
-
-<pre>
-&lt;script&gt;
-    console.log( Math.round(2.5) );   //output 2
-    console.log( Math.abs(-2.5) );    //output 2.5
-    console.log( Math.sqrt(4) );      //output 2    
-&lt;/script&gt;
+            <p>
+                Google CDN
+            <pre>
+&lt;script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"&gt;&lt;/script&gt;
 </pre>
+            </p>
 
-        </div>
-        <div class="footer"></div>
-    </div>
-</section>
-
-
-<section>
-    <div class="container wrapper">
-        <div class="content">
-            <h1>NaN - Not a Number</h1>
-            
-<p>NaN is a JavaScript reserved word indicating that a number is not a legal number.</p>
-
-
-<p>Trying to do arithmetic with a non-numeric string will result in NaN (Not a Number):
-
-<pre>
-&lt;script&gt;
-var x = 100 / "Apple";  
-&lt;/script&gt;
+            <p>
+                Microsoft CDN
+            <pre>
+&lt;script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.1.1.min.js"&gt;&lt;/script&gt;
 </pre>
-x will be NaN (Not a Number)
-</p>
-<p>JavaScript also provides isNaN() function, which return true, if value of variable is not a number.</p> 
-
+            </p>
         </div>
         <div class="footer"></div>
     </div>
@@ -1071,11 +992,16 @@ x will be NaN (Not a Number)
 <section>
     <div class="container wrapper">
         <div class="content">
-            <h1>Dates</h1>
-            
-            <p>The Date object lets us work with dates.</p>
-            <p>A date consists of a year, a month, a day, an hour, a minute, a second, and milliseconds.</p>
-
+            <h1>Syntax</h1>
+            <p>The jQuery syntax is designed for selecting HTML elements and performing some action on the element(s).</p>
+            <p>Basic syntax is:
+            <pre>$(selector).action()</pre>
+            <ul>
+                <li>A $ sign to define/access jQuery</li>
+                <li>A (selector) to "query (or find)" HTML elements</li>
+                <li>A jQuery action() to be performed on the element(s)</li>
+            </ul>
+            </p>
         </div>
         <div class="footer"></div>
     </div>
@@ -1085,25 +1011,16 @@ x will be NaN (Not a Number)
 <section>
     <div class="container wrapper">
         <div class="content">
-            <h1>Initiating a date:</h1>
-<pre>
-&lt;script&gt;
-//current date
-var date = new Date()
-
-
-//zero date (1. 1. 1970) + number miliseconds
-var date = new Date(number)
-
-
-// dateString in format "October 13, 2014 11:13:00"
-var date = new Date(dateString)
-
-
-//specify all values
-var date = new Date(year, month, day, hours, minutes, seconds, milliseconds)
-&lt;/script&gt;
+            <h1>... syntax</h1>
+            <p>It is recommended, to wrap your jQuery functionality inside .ready() function.</p>
+            <pre>
+$(document).ready(function(){
+   // jQuery methods go here...
+});
 </pre>
+            <p>This approach ensures you, in a moment of execution code, all your libraries have been loaded allready.</p>
+
+
         </div>
         <div class="footer"></div>
     </div>
@@ -1113,20 +1030,26 @@ var date = new Date(year, month, day, hours, minutes, seconds, milliseconds)
 <section>
     <div class="container wrapper">
         <div class="content">
-            <h1>Date to String</h1>
+            <h1>jQuery Selectors</h1>
+            <p>jQuery selectors are one of the most important parts of the jQuery library.</p>
+            <p>
+                The element Selector
+            <pre>$("p")</pre>
+            selects elements &gt;p&lt;&gt;/p&lt;
+            </p>
 
-<pre>
-&lt;script&gt;
-d = new Date();
-document.getElementById("demo").innerHTML = d.toString();
-&lt;/script&gt;
-</pre>
-<pre>
-&lt;script&gt;
-d = new Date();
-document.getElementById("demo").innerHTML = d.toUTCString();
-&lt;/script&gt;
-</pre>
+            <p>
+                The #id Selector
+            <pre>$("#test")</pre>
+            selects element width id=”test”
+            </p>
+
+            <p>
+                The .class Selector
+            <pre>$(".test")</pre>
+            selects elements with class=”test”
+            </p>
+
         </div>
         <div class="footer"></div>
     </div>
@@ -1136,21 +1059,33 @@ document.getElementById("demo").innerHTML = d.toUTCString();
 <section>
     <div class="container wrapper">
         <div class="content">
-            <h1>Get functions</h1>
+            <h1>Find Function</h1>
+            <pre>$(element).find(“.test”)</pre>
+            <p>This function find all elements matching selector “.test” inside element.</p>
+        </div>
+        <div class="footer"></div>
+    </div>
+</section>
+
+
+<section>
+    <div class="container wrapper">
+        <div class="content">
+            <h1>Examples of jQuery Selectors</h1>
             <table>
-                
-<tr><td style="width:30%">getDate()</td><td>Get the day as a number (1-31)</td></tr>
-<tr><td>getDay()</td><td>Get the weekday as a number (0-6)</td></tr>
-<tr><td>getFullYear()</td><td>Get the four digit year (yyyy)</td></tr>
-<tr><td>getHours()</td><td>Get the hour (0-23)</td></tr>
-<tr><td>getMilliseconds()</td><td>Get the milliseconds (0-999)</td></tr>
-<tr><td>getMinutes()</td><td>Get the minutes (0-59)</td></tr>
-<tr><td>getMonth()</td><td>Get the month (0-11)</td></tr>
-<tr><td>getSeconds()</td><td>Get the seconds (0-59)</td></tr>
-<tr><td>getTime()</td><td>Get the time (milliseconds since January 1, 1970)</td></tr>
-    </table>
-
-</p>
+                <tr><td>$("*")</td><td>Selects all elements&gt;/td&lt;&gt;/tr&lt;</td></tr>
+                <tr><td>$(this)</td><td>Selects the current HTML element</td></tr>
+                <tr><td>$("p.intro")</td><td>Selects all &gt;p&lt; elements with class="intro"</td></tr>
+                <tr><td>$("p:first")</td><td>Selects the first &gt;p&lt; element</td></tr>
+                <tr><td>$("ul li:first")</td><td>Selects the first &gt;li&lt; element of the first &gt;ul&lt;</td></tr>
+                <tr><td>$("ul li:first-child")</td><td>Selects the first &gt;li&lt; element of every &gt;ul&lt;</td></tr>
+                <tr><td>$("[href]")</td><td>Selects all elements with an href attribute</td></tr>
+                <tr><td>$("a[target='_blank']")</td><td>Selects all &gt;a&lt; elements with a target attribute value equal to "_blank"</td></tr>
+                <tr><td>$("a[target!='_blank']")</td><td>Selects all &gt;a&lt; elements with a target attribute value NOT equal to "_blank"</td></tr>
+                <tr><td>$(":button")</td><td>Selects all &gt;button&lt; elements and &gt;input&lt; elements of type="button"</td></tr>
+                <tr><td>$("tr:even")</td><td>Selects all even &gt;tr&lt; elements</td></tr>
+                <tr><td>$("tr:odd")</td><td>Selects all odd &gt;tr&lt; elements</td></tr>
+            </table>
         </div>
         <div class="footer"></div>
     </div>
@@ -1160,20 +1095,13 @@ document.getElementById("demo").innerHTML = d.toUTCString();
 <section>
     <div class="container wrapper">
         <div class="content">
-            <h1>Set functions</h1>
-
-
-<table>
-                
-<tr><td style="width:30%">setDate()</td><td>Set the day as a number (1-31)</td></tr>
-<tr><td>setFullYear()</td><td>Set the four digit year (yyyy)</td></tr>
-<tr><td>setHours()</td><td>Set the hour (0-23)</td></tr>
-<tr><td>setMilliseconds()</td><td>Set the milliseconds (0-999)</td></tr>
-<tr><td>setMinutes()</td><td>Set the minutes (0-59)</td></tr>
-<tr><td>setMonth()</td><td>Set the month (0-11)</td></tr>
-<tr><td>setSeconds()</td><td>Set the seconds (0-59)</td></tr>
-<tr><td>setTime()</td><td>Set the time (milliseconds since January 1, 1970)</td></tr>
-    </table>
+            <h1>jQuery Object</h1>
+            <p>What exactly does the $() function returns?</p>
+            <p>jQuery function returns a jQuery object containing collection of elements matching the selector.</p>
+            <p>jQuery collection is data object similar to JS array. However, jQuery collection provides more features, like .first(), .last() selectors and .each() function.</p>
+            <p>jQuery object is object encapsulating DOM object(s) and providing extra functions and length property, which return number of DOM objects in collection.</p>
+            <p>Every jQuery function returns jQuery object. This feature of jQuery allows us chaining functions. </p>
+            <pre>$("#p1").css("color", "red").slideUp(2000).slideDown(2000);</pre>
         </div>
         <div class="footer"></div>
     </div>
@@ -1183,11 +1111,11 @@ document.getElementById("demo").innerHTML = d.toUTCString();
 <section>
     <div class="container wrapper">
         <div class="content">
-            <h1>Working with cookies</h1>
-            <h3>What are Cookies?</h3>
-            <p>Cookies are data, stored in small text files, on your computer.</p>
-            <p>When a web server has sent a web page to a browser, the connection is shut down, and the server forgets everything about the user.</p>
-            <p>Cookies were invented to solve the problem "how to remember information about the user".</p>
+            <h1>DOM manipulation</h1>
+            <h3>get content</h3>
+            <p>text() - returns the text content of selected elements</p>
+            <p>html() - returns the content of selected elements (including HTML markup)</p>
+            <p>val() - returns the value of form fields</p>
         </div>
         <div class="footer"></div>
     </div>
@@ -1197,118 +1125,224 @@ document.getElementById("demo").innerHTML = d.toUTCString();
 <section>
     <div class="container wrapper">
         <div class="content">
-            <h1>Create cookie</h1>
-            <p>document.cookie = "username=John Doe; expires=Thu, 18 Dec 2013 12:00:00 UTC";</p>
+            <h1>DOM manipulation</h1>
+            <h3>get content</h3>
+            <p>The following example demonstrates how to get content from DOM elements with jQuery:
 
-<pre>
-&lt;script&gt;
-function setCookie(cname, cvalue, exdays) {
-    var d = new Date();
-    d.setTime(d.getTime() + (exdays*24*60*60*1000));
-    var expires = "expires="+ d.toUTCString();
-    document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
+            <pre>
+$("#btn1").click(function(){
+    alert("Text: " + $("#test").text());
+});
+$("#btn2").click(function(){
+    alert("HTML: " + $("#test").html());
+});
+$("#btn3").click(function(){
+    alert("Value: " + $("#test-input").val());
+});
+$("button").click(function(){
+    alert($("#w3s").attr("href"));
+});
+</pre>
+            </p>
+
+        </div>
+        <div class="footer"></div>
+    </div>
+</section>
+
+
+<section>
+    <div class="container wrapper">
+        <div class="content">
+            <h1>DOM manipulation</h1>
+            <h3>get content</h3>
+            <p>attr() - returns the attribute value of selected elements</p>
+            <p>The following example demonstrates how to get the value of the href attribute in a link:
+            <pre>
+
+</pre>
+            </p>
+
+        </div>
+        <div class="footer"></div>
+    </div>
+</section>
+
+
+<section>
+    <div class="container wrapper">
+        <div class="content">
+            <h1>DOM manipulation</h1>
+            <h3>set Content</h3>
+            <p>text(val) - sets the text content of selected elements</p>
+            <p>html(val) - sets the content of selected elements (including HTML markup)</p>
+            <p>val(val) - sets the value of form fields</p>
+            <p>attr(val) - sets the attribute value of selected elements</p>
+
+
+            <h3>Can you see the magic of jQuery?</h3>
+        </div>
+        <div class="footer"></div>
+    </div>
+</section>
+
+<section>
+    <div class="container wrapper">
+        <div class="content">
+            <h1>Add New HTML Content</h1>
+
+            <p>We will look at four jQuery methods that are used to add new content.</p>
+            <p>append() - Inserts content at the end of the selected elements</p>
+            <p>prepend() - Inserts content at the beginning of the selected elements</p>
+            <p>after() - Inserts content after the selected elements</p>
+            <p>before() - Inserts content before the selected elements</p>
+
+            <pre>
+var txt1 = "&gt;p&lt;Text.&gt;/p&lt;";               // Create element with HTML
+var txt2 = $("&gt;p&lt;&gt;/p&lt;").text("Text.");   // Create with jQuery
+
+$("body").append(txt1, txt2);      // Append the new elements
+</pre>
+        </div>
+        <div class="footer"></div>
+    </div>
+</section>
+
+
+<section>
+    <div class="container wrapper">
+        <div class="content">
+            <h1>Remove HTML Content</h1>
+
+            <p>empty() - Removes the child elements from the selected element</p>
+            <p>remove() - Removes the selected element (and its child elements)</p>
+
+
+            <p>The jQuery remove() method also accepts one parameter, which allows you to filter the elements to be removed.</p>
+
+
+            <p>The parameter can be any of the jQuery selector syntaxes.</p>
+
+            <pre>
+$("p").remove(".test");
+</pre>
+
+            <p>
+                example removes all <p> elements with class="test" this code is also compatible with
+            $("p.test").remove();
+        </p>
+        </div>
+        <div class="footer"></div>
+    </div>
+</section>
+
+
+<section>
+    <div class="container wrapper">
+        <div class="content">
+            <h1>Manipulating CSS</h1>
+            <p>The css() method sets or returns one or more style properties for the selected elements.</p>
+
+            <h3>Get a CSS Property</h3>
+            <p>css("propertyname");</p>
+
+            <pre>
+//the background-color value of the FIRST matched element
+$("p").css("background-color");
+</pre>
+        </div>
+        <div class="footer"></div>
+    </div>
+</section>
+
+
+<section>
+    <div class="container wrapper">
+        <div class="content">
+            <h1>Manipulating CSS</h1>
+            <h3>Set a CSS Property</h3>
+
+            <p>css("propertyname","value");</p>
+
+            <pre>
+//set the background-color value for ALL matched elements
+$("p").css("background-color", "yellow");
+</pre>
+            <h3>Set Multiple CSS Properties</h3>
+            <p>css({"propertyname":"value","propertyname":"value",...});</p>
+
+
+            <pre>
+$("p").css({"background-color": "yellow", "font-size": "200%"});
+</pre>
+
+        </div>
+        <div class="footer"></div>
+    </div>
+</section>
+
+
+<section>
+    <div class="container wrapper">
+        <div class="content">
+            <h1>Modifiing classes</h1>
+            <p>addClass("class")</p>
+            <p>This function add class to DOM element.</p>
+
+
+            <pre>
+$('#element').addClass('new-class');
+//you can add also multiple classes
+$('#element').addClass('new-class another-class');
+</pre>
+
+
+        </div>
+        <div class="footer"></div>
+    </div>
+</section>
+
+
+<section>
+    <div class="container wrapper">
+        <div class="content">
+
+            <p>removeClass("class")</p>
+            <p>This funciton removes class from DOM element</p>
+
+
+            <pre>
+$('#element').removeClass('new-class');
+</pre>
+
+            <p>hasClass("class")</p>
+            <p>This function return true, if element has class.</p>
+        </div>
+        <div class="footer"></div>
+    </div>
+</section>
+
+
+<section>
+    <div class="container wrapper">
+        <div class="content">
+
+            <p>toggleClass("some-class")</p>
+            <p>What does this function do?</p>
+
+            <pre>
+$(element).toggleClass("some-class");
+</pre>
+
+
+            <p>is equal code to</p>
+
+            <pre>
+if($(element).hasClass("some-class")){
+    $(element).removeClass("some-class");
+}else{
+    $(element).addClass("some-class");
 }
-&lt;/script&gt;
-</pre>
-        </div>
-        <div class="footer"></div>
-    </div>
-</section>
-
-
-
-<section>
-    <div class="container wrapper">
-        <div class="content">
-            <h1>Read cookie</h1>
-<pre>            
-&lt;script&gt;
-var x = document.cookie;
-&lt;/script&gt;
-</pre>
-<p>document.cookie will return all cookies in one string much like: cookie1=value; cookie2=value; cookie3=value;</p>
-<pre>
-&lt;script&gt;
-function str_obj(str) {
-    str = str.split(', ');
-    var result = {};
-    for (var i = 0; i &lt; str.length; i++) {
-        var cur = str[i].split('=');
-        result[cur[0]] = cur[1];
-    }
-    return result;
-}
-&lt;/script&gt;
-</pre>
-        </div>
-        <div class="footer"></div>
-    </div>
-</section>
-
-
-<section>
-    <div class="container wrapper">
-        <div class="content">
-            <h1>Change cookie</h1>
-            <p>Change cookie the same way as create - old one, will be overwritten</p>
-        </div>
-        <div class="footer"></div>
-    </div>
-</section>
-
-
-
-<section>
-    <div class="container wrapper">
-        <div class="content">
-            <h1>Delete cookie</h1>
-            
-<p>Set cookie expiration time to allready expired value</p>
-
-<pre>
-&lt;script&gt;
-    document.cookie = "username=; expires=Thu, 01 Jan 1970 00:00:00 UTC";
-&lt;/script&gt;
-</pre>
-        </div>
-        <div class="footer"></div>
-    </div>
-</section>
-
-
-<section>
-    <div class="container wrapper">
-        <div class="content">
-            <h1>Error handling</h1>
-
-            <p>Errors are handled by exceptions. If error occurs outside of any try block, error in browser will occur.</p> 
-            <p>Errors in browser console are unacceptable. That’s why, we are trying to catch a handle theese errors.</p> 
-
-        </div>
-        <div class="footer"></div>
-    </div>
-</section>
-
-<section>
-    <div class="container wrapper">
-        <div class="content">
-            <h1>Exceptions</h1>
-
-<pre>
-try {
-    Block of code to try
-}
-catch(err) {
-    Block of code to handle errors
-} 
-finally {
-    Block of code to be executed regardless of the try / catch result
-}
-</pre>
-<p>JavaScript throws standard error like "function f not defined". You can also throw your own error.</p>
-<pre>
-throw "my_error";   // throw a string 
-throw 500;          // throw a number
 </pre>
 
         </div>
@@ -1316,210 +1350,10 @@ throw 500;          // throw a number
     </div>
 </section>
 
-<section>
-    <div class="container wrapper">
-        <div class="content">
-            <h1>Debugging</h1>
-<pre>            
-console.log();
-</pre>
-<p>The debugger keyword stops the execution of JavaScript, and calls (if available) the debugging function.</p>
-<p>If no debugging is available, the debugger statement has no effect.</p>
-<p>With the debugger turned on, this code will stop executing before it executes the third line.</p>
-
-<pre>
-&lt;script&gt;
-var x = 15 * 5;
-debugger;
-document.getElementbyId("demo").innerHTML = x;
-&lt;script&gt;
-</pre>
-        </div>
-        <div class="footer"></div>
-    </div>
-</section>
-
-<section>
-    <div class="container wrapper">
-        <div class="content">
-            <h1>Performance</h1>
-            <h2>Reduce Activity in Loops</h2>
-<p>Bad</p>
-<pre>
-var i;
-for (i = 0; i < arr.length; i++) ...
-</pre>
-<p>Better Code</p>
-<pre>
-var i;
-var l = arr.length;
-for (i = 0; i < l; i++) ...
-</pre>
-
-        </div>
-        <div class="footer"></div>
-    </div>
-</section>
-
-<section>
-    <div class="container wrapper">
-        <div class="content">
-            <h1>Performance</h1>
-            <h2>Reduce DOM Access</h2>
-
-<pre>
-var obj;
-obj = document.getElementById("demo");
-obj.innerHTML = "Hello";
-obj.style.color = "#ff0";
-</pre>
-        </div>
-        <div class="footer"></div>
-    </div>
-</section>
-
-<section>
-    <div class="container wrapper">
-        <div class="content">
-            <h1>Performance</h1>
-
-            <h2>Reduce DOM Size</h2>
-            
-
-<p>Keep the number of elements in the HTML DOM small.</p>
-
-<p>This will always improve page loading, and speed up rendering (page display), especially on smaller devices.</p>
-
-<p>Every attempt to search the DOM (like getElementsByTagName) will benefit from a smaller DOM.</p>
-
-<pre>
-    &lt;div&gt;
-        &lt;div&gt;
-            &lt;div&gt;
-                &lt;span&gt;Content&lt;/span&gt;
-            &lt;/div&gt;
-        &lt;/div&gt;
-    &lt;/div&gt;
-</pre>      
-        </div>
-        <div class="footer"></div>
-    </div>
-</section>
-
-
-<section>
-    <div class="container wrapper">
-        <div class="content">
-                        <h1>Performance</h1>
-
-            <h2>Avoid Unnecessary Variables</h2>
-
-<p>Don't create new variables if you don't plan to save values.</p>
-
-<p>Often you can replace code like this:
-<pre>
-var fullName = firstName + " " + lastName;
-document.getElementById("demo").innerHTML = fullName;
-</pre>
-</p>
-<p>
-With this:
-<pre>
-document.getElementById("demo").innerHTML = firstName + " " + lastName
-</pre>
-</p>
-
-        </div>
-        <div class="footer"></div>
-    </div>
-</section>
-
-
-<section>
-    <div class="container wrapper">
-        <div class="content">
-                        <h1>Performance</h1>
-
-            <h2>Delay JavaScript Loading</h2>
-            
-<p>It is recommended, to include JavaScript files at the end of html document. Browser will start loading JS after page is loaded.</p> 
-
-
-<p>It’s common, to start JS functions after whole page was loaded:
-<pre>
-&lt;script&gt;
-window.onload = downScripts;
-
-function downScripts() {
-    var element = document.createElement("script");
-    element.src = "myScript.js";
-    document.body.appendChild(element);
-}
-&lt;/script&gt;
-</pre>
-
-        </div>
-        <div class="footer"></div>
-    </div>
-</section>
 
 <script src="../../js/jquery.min.js"></script>
 <script src="../../js/bootstrap.min.js"></script>
-<script>
-$(function () {
-    $('[data-toggle="tooltip"]').tooltip()
-	$('[data-toggle="popover"]').popover()
-})
-</script>
-<script>
-$(function () {
-    var $sections = $('section');
-    var count = $sections.length; 
-    for(var i = 0; i < count; i++){
-        $($sections[i]).find('.footer').html(
-            '<a href="prev">&lt;&lt;</a>'+
-            '&nbsp;'+
-            '<span class="pagination">'+ (i + 1) + '/' + count +'</span>'+
-            '&nbsp;'+
-            '<a href="next">&gt;&gt;</a>'
-        );
-    }
+<script src="../../js/prezi.js"></script>
 
-    $(document).keydown(function(e) {
-        var page = Math.round($(document).scrollTop() / $('section').height());
-        var $sections = $('section');
-        if(e.keyCode == 39){
-            if(page < ($sections.length -1))
-            $('html, body').animate({
-                scrollTop: $sections.eq(page).next().offset().top
-            }, 500);
-        }else if(e.keyCode == 37){
-            if(page > 0)
-            $('html, body').animate({
-                scrollTop: $sections.eq(page).prev().offset().top
-            }, 500);
-        }
-    });
-
-    $('.footer a').click(function(e){
-        e.preventDefault();
-        var href = $(this).attr('href');
-        var $section = $(this).closest('section');
-        
-        if(href == 'next'){
-            $('html, body').animate({
-                scrollTop: $section.next().offset().top
-            }, 500);
-        }else if(href == "prev"){
-            $('html, body').animate({
-                scrollTop: $section.prev().offset().top
-            }, 500);
-        }
-        
-        
-    });
-    
-});
-</script>
 </body>
 </html>

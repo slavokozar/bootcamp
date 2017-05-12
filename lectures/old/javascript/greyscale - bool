@@ -1,0 +1,40 @@
+greyscale - bool
+-webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+filter: grayscale(100%);
+
+invert - bool
+-webkit-filter: invert(100%); /* Safari 6.0 - 9.0 */
+filter: invert(100%);
+
+
+brightness
+Level of brightness change applied to the current image. Use values between -100 and +100.
+
+-webkit-filter: contrast(200%);  /* Safari */
+filter: contrast(200%);
+
+0% will make the image completely black.
+100% (1) is default and represents the original image.
+Values over 100% will provide brighter results.
+
+
+contrast
+-webkit-filter: contrast(0%); /* Safari 6.0 - 9.0 */
+filter: contrast(0%);
+
+Level of contrast change applied to the current image. Use values between -100 and +100.
+
+contrast(%)	Adjusts the contrast of the image.
+
+0% will make the image completely black.
+100% (1) is default and represents the original image.
+Values over 100% will provide results with less contrast.
+
+
+rotate - uhol
+
+
+
+
+
+

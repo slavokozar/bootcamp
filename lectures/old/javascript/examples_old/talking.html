@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Mobirise Free Bootstrap Template, https://mobirise.com -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="generator" content="SlavoKozar.sk">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="CodeLeague">
+    <title>Coding Bootcamp JavaScript Example</title>
+    
+</head>
+<body>
+
+<h1 id="greetings"><h1>
+
+<script> 
+    
+    var age = prompt("Hi, how old are you?");
+    
+    function hello(age){
+        var greet;
+
+        if(age <= 15){
+            greet = "Hiiiii";
+        }else if(age <= 50){
+            greet = "Hello";
+        }else{
+            greet = timeGreet();
+        } 
+
+        return greet;
+    }
+
+    function timeGreet(){
+        var date = new Date();
+        var hour = date.getHours();
+        var greet = "";
+
+        if(hour <= 12){
+            greet = "Good Morning";
+        }else if(hour <= 17){
+            greet = "Good Afternoon";
+        }else if(hour <= 22){
+            greet = "Good Evening";
+        }else{
+            greet = "Go to bed!";
+        }
+        return greet;
+    }
+    
+    
+    document.getElementById('greetings').innerHTML = hello(age);
+</script>
+
+</body>
+</html>
