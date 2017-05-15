@@ -1350,6 +1350,66 @@ if($(element).hasClass("some-class")){
     </div>
 </section>
 
+<section>
+    <div class="container wrapper">
+        <div class="content">
+            <h1>events</h1>
+            <h3>syntax</h3>
+
+
+            <p>In jQuery, most DOM events have an equivalent jQuery method.</p>
+            <pre>
+$("p").click(function(){
+    // action goes here!!
+});
+</pre>
+            <p><a href="http://www.w3schools.com/jquery/jquery_ref_events.asp">Reference to events</a></p>
+        </div>
+        <div class="footer"></div>
+    </div>
+</section>
+
+
+
+<section>
+    <div class="container wrapper">
+        <div class="content">
+            <h1>Custom events</h1>
+            <h3>on()</h3>
+            <p>The on() method attaches one or more event handlers for the selected elements.</p>
+
+            <pre>
+$("p").on("click", function(){
+		$(this).hide();
+});
+// attach a click event to a &gt;p&lt; element
+</pre>
+
+
+            <h3>trigger()</h3>
+            <p>The trigger() method triggers one or more events for the selected elements.</p>
+
+        </div>
+        <div class="footer"></div>
+    </div>
+</section>
+
+
+<section>
+    <div class="container wrapper">
+        <div class="content">
+            <h1>effects</h1>
+            <h3>syntax</h3>
+            <pre>$(selector).effect(speed, callback);</pre>
+            <p>The optional speed parameter specifies the speed of the effect, and can take the following values: "slow", "fast", or milliseconds.</p>
+            <p>The optional callback parameter is a function to be executed after the effect() method completes.</p>
+
+
+        </div>
+        <div class="footer"></div>
+    </div>
+</section>
+
 
 <script src="../../js/jquery.min.js"></script>
 <script src="../../js/bootstrap.min.js"></script>

@@ -1,0 +1,58 @@
+<html>
+<head>
+
+</head>
+<body>
+
+
+<script>
+
+    var name = "Slavo";
+
+
+    function myFunction() {
+        name = "Kozar";
+        alert(name);
+    }
+
+
+    alert(name);
+    myFunction();
+    alert(name);
+
+
+
+
+
+    var age = prompt("How old are you?");
+    var name = prompt("What's your name?");
+
+    var processed = processAge(age, name);
+    alert(processed);
+
+
+
+
+    function processAge(age, name){
+        if(isNaN(age)){
+            return('i wanted you age you ****');
+        }else{
+            if(age < 6){
+                return('go to bed ' + name);
+            }else if(age > 6 && age < 18){
+                return('go to school ' + name);
+            }else if(age > 18 && age < 60){
+                return('go to school ' + name);
+            }else if(age > 60){
+                return('go to bed ' + name);
+            }
+        }
+    }
+
+
+
+
+</script>
+
+</body>
+</html>
