@@ -8,8 +8,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="CodeLeague">
     <title>Coding Bootcamp</title>
-    <link rel="stylesheet" href="../css/bootstrap.min.css">
-    <link rel="stylesheet" href="../css/font-awesome.css"> 
+    <link rel="stylesheet" href="../../../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../../css/font-awesome.css">
 </head>
 <style>
     .item-row{
@@ -98,51 +98,10 @@
    
 </div>
 
-<script src="../js/jquery.min.js"></script>
-<script>
-    
+<script src="../../../js/jquery.min.js"></script>
+<script src="eshop.js"></script>
 
-    $('.item-to-basket').click(function(e){        
-        e.preventDefault();
 
-        var aero = '<div id="basket-aero" style="position:absolute;height:50px; width:50px; background-color:red"></div>';
-        $('body').append(aero);
 
-        var button_position = $(e.target).offset(); 
-
-        $('#basket-aero').css({
-            'left': button_position.left,
-            'top': button_position.top
-        })
-
-        // your animation
-        var basket_position = $('#basket').offset();
-
-        $('#basket-aero').animate({
-            'left' : basket_position.left,
-            'top': basket_position.top
-        }, 500, function(){
-            $('#basket-aero').fadeOut(300, function(){
-                
-                incrementBasket();
-                $('#basket-aero').remove();
-
-            })
-        });
-
-    })
-
-    function incrementBasket(){
-        var count = $('#basket-count').text(); 
-        if(count == ''){
-            count = 0;
-        }
-        
-        count++;
-
-        $('#basket-count').text(count);
-    }
-
-</script>
 </body>
 </html>

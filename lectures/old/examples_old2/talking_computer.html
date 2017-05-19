@@ -1,0 +1,73 @@
+<html>
+<head>
+
+</head>
+<body>
+
+
+<script>
+
+    //1)  Ask user for his / her age.
+    // 1.1) keep asking for age, until user provides a number from range <0; 200>
+    //2)  If he / she is under 18  - alert 'go to school'
+    //3) 	if he / she is over 60 - alert 'go to florida'
+    //4) 	if he / she is between 18 and 60:
+    //4.1) ask if he / she has a job
+    //4.2) if 'yes' - alert 'go to work'
+    //4.2) if 'not' - alert 'go to bar'
+
+
+    var age;
+
+    do {
+        age = prompt('How old are you?');
+    } while (isNaN(age) || age < 0 || age > 200);
+
+
+    if (isNaN(age)) {
+        alert('I asked for your age!');
+    } else {
+        if (age < 18) {
+            alert('go to school');
+        } else if (age > 60) {
+            alert('go to florida');
+        } else {
+
+            var job = prompt('do you have a job? (yes / no)');
+
+            if (job == 'yes' || job == 'y') {
+                alert('go to work');
+            } else if (job == 'no' || job == 'n') {
+                alert('go to bar');
+            } else {
+                alert('go to school you analphabet!');
+            }
+
+        }
+    }
+
+
+    //            for(var i = 0; i < triangle; i++){
+    //                var line = '';
+    //
+    //                for(var j = 0; j < (i + 1); j++){
+    //                    line += '* ';
+    //                }
+    //
+    //                console.log(line);
+    //            }
+    //
+    //            var line = '* ';
+    //            for(var i = 0; i < triangle; i++){
+    //                console.log(line);
+    //                line += '* ';
+    //            }
+
+
+    //            *
+    //            * *
+    //            * * *
+</script>
+
+</body>
+</html>

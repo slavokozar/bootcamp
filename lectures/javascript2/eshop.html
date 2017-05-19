@@ -100,46 +100,65 @@
 
 <script src="../../../js/jquery.min.js"></script>
 <script>
-    var aero = '<div id="basket-aero" style="position:absolute;height:50px; width:50px; background-color:red"></div>';
 
     $('.item-to-basket').click(function(e){
         e.preventDefault();
 
-        var aero = '<div id="basket-aero" style="position:absolute;height:50px; width:50px; background-color:red"></div>';
-        $('body').append(aero);
+        var btn = $(e.target);
+        var pos = btn.offset();
 
-        var button_position = $(e.target).offset();
+        var left = pos.left;
+        var right = left + btn.outerWidth();
 
-        $('#basket-aero').css({
-            'left': button_position.left,
-            'top': button_position.top
-        })
+        var top = pos.top;
+        var bottom = top + btn.outerHeight();
 
-        // your animation
-        var basket_position = $('#basket').offset();
+        var centerTop = (top + bottom) / 2;
+        var centerLeft = (left + right) / 2;
 
-        $('#basket-aero').animate({
-            'left' : basket_position.left,
-            'top': basket_position.top
-        }, 500, function(){
-            $('#basket-aero').fadeOut(300, function(){
 
-                incrementBasket();
-                $('#basket-aero').remove();
+        $('body').append('<div id="plane" style="background:green; width:50px; height:50px"></div>')
 
-            })
+        $('#plane').css({
+            'position':'absolute',
+            'left': (centerLeft - 25) + 'px',
+            'top': (centerTop - 25) + 'px'
         });
-    });
 
-    function incrementBasket(){
-        var count = $('#basket-count').text();
-        if(count == ''){
-            count = 0;
-        }
 
-        count++;
-        $('#basket-count').text(count);
-    }
+        var basket = $('#basket');
+        var pos = basket.offset();
+
+        var left = pos.left;
+        var right = left + basket.outerWidth();
+
+        var top = pos.top;
+        var bottom = top + basket.outerHeight();
+
+        var centerTop = (top + bottom) / 2;
+        var centerLeft = (left + right) / 2;
+
+        $('#plane').animate({
+            'left': (centerLeft - 25) + 'px',
+            'top': (centerTop - 25) + 'px'
+        }, 500, function(){
+            $('#plane').remove();
+
+            var count = $('#basket-count').text();
+
+            if(count == ''){
+                count = 0;
+            }
+
+            count = parseInt(count) + 1;
+
+            $('#basket-count').text(count);
+        });
+    })
+
 </script>
+
+
+
 </body>
 </html>

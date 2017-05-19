@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Mobirise Free Bootstrap Template, https://mobirise.com -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="generator" content="SlavoKozar.sk">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="CodeLeague">
+    <title>Coding Bootcamp JavaScript Example</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!--<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,200i,300,300i,400,400i,600,600i,700,700i,900,900i&subset=latin-ext"
+          rel="stylesheet">-->
+
+    <link rel="stylesheet" href="css/font-awesome.css">
+    <!--<link rel="stylesheet" href="css/prezi.css">-->
+</head>
+<body>
+    <button id="cookie-btn">Store cookie</button>
+
+<script>
+    document.getElementById('cookie-btn').onclick = cookieClick; 
+    function cookieClick(){
+            document.cookie = "name=val; expires=Thu, 01 Jan 1970 00:00:00 UTC";
+            console.log(str_obj(document.cookie));
+
+            // setCookie('name', 'asdf', 7);
+            // setCookie('number', 19, 7);
+    }
+
+
+    var cookie = str_obj(document.cookie);
+    console.log(cookie['name']);
+    var name = cookie['name'];
+
+
+    if(name == "undefined"){
+        debugger;
+        name = prompt('say name');
+    }
+    
+    setCookie('name', name, 7);
+    alert('Hey ' + name + "!");
+
+    function str_obj(str) {
+        str = str.split('; ');
+        var result = {};
+        for (var i = 0; i < str.length; i++) {
+            var cur = str[i].split('=');
+            result[cur[0]] = cur[1];
+        }
+        return result;
+    }
+
+    function setCookie(cname, cvalue, exdays) {
+        var d = new Date();
+        d.setTime(d.getTime() + (exdays*24*60*60*1000));
+
+        var expires = "expires="+ d.toUTCString();
+        document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
+    }
+
+
+
+    // setCookie('name', 'Slavo', 7);
+    // setCookie('surname', 'Kozar', 7);
+
+</script>
+
+</body>
+</html>
