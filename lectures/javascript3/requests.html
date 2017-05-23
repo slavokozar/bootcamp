@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Mobirise Free Bootstrap Template, https://mobirise.com -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="generator" content="SlavoKozar.sk">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="CodeLeague">
+    <link rel="stylesheet" href="../../../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../../css/font-awesome.css">
+</head>
+<body>
+<!-- Standard button -->
+
+<button type="button" class="btn btn-primary">Index</button>
+
+<button type="button" class="btn btn-success">Store</button>
+
+<button type="button" class="btn btn-info">Show</button>
+
+<button type="button" class="btn btn-warning">Update</button>
+
+<button type="button" class="btn btn-danger">Delete</button>
+
+<div class="container">
+
+</div>
+
+
+<script src="../../../js/jquery.min.js"></script>
+<script>
+    $('.btn-primary').click(function(){
+        $.ajax({
+            url: 'http://notes.webpixels.sk/notes/index.php',
+            method: 'get',
+            crossDomain: true,
+            data:{
+                order_by: 'created_at',
+                order_type: 'desc',
+                limit: 3,
+                offset: 2,
+            }
+        }).done(function(data){
+            $('.container').html(data);
+        }).fail(function(xhr){
+            console.log(xhr);
+        })
+    })
+
+    $('.btn-success').click(function(){
+        $.ajax({
+            url: 'http://notes.webpixels.sk/notes/store.php',
+            method: 'post',
+            crossDomain: true,
+            data: {
+                title: 'slavkova poznamka',
+                text: 'text text text text'
+            }
+        }).done(function(data){
+            console.log(data);
+        }).fail(function(xhr){
+            console.log(xhr);
+        })
+    })
+
+    $('.btn-info').click(function(){
+        $.ajax({
+            url: 'http://notes.webpixels.sk/notes/show.php?id=1',
+            method: 'get',
+            crossDomain: true,
+        }).done(function(data){
+            $('.container').html(data);
+        }).fail(function(xhr){
+            console.log(xhr);
+        })
+    })
+
+    $('.btn-warning').click(function(){
+        $.ajax({
+            url: 'http://notes.webpixels.sk/notes/update.php?id=1',
+            method: 'post',
+            crossDomain: true,
+            data: {
+                title: 'slavkova nova poznamka',
+                text: 'text text text text'
+            }
+        }).done(function(data){
+            $('.container').html(data);
+        }).fail(function(xhr){
+            console.log(xhr);
+        })
+    })
+
+    $('.btn-danger').click(function(){
+        $.ajax({
+            url: 'http://notes.webpixels.sk/notes/delete.php?id=1',
+            method: 'get',
+            crossDomain: true,
+        }).done(function(data){
+            console.log(data);
+        }).fail(function(xhr){
+            console.log(xhr);
+        })
+    })
+
+</script>
+
+
+
+</body>
+</html>

@@ -2,41 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6c3588d1-509f-4ef3-a890-c67a5436b9bc" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lectures/javascript2/eshop.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lectures/javascript2/eshop_refactored.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lectures/javascript2/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lectures/old/examples/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lectures/old/examples/jquery.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lectures/old/examples/talking.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lectures/old/examples_old/clock.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lectures/old/examples_old/cookie.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lectures/old/examples_old/events.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lectures/old/examples_old/js.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lectures/old/examples_old/js2.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lectures/old/examples_old/person.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lectures/old/examples_old/talking.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lectures/old/examples_old2/dom.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lectures/old/examples_old2/events.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lectures/old/examples_old2/first.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lectures/old/examples_old2/first.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lectures/old/examples_old2/functions.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lectures/old/examples_old2/objects.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lectures/old/examples_old2/talking_computer.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lectures/old/examples_old2/talking_computer2.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lectures/old/examples_old2/talking_computer3.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lectures/old/examples_old2/talking_computer_with_functions.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/lectures/ajax/examples/calc.html" afterPath="$PROJECT_DIR$/lectures/old/ajax/examples/calc.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/lectures/ajax/examples/calc.php" afterPath="$PROJECT_DIR$/lectures/old/ajax/examples/calc.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/lectures/ajax/examples/eshop.html" afterPath="$PROJECT_DIR$/lectures/old/ajax/examples/eshop.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/lectures/ajax/examples/modal.html" afterPath="$PROJECT_DIR$/lectures/old/ajax/examples/modal.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/lectures/ajax/examples/products.php" afterPath="$PROJECT_DIR$/lectures/old/ajax/examples/products.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/lectures/ajax/examples/template.html" afterPath="$PROJECT_DIR$/lectures/old/ajax/examples/template.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/lectures/ajax/examples/test.php" afterPath="$PROJECT_DIR$/lectures/old/ajax/examples/test.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/lectures/ajax/index.html" afterPath="$PROJECT_DIR$/lectures/old/ajax/index.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/lectures/jquery/examples_old/eshop.html" afterPath="$PROJECT_DIR$/lectures/javascript2/eshop.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lectures/javascript3/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lectures/javascript3/requests.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lectures/jquery/examples/eshop.html" afterPath="$PROJECT_DIR$/lectures/jquery/examples/eshop.html" />
     </list>
     <ignored path="bootcamp.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -69,8 +37,8 @@
       <file leaf-file-name="eshop.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lectures/javascript2/eshop.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="461">
-              <caret line="143" column="12" lean-forward="false" selection-start-line="143" selection-start-column="12" selection-end-line="143" selection-end-column="12" />
+            <state relative-caret-position="2622">
+              <caret line="138" column="23" lean-forward="false" selection-start-line="138" selection-start-column="23" selection-end-line="138" selection-end-column="23" />
               <folding>
                 <marker date="1495194782000" expanded="true" signature="5970:6011" ph="..." />
               </folding>
@@ -78,14 +46,61 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="eshop.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="eshop.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lectures/javascript2/eshop.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
+            <state relative-caret-position="912">
               <caret line="48" column="5" lean-forward="false" selection-start-line="48" selection-start-column="5" selection-end-line="48" selection-end-column="5" />
               <folding>
                 <marker date="1495196514000" expanded="true" signature="255:296" ph="..." />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="requests.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lectures/javascript3/requests.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1292">
+              <caret line="68" column="63" lean-forward="false" selection-start-line="68" selection-start-column="63" selection-end-line="68" selection-end-column="63" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/lectures/javascript3/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="319">
+              <caret line="45" column="20" lean-forward="false" selection-start-line="45" selection-start-column="20" selection-end-line="45" selection-end-column="20" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lectures/old/javascript/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="24244">
+              <caret line="1276" column="0" lean-forward="false" selection-start-line="1069" selection-start-column="0" selection-end-line="1276" selection-end-column="0" />
+              <folding>
+                <marker date="1487318693000" expanded="true" signature="32921:32925" ph="&lt;" />
+                <marker date="1487318693000" expanded="true" signature="32925:32929" ph="&lt;" />
+                <marker date="1487318693000" expanded="true" signature="32949:32955" ph=" " />
+                <marker date="1487318693000" expanded="true" signature="33046:33052" ph=" " />
+                <marker date="1487318693000" expanded="true" signature="33083:33087" ph="&gt;" />
+                <marker date="1487318693000" expanded="true" signature="33087:33091" ph="&gt;" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lectures/javascript2/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="10621">
+              <caret line="559" column="0" lean-forward="false" selection-start-line="559" selection-start-column="0" selection-end-line="705" selection-end-column="10" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -103,8 +118,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/lectures/javascript/examples/first.js" />
-        <option value="$PROJECT_DIR$/lectures/javascript/examples/first.html" />
         <option value="$PROJECT_DIR$/lectures/javascript/examples/talking_computer.html" />
         <option value="$PROJECT_DIR$/lectures/javascript/examples/talking_computer2.html" />
         <option value="$PROJECT_DIR$/lectures/javascript/examples/talking_computer3.html" />
@@ -154,6 +167,8 @@
         <option value="$PROJECT_DIR$/lectures/javascript2/eshop.html" />
         <option value="$PROJECT_DIR$/lectures/javascript2/eshop_refactored.html" />
         <option value="$PROJECT_DIR$/lectures/javascript2/eshop.js" />
+        <option value="$PROJECT_DIR$/lectures/javascript3/requests.html" />
+        <option value="$PROJECT_DIR$/lectures/javascript3/index.html" />
       </list>
     </option>
   </component>
@@ -168,8 +183,8 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
-    <option name="width" value="1280" />
-    <option name="height" value="800" />
+    <option name="width" value="1440" />
+    <option name="height" value="900" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -205,6 +220,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -391,7 +407,7 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="javascript2" />
+              <option name="myItemId" value="javascript3" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
@@ -405,14 +421,17 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="js" />
+              <option name="myItemId" value="lectures" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="javascript2" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
       <pane id="Scratches" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -425,19 +444,19 @@
     <property name="FullScreen" value="true" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/lectures" />
+      <recent name="$PROJECT_DIR$/lectures/javascript2" />
+      <recent name="$PROJECT_DIR$/lectures/javascript/examples" />
+      <recent name="$PROJECT_DIR$/lectures/old" />
+      <recent name="$PROJECT_DIR$/lectures/bootstrap/project" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/lectures/old" />
       <recent name="$PROJECT_DIR$/lectures/javascript2" />
       <recent name="$PROJECT_DIR$/lectures/javascript2/examples" />
       <recent name="$PROJECT_DIR$/lectures/bootstrap" />
       <recent name="$PROJECT_DIR$/lectures/javascript" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/lectures/javascript2" />
-      <recent name="$PROJECT_DIR$/lectures" />
-      <recent name="$PROJECT_DIR$/lectures/javascript/examples" />
-      <recent name="$PROJECT_DIR$/lectures/old" />
-      <recent name="$PROJECT_DIR$/lectures/bootstrap/project" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -551,12 +570,15 @@
       <workItem from="1495136243536" duration="658000" />
       <workItem from="1495150150247" duration="604000" />
       <workItem from="1495177751594" duration="878000" />
-      <workItem from="1495179737692" duration="8864000" />
+      <workItem from="1495179737692" duration="9699000" />
+      <workItem from="1495392519687" duration="96000" />
+      <workItem from="1495496597643" duration="3699000" />
+      <workItem from="1495523813740" duration="153000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="26755000" />
+    <option name="totallyTimeSpent" value="31538000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -568,18 +590,19 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1280" height="800" extended-state="6" />
+    <frame x="0" y="0" width="1440" height="900" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.5274637" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21888413" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24964234" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32932693" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -627,27 +650,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/lectures/old/ajax/examples/modal.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="21" column="6" lean-forward="false" selection-start-line="21" selection-start-column="6" selection-end-line="21" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lectures/old/ajax/examples/template.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="6" column="23" lean-forward="false" selection-start-line="6" selection-start-column="23" selection-end-line="6" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lectures/old/ajax/examples/products.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="12" column="32" lean-forward="false" selection-start-line="12" selection-start-column="23" selection-end-line="12" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/lectures/old/ajax/examples/eshop.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -880,7 +882,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="76">
           <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -895,7 +896,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="748">
           <caret line="34" column="43" lean-forward="false" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="43" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -903,7 +903,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -911,7 +910,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -919,7 +917,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="31020">
           <caret line="1410" column="10" lean-forward="false" selection-start-line="1410" selection-start-column="10" selection-end-line="1410" selection-end-column="10" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -927,9 +924,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="924">
           <caret line="42" column="0" lean-forward="false" selection-start-line="42" selection-start-column="0" selection-end-line="42" selection-end-column="0" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -937,14 +931,55 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="660">
           <caret line="30" column="9" lean-forward="false" selection-start-line="30" selection-start-column="9" selection-end-line="30" selection-end-column="9" />
-          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lectures/jquery/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="16852">
+          <caret line="766" column="0" lean-forward="false" selection-start-line="766" selection-start-column="0" selection-end-line="856" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lectures/jquery/examples/eshop.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1674">
+          <caret line="141" column="5" lean-forward="false" selection-start-line="141" selection-start-column="5" selection-end-line="141" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lectures/javascript2/eshop_refactored.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="452">
+          <caret line="101" column="18" lean-forward="false" selection-start-line="101" selection-start-column="13" selection-end-line="101" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lectures/javascript3/eshop.js" />
+    <entry file="file://$PROJECT_DIR$/lectures/javascript2/eshop.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2622">
+          <caret line="138" column="23" lean-forward="false" selection-start-line="138" selection-start-column="23" selection-end-line="138" selection-end-column="23" />
+          <folding>
+            <marker date="1495194782000" expanded="true" signature="5970:6011" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lectures/javascript2/eshop.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="912">
+          <caret line="48" column="5" lean-forward="false" selection-start-line="48" selection-start-column="5" selection-end-line="48" selection-end-column="5" />
+          <folding>
+            <marker date="1495196514000" expanded="true" signature="255:296" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/lectures/old/javascript/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="24244">
+          <caret line="1276" column="0" lean-forward="false" selection-start-line="1069" selection-start-column="0" selection-end-line="1276" selection-end-column="0" />
           <folding>
             <marker date="1487318693000" expanded="true" signature="32921:32925" ph="&lt;" />
             <marker date="1487318693000" expanded="true" signature="32925:32929" ph="&lt;" />
@@ -956,58 +991,27 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lectures/jquery/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="16852">
-          <caret line="766" column="0" lean-forward="false" selection-start-line="766" selection-start-column="0" selection-end-line="856" selection-end-column="10" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/lectures/javascript2/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="12254">
-          <caret line="557" column="10" lean-forward="false" selection-start-line="557" selection-start-column="10" selection-end-line="557" selection-end-column="10" />
+        <state relative-caret-position="10621">
+          <caret line="559" column="0" lean-forward="false" selection-start-line="559" selection-start-column="0" selection-end-line="705" selection-end-column="10" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lectures/jquery/examples/eshop.html">
+    <entry file="file://$PROJECT_DIR$/lectures/javascript3/requests.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1674">
-          <caret line="141" column="5" lean-forward="false" selection-start-line="141" selection-start-column="5" selection-end-line="141" selection-end-column="5" />
-          <folding>
-            <marker date="1495180990000" expanded="true" signature="5588:5651" ph="..." />
-            <marker date="1495180990000" expanded="true" signature="5785:5848" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lectures/javascript2/eshop_refactored.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="452">
-          <caret line="101" column="18" lean-forward="false" selection-start-line="101" selection-start-column="13" selection-end-line="101" selection-end-column="18" />
+        <state relative-caret-position="1292">
+          <caret line="68" column="63" lean-forward="false" selection-start-line="68" selection-start-column="63" selection-end-line="68" selection-end-column="63" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lectures/javascript2/eshop.html">
+    <entry file="file://$PROJECT_DIR$/lectures/javascript3/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="461">
-          <caret line="143" column="12" lean-forward="false" selection-start-line="143" selection-start-column="12" selection-end-line="143" selection-end-column="12" />
-          <folding>
-            <marker date="1495194782000" expanded="true" signature="5970:6011" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lectures/javascript2/eshop.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="48" column="5" lean-forward="false" selection-start-line="48" selection-start-column="5" selection-end-line="48" selection-end-column="5" />
-          <folding>
-            <marker date="1495196514000" expanded="true" signature="255:296" ph="..." />
-          </folding>
+        <state relative-caret-position="319">
+          <caret line="45" column="20" lean-forward="false" selection-start-line="45" selection-start-column="20" selection-end-line="45" selection-end-column="20" />
+          <folding />
         </state>
       </provider>
     </entry>
