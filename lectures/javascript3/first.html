@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="generator" content="SlavoKozar.sk">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="BootCamp ajax example">
+
+</head>
+<body>
+
+
+<div id="notes">
+</div>
+
+<button id="more-notes">Load older notes</button>
+
+
+<script src="../../../js/jquery.min.js"></script>
+<script>
+
+    var notesLimit = 5;
+    var notesOffset = 0;
+
+
+    function loadNotes(){
+        $.ajax({
+            'url' : 'http://notes.webpixels.sk/notes/index.php',
+            'type' : 'GET',
+            'data': {
+                'limit': notesLimit,
+                'offset': notesOffset,
+            }
+        })
+            .done(function(data) {
+                var parsed = JSON.parse(data);
+
+                var notesContainer = $('#notes');
+
+                for(var i = 0; i < parsed.length; i++){
+
+                    notesContainer.append(
+                        '<h4>' + parsed[i].title + '</h4>'+
+                        '<p>' + parsed[i].text + '</p>'
+                    );
+                }
+
+                notesOffset = notesOffset + parsed.length;
+
+                if(parsed.length < notesLimit){
+                    $('#more-notes').hide();
+                }
+
+            })
+            .fail(function(jqXHR, textStatus) {
+                alert( "error" );
+            })
+            .always(function() {
+
+            });
+    }
+
+    $('#more-notes').click(function(){
+
+        //load 5 more notes
+        loadNotes();
+
+    });
+
+    $( document ).ready(function() {
+
+        loadNotes();
+
+    });
+
+
+
+
+</script>
+</body>
+</html>
