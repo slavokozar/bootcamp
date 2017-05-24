@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6c3588d1-509f-4ef3-a890-c67a5436b9bc" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lectures/javascript3/example.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lectures/javascript3/first.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lectures/javascript3/first.html" afterPath="$PROJECT_DIR$/lectures/javascript3/first.html" />
     </list>
     <ignored path="bootcamp.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -37,7 +36,7 @@
       <file leaf-file-name="eshop.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lectures/javascript2/eshop.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
+            <state relative-caret-position="2622">
               <caret line="138" column="23" lean-forward="false" selection-start-line="138" selection-start-column="23" selection-end-line="138" selection-end-column="23" />
               <folding>
                 <marker date="1495194782000" expanded="true" signature="5970:6011" ph="..." />
@@ -71,8 +70,8 @@
       <file leaf-file-name="first.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/lectures/javascript3/first.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="277">
-              <caret line="41" column="0" lean-forward="true" selection-start-line="41" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
+            <state relative-caret-position="220">
+              <caret line="136" column="39" lean-forward="false" selection-start-line="136" selection-start-column="39" selection-end-line="136" selection-end-column="39" />
               <folding />
             </state>
           </provider>
@@ -91,7 +90,7 @@
       <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="308">
+            <state relative-caret-position="570">
               <caret line="30" column="14" lean-forward="true" selection-start-line="24" selection-start-column="12" selection-end-line="30" selection-end-column="14" />
               <folding />
             </state>
@@ -101,7 +100,7 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lectures/javascript3/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="388">
+            <state relative-caret-position="5415">
               <caret line="285" column="14" lean-forward="true" selection-start-line="285" selection-start-column="14" selection-end-line="285" selection-end-column="14" />
               <folding />
             </state>
@@ -223,8 +222,8 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
-    <option name="width" value="1280" />
-    <option name="height" value="800" />
+    <option name="width" value="1440" />
+    <option name="height" value="900" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -613,12 +612,13 @@
       <workItem from="1495179737692" duration="9699000" />
       <workItem from="1495392519687" duration="96000" />
       <workItem from="1495496597643" duration="3699000" />
-      <workItem from="1495523813740" duration="5839000" />
+      <workItem from="1495523813740" duration="7766000" />
+      <workItem from="1495542539326" duration="6762000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="37224000" />
+    <option name="totallyTimeSpent" value="45913000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -630,10 +630,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1280" height="800" extended-state="0" />
+    <frame x="0" y="0" width="1440" height="900" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24717286" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22174536" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -686,7 +686,9 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager />
+    <breakpoint-manager>
+      <option name="time" value="1" />
+    </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
@@ -963,7 +965,7 @@
     <entry file="file://$PROJECT_DIR$/lectures/javascript3/eshop.js" />
     <entry file="file://$PROJECT_DIR$/lectures/javascript2/eshop.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
+        <state relative-caret-position="2622">
           <caret line="138" column="23" lean-forward="false" selection-start-line="138" selection-start-column="23" selection-end-line="138" selection-end-column="23" />
           <folding>
             <marker date="1495194782000" expanded="true" signature="5970:6011" ph="..." />
@@ -1006,7 +1008,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/lectures/javascript3/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="388">
+        <state relative-caret-position="5415">
           <caret line="285" column="14" lean-forward="true" selection-start-line="285" selection-start-column="14" selection-end-line="285" selection-end-column="14" />
           <folding />
         </state>
@@ -1038,7 +1040,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="308">
+        <state relative-caret-position="570">
           <caret line="30" column="14" lean-forward="true" selection-start-line="24" selection-start-column="12" selection-end-line="30" selection-end-column="14" />
           <folding />
         </state>
@@ -1054,8 +1056,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/lectures/javascript3/first.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="277">
-          <caret line="41" column="0" lean-forward="true" selection-start-line="41" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
+        <state relative-caret-position="220">
+          <caret line="136" column="39" lean-forward="false" selection-start-line="136" selection-start-column="39" selection-end-line="136" selection-end-column="39" />
           <folding />
         </state>
       </provider>

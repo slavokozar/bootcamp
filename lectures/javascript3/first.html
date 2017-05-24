@@ -10,6 +10,29 @@
 </head>
 <body>
 
+<div id="note-form">
+    <p>Create a new note</p>
+    <input type="text" id="note-title">
+    <br/>
+    <textarea rows="3" id="note-text"></textarea>
+    <br/>
+    <button id="note-submit">Submit</button>
+</div>
+
+
+<select id="order_by">
+    <option value="created_at">Created At</option>
+    <option value="title">Title</option>
+    <option value="text">Text</option>
+</select>
+
+
+<select id="order_type">
+    <option value="asc">ASC</option>
+    <option value="desc">DESC</option>
+</select>
+
+
 
 <div id="notes">
 </div>
@@ -31,42 +54,111 @@
             'data': {
                 'limit': notesLimit,
                 'offset': notesOffset,
+                'order_by': $('#order_by').val(),
+                'order_type': $('#order_type').val()
             }
-        })
-            .done(function(data) {
-                var parsed = JSON.parse(data);
+        }).done(function(data) {
+            var parsed = JSON.parse(data);
 
-                var notesContainer = $('#notes');
+            var notesContainer = $('#notes');
 
-                for(var i = 0; i < parsed.length; i++){
+            for(var i = 0; i < parsed.length; i++){
 
-                    notesContainer.append(
-                        '<h4>' + parsed[i].title + '</h4>'+
-                        '<p>' + parsed[i].text + '</p>'
-                    );
-                }
+                notesContainer.append(
+                    '<h4>' + parsed[i].title + '</h4>'+
+                    '<p>' + parsed[i].text + '</p>'+
+                    '<button class="note-delete" data-id="' + parsed[i].id + '">Delete</button>'+
+                    '<hr/>'
+                );
+            }
 
-                notesOffset = notesOffset + parsed.length;
+            notesOffset = notesOffset + parsed.length;
 
-                if(parsed.length < notesLimit){
-                    $('#more-notes').hide();
-                }
-
-            })
-            .fail(function(jqXHR, textStatus) {
+            if(parsed.length < notesLimit){
+                $('#more-notes').hide();
+            }
+            }).fail(function(jqXHR, textStatus) {
                 alert( "error" );
-            })
-            .always(function() {
+            }).always(function() {
 
             });
+    }
+
+    function reorderNotes(){
+        $('#notes').empty();
+
+        notesOffset = 0;
+
+        loadNotes();
     }
 
     $('#more-notes').click(function(){
 
         //load 5 more notes
         loadNotes();
+    });
+
+    $('#order_by, #order_type').change(function(){
+
+        reorderNotes();
+    });
+
+
+    $('#note-submit').click(function(){
+
+        var title = $('#note-title').val();
+        var text = $('#note-text').val();
+
+        $.ajax({
+            'url' : 'http://notes.webpixels.sk/notes/store.php',
+            'type': 'post',
+            'data': {
+                'title': title,
+                'text': text
+            }
+        }).done(function(){
+            alert('success - you created a note');
+        }).fail(function(){
+            alert('error');
+        })
+    });
+
+
+    $(document).on('click', '.note-delete', function(e){
+
+        var btn = $(e.target);
+
+        var id = btn.data('id');
+
+
+        $.ajax({
+            'url': 'http://notes.webpixels.sk/notes/delete.php?id='+ id,
+            'type': 'get'
+        }).done(function(data, status, xhr){
+
+            console.log(xhr);
+
+            btn.prevAll('h4').first().remove();
+            btn.prevAll('p').first().remove();
+            btn.nextAll('hr').first().remove();
+            btn.remove();
+
+
+
+            alert('removed');
+        }).fail(function(){
+            alert('error');
+        });
+        console.log(id);
+
+        console.log('something');
 
     });
+
+
+
+
+
 
     $( document ).ready(function() {
 
