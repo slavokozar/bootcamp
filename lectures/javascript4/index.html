@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+</head>
+<body>
+
+<h1> Time till the end of coffee break!</h1>
+<div id="countdown"></div>
+
+
+<div class="count"></div>
+<div class="count"></div>
+
+<button id="start">start</button>
+
+<script src="../../../js/jquery.min.js"></script>
+
+<script src="countdown.js"></script>
+
+<script>
+
+    $('#countdown').css('color','red').addClass('my-special-class').show();
+
+
+    $('#start').click(function(){
+
+
+        $('.count').countdown().css('background','yellow');
+
+        console.log();
+
+
+
+        $('.count').each(function(){
+
+            console.log(this);
+
+        })
+
+
+    });
+
+
+</script>
+
+</body>
+</html>
