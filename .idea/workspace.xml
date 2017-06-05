@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6c3588d1-509f-4ef3-a890-c67a5436b9bc" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lectures/javascript4/countdown.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lectures/javascript4/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lectures/javascript4/index.html" afterPath="$PROJECT_DIR$/lectures/javascript4/index.html" />
     </list>
     <ignored path="bootcamp.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -54,17 +52,17 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/lectures/javascript4/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="836">
-              <caret line="38" column="0" lean-forward="true" selection-start-line="33" selection-start-column="8" selection-end-line="38" selection-end-column="0" />
+            <state relative-caret-position="225">
+              <caret line="24" column="6" lean-forward="false" selection-start-line="24" selection-start-column="6" selection-end-line="24" selection-end-column="6" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="countdown.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="countdown.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lectures/javascript4/countdown.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="636">
@@ -205,8 +203,8 @@
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/lectures/javascript3/example.php" />
         <option value="$PROJECT_DIR$/lectures/javascript3/first.html" />
-        <option value="$PROJECT_DIR$/lectures/javascript4/index.html" />
         <option value="$PROJECT_DIR$/lectures/javascript4/countdown.js" />
+        <option value="$PROJECT_DIR$/lectures/javascript4/index.html" />
       </list>
     </option>
   </component>
@@ -221,8 +219,8 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
-    <option name="width" value="1280" />
-    <option name="height" value="800" />
+    <option name="width" value="1920" />
+    <option name="height" value="1080" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -631,12 +629,12 @@
       <workItem from="1495496597643" duration="3699000" />
       <workItem from="1495523813740" duration="7766000" />
       <workItem from="1495542539326" duration="6762000" />
-      <workItem from="1496406252845" duration="6848000" />
+      <workItem from="1496406252845" duration="7338000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="52761000" />
+    <option name="totallyTimeSpent" value="53251000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -648,10 +646,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1280" height="800" extended-state="0" />
+    <frame x="0" y="0" width="1920" height="1080" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2253635" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1485623" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1066,14 +1064,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lectures/javascript4/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="836">
-          <caret line="38" column="0" lean-forward="true" selection-start-line="33" selection-start-column="8" selection-end-line="38" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/lectures/javascript4/countdown.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="636">
@@ -1081,6 +1071,14 @@
           <folding>
             <element signature="e#375#1179#0" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lectures/javascript4/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="24" column="6" lean-forward="false" selection-start-line="24" selection-start-column="6" selection-end-line="24" selection-end-column="6" />
+          <folding />
         </state>
       </provider>
     </entry>
