@@ -1,11 +1,9 @@
         body{
-            font-family: 'Source Sans Pro', sans-serif;
             font-weight: 300;
             font-style: normal;
-            font-size:28px;
-            line-height:1.8em;
-            background: #fdfdfd;
-            color: #585858;
+            font-size:20px;
+            line-height:1.2em;
+            color: #383838;
         }
 
         section{
@@ -48,6 +46,71 @@
         }
 
         p{
-            margin: 40px 0;
+            margin: 20px 0;
         }
-    
+
+        ul li{
+            margin: 8px 0;
+        }
+
+        .view-desktop{
+            margin: 10px 0;
+            width: 100%;
+            height: 400px;
+            background-image: url('../img/desktop.png');
+            background-repeat: no-repeat;
+            background-position: top center;
+            background-size: contain;
+            padding-top: 46px;
+
+            border: 2px solid #f2f2f2;
+            border-radius: 25px 25px 5px 5px;
+        }
+
+        .view-desktop.view-small{
+            height: 150px;
+        }
+
+        .view-desktop iframe{
+            border: none;
+            border-radius: 0 0 5px 5px;
+            width: 100%;
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+
+        .view-mobile{
+            width: 450px;
+            margin: 10px auto;
+        }
+
+        .view-mobile .top{
+            width: 100%;
+            height: 108px;
+
+            background-image: url('../img/iphone-top.png');
+            background-repeat: no-repeat;
+            background-position: center top;
+            background-size: cover;
+        }
+
+        .view-mobile .body{
+            width: 100%;
+            height: 300px;
+
+            padding: 0 24px;
+
+            background-image: url('../img/iphone-sides.png');
+            background-repeat: repeat-y;
+            background-size: contain;
+        }
+
+        .view-mobile .body iframe{
+            border: none;
+            border-radius: 5px;
+            width: 100%;
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }

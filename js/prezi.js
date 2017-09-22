@@ -5,7 +5,7 @@
             $($sections[i]).find('.footer').html(
                 '<a href="prev">&lt;&lt;</a>'+
                 '&nbsp;'+
-                '<span class="pagination">'+ (i + 1) + '/' + count +'</span>'+
+                '<span>'+ (i + 1) + '/' + count +'</span>'+
                 '&nbsp;'+
                 '<a href="next">&gt;&gt;</a>'
             );
