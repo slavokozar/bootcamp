@@ -2,100 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6c3588d1-509f-4ef3-a890-c67a5436b9bc" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/desktop.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/iphone-bottom.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/iphone-sides.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/iphone-top.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lectures/bootstrap4/HouseFrame.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lectures/bootstrap4/fonts/FontAwesome.otf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lectures/bootstrap4/fonts/fontawesome-webfont.eot" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lectures/bootstrap4/fonts/fontawesome-webfont.ttf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lectures/bootstrap4/fonts/fontawesome-webfont.woff" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lectures/bootstrap4/fonts/fontawesome-webfont.woff2" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lectures/bootstrap4/fonts/glyphicons-halflings-regular.eot" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lectures/bootstrap4/fonts/glyphicons-halflings-regular.ttf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lectures/bootstrap4/fonts/glyphicons-halflings-regular.woff" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lectures/bootstrap4/fonts/glyphicons-halflings-regular.woff2" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lectures/bootstrap4/grid.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lectures/bootstrap4/project/fonts/glyphicons-halflings-regular.eot" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lectures/bootstrap4/project/fonts/glyphicons-halflings-regular.ttf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lectures/bootstrap4/project/fonts/glyphicons-halflings-regular.woff" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lectures/bootstrap4/project/fonts/glyphicons-halflings-regular.woff2" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lectures/bootstrap4/project/img.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/bootstrap4.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/bootstrap4.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/jquery3.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/popper.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lectures/bootstrap4/alerts.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lectures/bootstrap4/buttons.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lectures/bootstrap4/colors.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lectures/bootstrap4/content.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lectures/bootstrap4/css/bootstrap-theme.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lectures/bootstrap4/css/bootstrap-theme.css.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lectures/bootstrap4/css/bootstrap-theme.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lectures/bootstrap4/css/bootstrap-theme.min.css.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lectures/bootstrap4/css/bootstrap.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lectures/bootstrap4/css/bootstrap.css.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lectures/bootstrap4/css/bootstrap.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lectures/bootstrap4/css/bootstrap.min.css.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lectures/bootstrap4/css/font-awesome.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lectures/bootstrap4/css/font-awesome.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lectures/bootstrap4/dropdown.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lectures/bootstrap4/examples/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lectures/bootstrap4/fonts/fontawesome-webfont.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lectures/bootstrap4/fonts/glyphicons-halflings-regular.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lectures/bootstrap4/forms/check-inline.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lectures/bootstrap4/forms/check-stacked.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lectures/bootstrap4/forms/controls.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lectures/bootstrap4/forms/horizontal.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lectures/bootstrap4/forms/inline.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lectures/bootstrap4/forms/login.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lectures/bootstrap4/forms/sizes.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lectures/bootstrap4/grid/1.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lectures/bootstrap4/grid/2.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lectures/bootstrap4/grid/3.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lectures/bootstrap4/grid/4.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lectures/bootstrap4/grid/5.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lectures/bootstrap4/grid/6.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lectures/bootstrap4/grid/7.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lectures/bootstrap4/grid/70.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lectures/bootstrap4/grid/8.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lectures/bootstrap4/grid/ebay.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lectures/bootstrap4/grid/facebook.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lectures/bootstrap4/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lectures/bootstrap4/js/bootstrap.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lectures/bootstrap4/js/bootstrap.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lectures/bootstrap4/js/holder.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lectures/bootstrap4/js/jquery.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lectures/bootstrap4/js/npm.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lectures/bootstrap4/jumbotron.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lectures/bootstrap4/labels.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lectures/bootstrap4/modals.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lectures/bootstrap4/navbar/dark.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lectures/bootstrap4/navbar/navbar.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lectures/bootstrap4/navbar/primary.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lectures/bootstrap4/panels.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lectures/bootstrap4/project.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lectures/bootstrap4/project/css/bootstrap.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lectures/bootstrap4/project/css/bootstrap.css.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lectures/bootstrap4/project/css/bootstrap.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lectures/bootstrap4/project/css/bootstrap.min.css.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lectures/bootstrap4/project/css/custom.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lectures/bootstrap4/project/fonts/glyphicons-halflings-regular.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lectures/bootstrap4/project/grid.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lectures/bootstrap4/project/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lectures/bootstrap4/project/js/bootstrap.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lectures/bootstrap4/project/js/bootstrap.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lectures/bootstrap4/project/js/npm.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lectures/bootstrap4/project/navigation.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lectures/bootstrap4/tabs.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lectures/bootstrap4/tooltips.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lectures/bootstrap4/utilities.html" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/index.php" afterPath="" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lectures/bootstrap4/grid/example.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lectures/bootstrap4/landing.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/prezi.css" afterPath="$PROJECT_DIR$/css/prezi.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/prezi.js" afterPath="$PROJECT_DIR$/js/prezi.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lectures/bootstrap4/index.html" afterPath="$PROJECT_DIR$/lectures/bootstrap4/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lectures/bootstrap4/navbar/navbar.html" afterPath="$PROJECT_DIR$/lectures/bootstrap4/navbar/navbar.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lectures/bootstrap4/utilities.html" afterPath="$PROJECT_DIR$/lectures/bootstrap4/utilities.html" />
     </list>
     <ignored path="bootcamp.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -126,41 +39,35 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lectures/bootstrap4/index.html">
+        <entry file="file://$PROJECT_DIR$/lectures/bootstrap4/examples/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="315">
-              <caret line="113" column="30" lean-forward="true" selection-start-line="113" selection-start-column="30" selection-end-line="113" selection-end-column="30" />
+            <state relative-caret-position="-1804">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="labels.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lectures/bootstrap4/labels.html">
+      <file leaf-file-name="prezi.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/css/prezi.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="494">
-              <caret line="26" column="90" lean-forward="true" selection-start-line="15" selection-start-column="4" selection-end-line="26" selection-end-column="90" />
+            <state relative-caret-position="406">
+              <caret line="65" column="34" lean-forward="false" selection-start-line="65" selection-start-column="34" selection-end-line="65" selection-end-column="34" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="login.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lectures/bootstrap4/forms/login.html">
+      <file leaf-file-name="landing.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/lectures/bootstrap4/landing.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="608">
-              <caret line="32" column="19" lean-forward="true" selection-start-line="15" selection-start-column="12" selection-end-line="32" selection-end-column="19" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="inline.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lectures/bootstrap4/forms/inline.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="608">
-              <caret line="32" column="11" lean-forward="true" selection-start-line="15" selection-start-column="4" selection-end-line="32" selection-end-column="11" />
-              <folding />
+            <state relative-caret-position="504">
+              <caret line="171" column="0" lean-forward="false" selection-start-line="171" selection-start-column="0" selection-end-line="171" selection-end-column="0" />
+              <folding>
+                <element signature="n#style#0;n#section#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#section#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#section#3;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -168,11 +75,39 @@
       <file leaf-file-name="horizontal.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lectures/bootstrap4/forms/horizontal.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="538">
-              <caret line="70" column="11" lean-forward="true" selection-start-line="17" selection-start-column="4" selection-end-line="70" selection-end-column="11" />
-              <folding>
-                <element signature="e#1570#1577#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="452">
+              <caret line="69" column="14" lean-forward="true" selection-start-line="65" selection-start-column="8" selection-end-line="69" selection-end-column="14" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="buttons.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lectures/bootstrap4/buttons.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="546">
+              <caret line="43" column="7" lean-forward="true" selection-start-line="43" selection-start-column="7" selection-end-line="43" selection-end-column="7" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="utilities.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lectures/bootstrap4/utilities.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="304">
+              <caret line="16" column="0" lean-forward="false" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="colors.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lectures/bootstrap4/colors.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="456">
+              <caret line="24" column="7" lean-forward="true" selection-start-line="24" selection-start-column="7" selection-end-line="24" selection-end-column="7" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -180,48 +115,28 @@
       <file leaf-file-name="navbar.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lectures/bootstrap4/navbar/navbar.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="193">
-              <caret line="13" column="0" lean-forward="false" selection-start-line="13" selection-start-column="0" selection-end-line="37" selection-end-column="6" />
+            <state relative-caret-position="369">
+              <caret line="20" column="0" lean-forward="false" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/index.html">
+      <file leaf-file-name="bootstrap4.min.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/css/bootstrap4.min.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="26" column="0" lean-forward="true" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
+            <state relative-caret-position="-968">
+              <caret line="5" column="648" lean-forward="true" selection-start-line="5" selection-start-column="648" selection-end-line="5" selection-end-column="648" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="controls.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lectures/bootstrap4/forms/controls.html">
+      <file leaf-file-name="example.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lectures/bootstrap4/grid/example.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="194">
-              <caret line="17" column="9" lean-forward="false" selection-start-line="17" selection-start-column="9" selection-end-line="17" selection-end-column="9" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="sizes.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lectures/bootstrap4/forms/sizes.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="380">
-              <caret line="20" column="95" lean-forward="false" selection-start-line="20" selection-start-column="95" selection-end-line="20" selection-end-column="95" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="check-inline.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lectures/bootstrap4/forms/check-inline.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="299">
-              <caret line="28" column="23" lean-forward="false" selection-start-line="28" selection-start-column="23" selection-end-line="28" selection-end-column="23" />
+            <state relative-caret-position="57">
+              <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -231,10 +146,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>bootstrap.min</find>
-      <find>bootstrap.min.csss</find>
-      <find>bootstrap.min.css</find>
-      <find>bootstrap</find>
       <find>&lt;link rel=&quot;stylesheet&quot; href=&quot;../../../css/bootstrap4.min.css&quot;&gt;</find>
       <find>&lt;link rel=&quot;stylesheet&quot; href=&quot;../../..css/bootstrap4.min.css&quot;&gt;</find>
       <find>&lt;link rel=&quot;stylesheet&quot; href=&quot;../../.css/bootstrap4.min.css&quot;&gt;</find>
@@ -260,14 +171,20 @@
       <find>forms</find>
       <find>horizontal</find>
       <find>mobile</find>
+      <find>desk</find>
       <find>inline</find>
+      <find>col-md-3</find>
+      <find>col-lg-3</find>
+      <find>col-lg-3 col-6</find>
     </findStrings>
     <replaceStrings>
       <replace>user</replace>
       <replace>bootstrap4.min.css</replace>
       <replace>&lt;link rel=&quot;stylesheet&quot; href=&quot;../../../css/bootstrap4.min.css&quot;&gt;</replace>
-      <replace>col-</replace>
       <replace>viewports</replace>
+      <replace>col-3</replace>
+      <replace>col-</replace>
+      <replace>col-lg-3 col-sm-6 col-12</replace>
     </replaceStrings>
     <dirStrings>
       <dir>$PROJECT_DIR$/lectures/bootstrap4</dir>
@@ -280,8 +197,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/js/jquery.min.js" />
-        <option value="$PROJECT_DIR$/lectures/javascript/index.html" />
         <option value="$PROJECT_DIR$/lectures/javascript/examples/jquery.html" />
         <option value="$PROJECT_DIR$/lectures/javascript2/index.html" />
         <option value="$PROJECT_DIR$/lectures/jquery/examples_old/eshop.html" />
@@ -314,14 +229,11 @@
         <option value="$PROJECT_DIR$/js/popper.js" />
         <option value="$PROJECT_DIR$/lectures/bootstrap4/navbar/1.html" />
         <option value="$PROJECT_DIR$/lectures/bootstrap4/dropdown.html" />
-        <option value="$PROJECT_DIR$/lectures/bootstrap4/navbar/navbar.html" />
         <option value="$PROJECT_DIR$/lectures/bootstrap4/navbar/primary.html" />
         <option value="$PROJECT_DIR$/lectures/bootstrap4/navbar/dark.html" />
         <option value="$PROJECT_DIR$/lectures/bootstrap4/modals.html" />
         <option value="$PROJECT_DIR$/lectures/bootstrap4/tooltips.html" />
-        <option value="$PROJECT_DIR$/css/prezi.css" />
         <option value="$PROJECT_DIR$/lectures/bootstrap4/labels.html" />
-        <option value="$PROJECT_DIR$/lectures/bootstrap4/utilities.html" />
         <option value="$PROJECT_DIR$/lectures/bootstrap4/forms/login.html" />
         <option value="$PROJECT_DIR$/lectures/bootstrap4/forms/inputs.html" />
         <option value="$PROJECT_DIR$/lectures/bootstrap4/forms/check-stacked.html" />
@@ -329,8 +241,13 @@
         <option value="$PROJECT_DIR$/lectures/bootstrap4/forms/sizes.html" />
         <option value="$PROJECT_DIR$/lectures/bootstrap4/forms/horizontal.html" />
         <option value="$PROJECT_DIR$/lectures/bootstrap4/forms/inline.html" />
-        <option value="$PROJECT_DIR$/lectures/bootstrap4/index.html" />
         <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/lectures/bootstrap4/index.html" />
+        <option value="$PROJECT_DIR$/css/prezi.css" />
+        <option value="$PROJECT_DIR$/lectures/bootstrap4/grid/example.html" />
+        <option value="$PROJECT_DIR$/lectures/bootstrap4/utilities.html" />
+        <option value="$PROJECT_DIR$/lectures/bootstrap4/navbar/navbar.html" />
+        <option value="$PROJECT_DIR$/lectures/bootstrap4/landing.html" />
       </list>
     </option>
   </component>
@@ -345,8 +262,8 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
-    <option name="width" value="1440" />
-    <option name="height" value="900" />
+    <option name="width" value="1280" />
+    <option name="height" value="800" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -444,28 +361,6 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="navbar" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="bootcamp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="bootcamp" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="lectures" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="bootstrap4" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="grid" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
@@ -488,7 +383,7 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="forms" />
+              <option name="myItemId" value="examples" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
@@ -546,7 +441,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="js-jscs-nodeInterpreter" value="/usr/local/bin/node" />
     <property name="ignore_missing_gitignore" value="true" />
-    <property name="SearchEverywhereHistoryKey" value="prezi&#9;FILE&#9;file:///Users/slavo/Code/bootcamp/css/prezi.css&#10;prezi.css&#9;FILE&#9;file:///Users/slavo/Code/bootcamp/css/prezi.css&#10;jquery.&#9;FILE&#9;file:///Users/slavo/Code/bootcamp/js/jquery.min.js&#10;prezi.js&#9;FILE&#9;file:///Users/slavo/Code/bootcamp/js/prezi.js&#10;tabs.&#9;FILE&#9;file:///Users/slavo/Code/bootcamp/lectures/bootstrap/tabs.html" />
+    <property name="SearchEverywhereHistoryKey" value="horiz&#9;FILE&#9;file:///Users/slavo/Code/bootcamp/lectures/bootstrap4/forms/horizontal.html&#10;button&#9;FILE&#9;file:///Users/slavo/Code/bootcamp/lectures/bootstrap4/buttons.html&#10;navba&#9;FILE&#9;file:///Users/slavo/Code/bootcamp/lectures/bootstrap4/navbar/navbar.html&#10;prezi.css&#9;FILE&#9;file:///Users/slavo/Code/bootcamp/css/prezi.css&#10;prezi&#9;FILE&#9;file:///Users/slavo/Code/bootcamp/css/prezi.css&#10;jquery.&#9;FILE&#9;file:///Users/slavo/Code/bootcamp/js/jquery.min.js&#10;prezi.js&#9;FILE&#9;file:///Users/slavo/Code/bootcamp/js/prezi.js&#10;tabs.&#9;FILE&#9;file:///Users/slavo/Code/bootcamp/lectures/bootstrap/tabs.html" />
     <property name="FullScreen" value="true" />
   </component>
   <component name="RecentsManager">
@@ -685,12 +580,12 @@
       <workItem from="1496933943112" duration="289000" />
       <workItem from="1505842189969" duration="2744000" />
       <workItem from="1505861555580" duration="20000" />
-      <workItem from="1506018308488" duration="16720000" />
+      <workItem from="1506018308488" duration="26708000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="73024000" />
+    <option name="totallyTimeSpent" value="83012000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -702,10 +597,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1440" height="900" extended-state="0" />
+    <frame x="0" y="0" width="1280" height="800" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18884121" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.21324718" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -724,23 +619,23 @@
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2532189" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="combo" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32876712" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21324718" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32876712" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24964234" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
     </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -764,27 +659,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/lectures/javascript3/example.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="38">
-          <caret line="2" column="27" lean-forward="false" selection-start-line="2" selection-start-column="27" selection-end-line="2" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lectures/javascript3/first.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="42" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lectures/javascript4/countdown.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="589">
-          <caret line="54" column="7" lean-forward="false" selection-start-line="54" selection-start-column="7" selection-end-line="54" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/lectures/javascript4/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="456">
@@ -864,14 +738,6 @@
     <entry file="file://$PROJECT_DIR$/css/bootstrap.min.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lectures/bootstrap4/examples/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2323">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
@@ -1028,7 +894,7 @@
         <state relative-caret-position="331">
           <caret line="22" column="30" lean-forward="false" selection-start-line="22" selection-start-column="30" selection-end-line="22" selection-end-column="30" />
           <folding>
-            <element signature="e#1004#1011#1" expanded="true" />
+            <element signature="e#1004#1011#1" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1045,38 +911,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="475">
           <caret line="25" column="50" lean-forward="false" selection-start-line="25" selection-start-column="50" selection-end-line="25" selection-end-column="50" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css/prezi.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="279">
-          <caret line="39" column="10" lean-forward="true" selection-start-line="39" selection-start-column="10" selection-end-line="39" selection-end-column="10" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lectures/bootstrap4/colors.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="15" column="29" lean-forward="false" selection-start-line="15" selection-start-column="29" selection-end-line="15" selection-end-column="29" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lectures/bootstrap4/buttons.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="547">
-          <caret line="33" column="84" lean-forward="false" selection-start-line="33" selection-start-column="84" selection-end-line="33" selection-end-column="84" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lectures/bootstrap4/utilities.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
-          <caret line="16" column="39" lean-forward="false" selection-start-line="16" selection-start-column="39" selection-end-line="16" selection-end-column="39" />
           <folding />
         </state>
       </provider>
@@ -1121,14 +955,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lectures/bootstrap4/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="113" column="30" lean-forward="true" selection-start-line="113" selection-start-column="30" selection-end-line="113" selection-end-column="30" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/lectures/bootstrap4/labels.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="494">
@@ -1153,29 +979,111 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lectures/bootstrap4/forms/horizontal.html">
+    <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="538">
-          <caret line="70" column="11" lean-forward="true" selection-start-line="17" selection-start-column="4" selection-end-line="70" selection-end-column="11" />
+        <state relative-caret-position="494">
+          <caret line="26" column="0" lean-forward="true" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lectures/bootstrap4/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="931">
+          <caret line="49" column="17" lean-forward="false" selection-start-line="49" selection-start-column="17" selection-end-line="49" selection-end-column="17" />
           <folding>
-            <element signature="e#1570#1577#0" expanded="true" />
+            <element signature="e#986#990#0" expanded="true" />
+            <element signature="e#990#994#0" expanded="true" />
+            <element signature="e#998#1004#1" expanded="true" />
+            <element signature="e#1021#1027#1" expanded="true" />
+            <element signature="e#1042#1046#0" expanded="true" />
+            <element signature="e#1046#1050#0" expanded="true" />
+            <element signature="n#section#3;n#body#0;n#html#0;n#!!top" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lectures/bootstrap4/examples/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1804">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/prezi.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="406">
+          <caret line="65" column="34" lean-forward="false" selection-start-line="65" selection-start-column="34" selection-end-line="65" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lectures/bootstrap4/grid/example.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="57">
+          <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/bootstrap4.min.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-968">
+          <caret line="5" column="648" lean-forward="true" selection-start-line="5" selection-start-column="648" selection-end-line="5" selection-end-column="648" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lectures/bootstrap4/utilities.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="304">
+          <caret line="16" column="0" lean-forward="false" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lectures/bootstrap4/colors.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="456">
+          <caret line="24" column="7" lean-forward="true" selection-start-line="24" selection-start-column="7" selection-end-line="24" selection-end-column="7" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/lectures/bootstrap4/navbar/navbar.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="193">
-          <caret line="13" column="0" lean-forward="false" selection-start-line="13" selection-start-column="0" selection-end-line="37" selection-end-column="6" />
+        <state relative-caret-position="369">
+          <caret line="20" column="0" lean-forward="false" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
+    <entry file="file://$PROJECT_DIR$/lectures/bootstrap4/buttons.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="26" column="0" lean-forward="true" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
+        <state relative-caret-position="546">
+          <caret line="43" column="7" lean-forward="true" selection-start-line="43" selection-start-column="7" selection-end-line="43" selection-end-column="7" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lectures/bootstrap4/forms/horizontal.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="452">
+          <caret line="69" column="14" lean-forward="true" selection-start-line="65" selection-start-column="8" selection-end-line="69" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lectures/bootstrap4/landing.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="504">
+          <caret line="171" column="0" lean-forward="false" selection-start-line="171" selection-start-column="0" selection-end-line="171" selection-end-column="0" />
+          <folding>
+            <element signature="n#style#0;n#section#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#section#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#section#3;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
