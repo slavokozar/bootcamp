@@ -56,25 +56,33 @@
             <h1>Schedule</h1>
             <div class="row">
                 <div class="col-md-6">
-                    <h2>9.00 - 10.20</h2>
+                    <h2>9.00 - 9.30</h2>
+                    <ul>
+                        <li>Warm-up Exercise</li>
+                    </ul>
+                    <h2 class="text-danger">9.30 - 9.45 Stand-up</h2>
+
+                    <h2>9.45 - 10.30</h2>
                     <ul>
                         <li>Introduction to JavaScript</li>
+                        <li>Variables, Conditions, Loops</li>
                     </ul>
+                    <h2 class="text-danger">10.30 - 10.45 Break</h2>
 
-                    <h2 class="text-danger">10.20 - 10.30 Break</h2>
-
-                    <h2>10.30 - 12.00</h2>
+                    <h2>10.45 - 12.00</h2>
                     <ul>
-                        <li>JavaScript functions, events</li>
+                        <li>JavaScript functions, DOM, events</li>
                     </ul>
-                    <h2 class="text-danger">12.00 - 13.00 Lunch</h2>
                 </div>
                 <div class="col-md-6">
-                    <h2>13.00 - 15.00</h2>
+                    <h2 class="text-danger">12.00 - 13.00 Lunch</h2>
+
+                    <h2>13.00 - 14.30</h2>
                     <ul>
                         <li>jQuery</li>
                     </ul>
-                    <h2 class="text-danger">15.00 - 15.15 Break</h2>
+                    <h2 class="text-danger">14.30 - 14.45 Break</h2>
+
 
                     <h2>15.15 - 17.00</h2>
                     <ul>
@@ -82,11 +90,6 @@
                     </ul>
                 </div>
             </div>
-
-
-
-
-
         </div>
         <div class="footer"></div>
     </div>
@@ -116,9 +119,7 @@
 <section>
     <div class="container wrapper">
         <div class="content text-center">
-
-                    <img src="bus.jpg" style="width:500px"/>
-
+            <img src="bus.jpg" style="width:500px"/>
         </div>
         <div class="footer"></div>
     </div>
@@ -250,6 +251,7 @@ var res = str1 + " " + str2;
     </div>
 </section>
 
+<!--replace-->
 <section>
     <div class="container wrapper">
         <div class="content">
@@ -268,6 +270,7 @@ var res = str.replace("Pub", "CodingBootcamp");
     </div>
 </section>
 
+<!--split-->
 <section>
     <div class="container wrapper">
         <div class="content">
@@ -311,36 +314,36 @@ var res = str.split(" ");
 <p>Comparison operators are used in logical statements to determine equality or difference between variables or values.</p>
 <table>
 
-<tr>
-    <td style="width:20%">==</td>
+<tr style="padding: 5px 0">
+    <td style="width:20%"><span class="label label-default">==</span></td>
     <td>equal to</td>
 </tr>
-<tr>
-    <td>===</td>
+<tr style="padding: 5px 0">
+    <td><span class="label label-default">===</span></td>
     <td>equal value and equal type</td>
 </tr>
-<tr>
-    <td>!=</td>
+<tr style="padding: 5px 0">
+    <td><span class="label label-default">!=</span></td>
     <td>not equal</td>
 </tr>
-<tr>
-    <td>!==</td>
+<tr style="padding: 5px 0">
+    <td><span class="label label-default">!==</span></td>
     <td>not equal value or not equal type</td>
 </tr>
-<tr>
-    <td>></td>
+<tr style="padding: 5px 0">
+    <td><span class="label label-default">></span></td>
     <td>greater than</td>
 </tr>
-<tr>
-    <td><</td>
+<tr style="padding: 5px 0">
+    <td><span class="label label-default"><</span></td>
     <td>less than</td>
 </tr>
-<tr>
-    <td>>=</td>
+<tr style="padding: 5px 0">
+    <td><span class="label label-default">>=</span></td>
     <td>greater than or equal to</td>
 </tr>
-<tr>
-    <td><=</td>
+<tr style="padding: 5px 0">
+    <td><span class="label label-default"><=</span></td>
     <td>less than or equal to</td>
 </tr>
 </table>                
@@ -420,6 +423,23 @@ var res = str.split(" ");
         <div class="content">
             <h1>Comparison</h1>
 <p>which can be also written as </p>
+<div class="row">
+    <div class="col-md-6">
+<pre>
+&lt;script&gt;
+    if(number == 0){
+        console.log('number is zero');
+    }else{
+        if(number % 2 == 0){
+            console.log('number is even');
+        }else{
+            console.log('number is odd');
+        }
+    }
+&lt;/script&gt;
+</pre>
+    </div>
+    <div class="col-md-6">
 <pre>
 &lt;script&gt;
     if(number == 0){
@@ -431,7 +451,10 @@ var res = str.split(" ");
 
     }
 &lt;/script&gt;
-</pre>   
+</pre>
+    </div>
+</div>
+
         </div>
         <div class="footer"></div>
     </div>
@@ -459,7 +482,7 @@ var cars = ["Saab", "Volvo", "BMW"];
 <section>
     <div class="container wrapper">
         <div class="content">
-            <h1>Using Array</h1>
+            <h1>Using Arrays</h1>
                 
                <p>You refer to an array element by referring to the index number.</p>
 
@@ -475,6 +498,15 @@ cars[0] = "Opel";
 </pre>
 </p>
 
+        </div>
+        <div class="footer"></div>
+    </div>
+</section>
+<section>
+    <div class="container wrapper">
+        <div class="content">
+            <h1>Using Arrays</h1>
+
 
 <p>The real strength of JavaScript arrays are the built-in array properties and methods:
 
@@ -482,7 +514,15 @@ cars[0] = "Opel";
 var x = cars.length;
 var y = cars.sort();
 </pre>
-</p> 
+</p>
+
+<pre>
+var str = "How are you doing today?";
+var res = str.split(" ");
+</pre>
+<p>The result of res will be an array with the values:
+<pre>How,are,you,doing,today?</pre>
+</p>
         </div>
         <div class="footer"></div>
     </div>
@@ -728,6 +768,76 @@ alert(name);
 <section>
     <div class="container wrapper">
         <div class="content">
+            <h1>DOM manipulation ... </h1>
+
+            <p>When a web page is loaded, the browser creates a Document Object Model of the page.</p>
+
+
+            <p>The HTML DOM model is constructed as a tree of Objects</p>
+        </div>
+        <div class="footer"></div>
+    </div>
+</section>
+
+<section>
+    <div class="container wrapper">
+        <div class="content">
+            <p class="text-center">
+                <img src="http://www.w3schools.com/js/pic_htmltree.gif" style="width: 80%;"/>
+            </p>
+        </div>
+        <div class="footer"></div>
+    </div>
+</section>
+
+<section>
+    <div class="container wrapper">
+        <div class="content">
+            <h1>... DOM manipulation</h1>
+            <p>With the object model, JavaScript gets all the power it needs to create dynamic HTML</p>
+            <p>JavaScript can change HTML elements, attributes, CSS styles and react to existing or new HTML events in the page.
+
+
+        </div>
+        <div class="footer"></div>
+    </div>
+</section>
+
+<section>
+    <div class="container wrapper">
+        <div class="content">
+            <h1>Traverse DOM by JavaScript</h1>
+            <pre>
+document.getElementById(id);
+document.getElementsByTagName(name);
+document.getElementsByClassName(name);
+</pre>
+
+        </div>
+        <div class="footer"></div>
+    </div>
+</section>
+
+<section>
+    <div class="container wrapper">
+        <div class="content">
+            <h1>Change DOM elements</h1>
+            <pre>
+element.innerHTML = new_html_content;
+element.attribute = new_value;
+element.setAttribute(attribute, value);
+element.style.property = new style;
+</pre>
+
+        </div>
+        <div class="footer"></div>
+    </div>
+</section>
+
+
+<section>
+    <div class="container wrapper">
+        <div class="content">
             <h1>Events</h1>
             <p>Event is action in web browser.</p>
             <p>Event listener is a function, which is called, when this event occurs.</p>
@@ -776,75 +886,6 @@ alert(name);
         <div class="footer"></div>
     </div>
 </section>
-
-<section>
-    <div class="container wrapper">
-        <div class="content">
-            <h1>DOM manipulation ... </h1>
-               
-<p>When a web page is loaded, the browser creates a Document Object Model of the page.</p>
-
-
-<p>The HTML DOM model is constructed as a tree of Objects</p>                
-        </div>
-        <div class="footer"></div>
-    </div>
-</section>
-
-<section>
-    <div class="container wrapper">
-        <div class="content">
-            <p class="text-center">
-                <img src="http://www.w3schools.com/js/pic_htmltree.gif" style="width: 80%;"/>
-            </p>     
-        </div>
-        <div class="footer"></div>
-    </div>
-</section>
-
-<section>
-    <div class="container wrapper">
-        <div class="content">
-            <h1>... DOM manipulation</h1>
-                <p>With the object model, JavaScript gets all the power it needs to create dynamic HTML</p>
-                <p>JavaScript can change HTML elements, attributes, CSS styles and react to existing or new HTML events in the page. 
-
-                
-        </div>
-        <div class="footer"></div>
-    </div>
-</section>
-
-<section>
-    <div class="container wrapper">
-        <div class="content">
-            <h1>Traverse DOM by JavaScript</h1>
-<pre>
-document.getElementById(id);
-document.getElementsByTagName(name);
-document.getElementsByClassName(name);
-</pre>                
-                
-        </div>
-        <div class="footer"></div>
-    </div>
-</section>
-<section>
-    <div class="container wrapper">
-        <div class="content">
-            <h1>Change DOM elements</h1>
-<pre>
-element.innerHTML = new_html_content;
-element.attribute = new_value;  
-element.setAttribute(attribute, value);
-element.style.property = new style;
-</pre>                
-                
-        </div>
-        <div class="footer"></div>
-    </div>
-</section>
-
 
 <section>
     <div class="container wrapper">
@@ -1055,42 +1096,28 @@ $(document).ready(function(){
     </div>
 </section>
 
-
-<section>
-    <div class="container wrapper">
-        <div class="content">
-            <h1>Find Function</h1>
-            <pre>$(element).find(“.test”)</pre>
-            <p>This function find all elements matching selector “.test” inside element.</p>
-        </div>
-        <div class="footer"></div>
-    </div>
-</section>
-
-
 <section>
     <div class="container wrapper">
         <div class="content">
             <h1>Examples of jQuery Selectors</h1>
             <table>
-                <tr><td>$("*")</td><td>Selects all elements&gt;/td&lt;&gt;/tr&lt;</td></tr>
-                <tr><td>$(this)</td><td>Selects the current HTML element</td></tr>
-                <tr><td>$("p.intro")</td><td>Selects all &gt;p&lt; elements with class="intro"</td></tr>
-                <tr><td>$("p:first")</td><td>Selects the first &gt;p&lt; element</td></tr>
-                <tr><td>$("ul li:first")</td><td>Selects the first &gt;li&lt; element of the first &gt;ul&lt;</td></tr>
-                <tr><td>$("ul li:first-child")</td><td>Selects the first &gt;li&lt; element of every &gt;ul&lt;</td></tr>
-                <tr><td>$("[href]")</td><td>Selects all elements with an href attribute</td></tr>
-                <tr><td>$("a[target='_blank']")</td><td>Selects all &gt;a&lt; elements with a target attribute value equal to "_blank"</td></tr>
-                <tr><td>$("a[target!='_blank']")</td><td>Selects all &gt;a&lt; elements with a target attribute value NOT equal to "_blank"</td></tr>
-                <tr><td>$(":button")</td><td>Selects all &gt;button&lt; elements and &gt;input&lt; elements of type="button"</td></tr>
-                <tr><td>$("tr:even")</td><td>Selects all even &gt;tr&lt; elements</td></tr>
-                <tr><td>$("tr:odd")</td><td>Selects all odd &gt;tr&lt; elements</td></tr>
+                <tr><td><span class="label label-default">$("*")</span></td><td>Selects all elements</td></tr>
+                <tr><td><span class="label label-default">$(this)</span></td><td>Selects the current HTML element</td></tr>
+                <tr><td><span class="label label-default">$("p.intro")</span></td><td>Selects all &lt;p&gt; elements with class="intro"</td></tr>
+                <tr><td><span class="label label-default">$("p:first")</span></td><td>Selects the first &lt;p&gt; element</td></tr>
+                <tr><td><span class="label label-default">$("ul li:first")</span></td><td>Selects the first &lt;li&gt; element of the first &gt;ul&lt;</td></tr>
+                <tr><td><span class="label label-default">$("ul li:first-child")</span></td><td>Selects the first &lt;li&gt; element of every &gt;ul&lt;</td></tr>
+                <tr><td><span class="label label-default">$("[href]")</span></td><td>Selects all elements with an href attribute</td></tr>
+                <tr><td><span class="label label-default">$("a[target='_blank']")</span></td><td>Selects all &lt;a&gt; elements with a target attribute value equal to "_blank"</td></tr>
+                <tr><td><span class="label label-default">$("a[target!='_blank']")</span></td><td>Selects all &lt;a&gt; elements with a target attribute value NOT equal to "_blank"</td></tr>
+                <tr><td><span class="label label-default">$(":button")</span></td><td>Selects all &gt;button&gt; elements and &lt;input&gt; elements of type="button"</td></tr>
+                <tr><td><span class="label label-default">$("tr:even")</span></td><td>Selects all even &lt;tr&gt; elements</td></tr>
+                <tr><td><span class="label label-default">$("tr:odd")</span></td><td>Selects all odd &lt;tr&gt; elements</td></tr>
             </table>
         </div>
         <div class="footer"></div>
     </div>
 </section>
-
 
 <section>
     <div class="container wrapper">
@@ -1106,6 +1133,9 @@ $(document).ready(function(){
         <div class="footer"></div>
     </div>
 </section>
+
+
+
 
 
 <section>
@@ -1129,19 +1159,14 @@ $(document).ready(function(){
             <h3>get content</h3>
             <p>The following example demonstrates how to get content from DOM elements with jQuery:
 
-            <pre>
-$("#btn1").click(function(){
-    alert("Text: " + $("#test").text());
-});
-$("#btn2").click(function(){
-    alert("HTML: " + $("#test").html());
-});
-$("#btn3").click(function(){
-    alert("Value: " + $("#test-input").val());
-});
-$("button").click(function(){
-    alert($("#w3s").attr("href"));
-});
+<pre>
+alert("Text: " + $("#test").text());
+
+alert("HTML: " + $("#test").html());
+
+alert("Value: " + $("#test-input").val());
+
+alert($("#w3s").attr("href"));
 </pre>
             </p>
 
@@ -1158,8 +1183,8 @@ $("button").click(function(){
             <h3>get content</h3>
             <p>attr() - returns the attribute value of selected elements</p>
             <p>The following example demonstrates how to get the value of the href attribute in a link:
-            <pre>
-
+<pre>
+var href = $('a').attr('href');
 </pre>
             </p>
 
@@ -1167,6 +1192,7 @@ $("button").click(function(){
         <div class="footer"></div>
     </div>
 </section>
+
 
 
 <section>
@@ -1285,7 +1311,7 @@ $("p").css({"background-color": "yellow", "font-size": "200%"});
 <section>
     <div class="container wrapper">
         <div class="content">
-            <h1>Modifiing classes</h1>
+            <h1>Modifying classes</h1>
             <p>addClass("class")</p>
             <p>This function add class to DOM element.</p>
 
@@ -1350,6 +1376,19 @@ if($(element).hasClass("some-class")){
     </div>
 </section>
 
+
+<section>
+    <div class="container wrapper">
+        <div class="content">
+            <h1>Find Function</h1>
+            <pre>$(element).find(“.test”)</pre>
+            <p>This function find all elements matching selector “.test” inside element.</p>
+        </div>
+        <div class="footer"></div>
+    </div>
+</section>
+
+
 <section>
     <div class="container wrapper">
         <div class="content">
@@ -1395,6 +1434,7 @@ $("p").on("click", function(){
 </section>
 
 
+
 <section>
     <div class="container wrapper">
         <div class="content">
@@ -1403,13 +1443,22 @@ $("p").on("click", function(){
             <pre>$(selector).effect(speed, callback);</pre>
             <p>The optional speed parameter specifies the speed of the effect, and can take the following values: "slow", "fast", or milliseconds.</p>
             <p>The optional callback parameter is a function to be executed after the effect() method completes.</p>
-
+            <a href="https://api.jquery.com/category/effects/">List of effects</a>
 
         </div>
         <div class="footer"></div>
     </div>
 </section>
 
+<section>
+    <div class="container wrapper">
+        <div class="content">
+            <h1>Thank You!</h1>
+            <h2>Have a nice evening</h2>
+        </div>
+        <div class="footer"></div>
+    </div>
+</section>
 
 <script src="../../js/jquery.min.js"></script>
 <script src="../../js/bootstrap.min.js"></script>

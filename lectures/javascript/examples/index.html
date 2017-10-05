@@ -3,31 +3,32 @@
 
 </head>
 <body>
-    <button>Click Me!</button>
-    <div id="content">First Content</div>
+    <button class="btn">Click Me!</button>
+    <button class="btn">Click Me!</button>
 
-
-
+    <div id="content"><h1>First Content</h1></div>
 
 <script>
-    var button = document.getElementsByTagName('button');
-    button = button[0];
-
     var content = document.getElementById('content');
-    button.onclick = buttonClicked;
 
-    function buttonClicked(){
-        alert('clicked');
-
-        content.innerHTML = "Hello World!";
-        content.style.color = "#00f";
-
-    };
+    content.innerHTML = 'Hello <b>World!</b>';
+    content.className = 'text-danger';
+    content.style.color = '#f0f';
 
 
+    var btn = document.getElementsByClassName('btn');
+    console.log(btn);
+
+    for( var i = 0; i < btn.length; i++ ){
+        btn[i].innerHTML = 'content';
+    }
 
 
+    btn[0].onclick = click;
 
+    function click(){
+        console.log('click');
+    }
 
 </script>
 

@@ -1,0 +1,120 @@
+<html>
+<head>
+
+</head>
+<body>
+<button>Click Me!</button>
+<div id="square" style="background: #000; width:100px; height:100px;"></div>
+
+<div id="content">
+    <h1>header</h1>
+    <p>First Content</p>
+</div>
+
+<script src="../../../js/jquery.min.js"></script>
+<script>
+
+    var cars = ['vw', 'bmw', 'audi', 'fiat'];
+    // task:
+    // 1) for each of the car, create element "<p>{name of car}</p>"
+    // inside div with id="content"
+    // 2) modify the heading inside to "cars"
+
+    /*
+     <div id="content">
+     <h1>cars</h1>
+     <p>vw</p>
+     <p>bmw</p>
+     ...
+     </div>
+     */
+
+
+    $('#content p').remove();
+    $('#content').find('p').remove();
+
+
+    for (var i = 0; i < cars.length; i++) {
+        $('#content').append('<p>' + cars[i] + '</p>')
+    }
+
+    $('#content h1').text('cars');
+    $('#content').find('h1').text('cars');
+
+
+    //multiple ways how to change css
+
+    //not good - looking for elements multiple times
+    $('#content p').css('color', 'green');
+    $('#content p').css('font-size', '40px');
+
+    //eficient, but repeating '$content.css(....)'
+    var $content = $('#content p');
+    $content.css('color', 'green');
+    $content.css('font-size', '40px');
+
+    //eficient but repeating '.css(...)'
+    var $content = $('#content p');
+    $content.css('color', 'green').css('font-size', '40px');
+
+    //complex solution, hard to remember syntax
+    $('#content p').css({
+        'color': 'green',
+        'font-size': '40px'
+    });
+
+
+//    var button = document.getElementsByTagName('button');
+//    button = button[0];
+//
+//    var content = document.getElementById('content');
+//    button.onclick = buttonClicked;
+//
+//    function buttonClicked() {
+//        alert('clicked');
+//
+//        content.innerHTML = "Hello World!";
+//        content.style.color = "#00f";
+//    };
+
+
+    //abracadabra function
+    var content = "Hello World";
+
+//    $('button').click(function(){
+//        var tmpContent = $('#content').html();
+//        $('#content').html(content);
+//        content = tmpContent;
+//
+//
+//    });
+
+
+    var $content = $('#content');
+    $('button').click(function(){
+
+        if($content.hasClass('faded')){
+            $content.removeClass('faded').fadeIn(2000, function(){
+                alert('faded in');
+            });
+        }else{
+            $content.addClass('faded').fadeOut(2000);
+        }
+
+    })
+
+    var $square = $('#square');
+    function fader(){
+        $square.fadeIn(1000, function(){
+            $square.fadeOut(1000, function(){
+                fader();
+            });
+        });
+    }
+    fader();
+
+
+</script>
+
+</body>
+</html>

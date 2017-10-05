@@ -1,0 +1,40 @@
+<html>
+<head>
+
+</head>
+<body>
+    <div id="player" style="position: absolute; width: 100px; height: 100px; background: red; top: 0px"></div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script>
+
+        var player = $('#player');
+
+        $(document).keydown(function(e){
+
+            if(e.key == "ArrowUp"){
+                var top = player.css('top');
+                top = parseInt(top) - 20;
+                player.css('top', top);
+                
+            }else if(e.key == "ArrowDown"){
+                var top = parseInt(player.css('top'));
+
+                player.css('top', top + 20);
+            }else if(e.key == "ArrowLeft"){
+                var top = parseInt(player.css('left'));
+
+                player.css('left', top - 20);
+            }else if(e.key == "ArrowRight"){
+                var top = parseInt(player.css('left'));
+
+                player.css('left', top + 20);
+            }
+        });
+
+
+
+    </script>
+
+</body>
+</html>
