@@ -8,8 +8,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="CodeLeague">
     <title>Coding Bootcamp</title>
-    <link rel="stylesheet" href="../../../css/bootstrap.min.css">
-    <link rel="stylesheet" href="../../../css/font-awesome.css">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <style>
     .item-row{
@@ -37,7 +38,7 @@
             </div>
         </div>
         <div class="col-md-6">
-            <a href="to-basket" class="item-to-basket btn btn-lg btn-danger">Into the basket!</a> 
+            <a href="#" class="item-to-basket btn btn-lg btn-danger">Into the basket!</a>
         </div>
     </div>
 
@@ -98,66 +99,74 @@
    
 </div>
 
-<script src="../../../js/jquery.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"
+        integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+
+
+
 <script>
+    /*
+        1) select the button DOM
+            $('selector')
 
-    $('.item-to-basket').click(function(e){
-        e.preventDefault();
+        2) create listener
 
-        var btn = $(e.target);
-        var pos = btn.offset();
+            $('selector').click(btnClick());
 
-        var left = pos.left;
-        var right = left + btn.outerWidth();
-
-        var top = pos.top;
-        var bottom = top + btn.outerHeight();
-
-        var centerTop = (top + bottom) / 2;
-        var centerLeft = (left + right) / 2;
-
-
-        $('body').append('<div id="plane" style="background:green; width:50px; height:50px"></div>')
-
-        $('#plane').css({
-            'position':'absolute',
-            'left': (centerLeft - 25) + 'px',
-            'top': (centerTop - 25) + 'px'
-        });
-
-
-        var basket = $('#basket');
-        var pos = basket.offset();
-
-        var left = pos.left;
-        var right = left + basket.outerWidth();
-
-        var top = pos.top;
-        var bottom = top + basket.outerHeight();
-
-        var centerTop = (top + bottom) / 2;
-        var centerLeft = (left + right) / 2;
-
-        $('#plane').animate({
-            'left': (centerLeft - 25) + 'px',
-            'top': (centerTop - 25) + 'px'
-        }, 500, function(){
-            $('#plane').remove();
-
-            var count = $('#basket-count').text();
-
-            if(count == ''){
-                count = 0;
+            function btnClick(){
+                // code
             }
 
-            count = parseInt(count) + 1;
+            ---
 
-            $('#basket-count').text(count);
+            $('selector').click(function  (){
+                // code to execute
+            })
+
+        3) do sth
+     */
+
+
+    var basketOffset = $('#basket').offset()
+
+
+
+    console.log($('.item-to-basket'));
+
+
+    $('.item-to-basket').click(function(){
+
+
+
+
+        $('body').append('<div id="flier"></div>');
+
+        //$(this) - holds the button which was pressed
+        var btnOffset = $(this).offset();
+
+        $('#flier').css({
+            'width': '50px',
+            'height': '50px',
+            'background': '#00f',
+            'position': 'absolute',
+            'top' : btnOffset.top  - ($(this).outerHeight() / 2) + 25,
+            'left' : btnOffset.left + ($(this).outerWidth() / 2) - 25
         });
-    })
+
+        $('#flier').animate({
+            'top': basketOffset.top,
+            'left': basketOffset.left
+        }, 1000, function(){
+            $('#flier').remove();
+
+
+            var number = $('#basket-count').html();
+            number++;
+            $('#basket-count').html(number);
+        });
+    });
 
 </script>
-
 
 
 </body>

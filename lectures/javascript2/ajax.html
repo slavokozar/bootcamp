@@ -1,0 +1,36 @@
+<html>
+
+<head>
+
+</head>
+<body>
+
+
+</body>
+
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"
+        integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+
+
+<script>
+    $.ajax({
+        'url': "example.php",
+        'type': 'post',
+        'data': {
+            'a': 'value'
+        }
+    })
+        .done(function (data) {
+
+            alert(data);
+
+        })
+        .fail(function (jqXHR, textStatus) {
+            alert("error");
+        })
+        .always(function () {
+            alert("complete");
+        });
+</script>
+
+</html>

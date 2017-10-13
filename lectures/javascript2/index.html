@@ -49,40 +49,46 @@
         <div class="footer"></div>
     </div>
 </section>
-
 <section>
     <div class="container wrapper">
         <div class="content">
             <h1>Schedule</h1>
             <div class="row">
                 <div class="col-md-6">
-                    <h2>9.00 - 10.20</h2>
+                    <h2>9.00 - 9.30</h2>
                     <ul>
-                        <li>Introduction to AJAX</li>
+                        <li>Warm-up Exercise</li>
                     </ul>
+                    <h2 class="text-danger">9.30 - 9.45 Stand-up</h2>
 
-                    <h2 class="text-danger">10.20 - 10.30 Break</h2>
-
-                    <h2>10.30 - 12.00</h2>
+                    <h2>9.45 - 10.30</h2>
                     <ul>
-                        <li>Data parsing, rendering</li>
+                        <li>Introduction to Ajax</li>
+                        <li>Request, Response, Callback</li>
                     </ul>
-                    <h2 class="text-danger">12.00 - 13.00 Lunch</h2>
+                    <h2 class="text-danger">10.30 - 10.45 Break</h2>
+
+                    <h2>10.45 - 12.00</h2>
+                    <ul>
+                        <li>Practising Ajax</li>
+                    </ul>
                 </div>
                 <div class="col-md-6">
-                    <h2>13.00 - 15.00</h2>
+                    <h2 class="text-danger">12.00 - 13.00 Lunch</h2>
+
+                    <h2>13.00 - 14.30</h2>
                     <ul>
-                        <li>jQuery animations</li>
+                        <li>jQuery effects</li>
                     </ul>
-                    <h2 class="text-danger">15.00 - 15.15 Break</h2>
+                    <h2 class="text-danger">14.30 - 14.45 Break</h2>
+
 
                     <h2>15.15 - 17.00</h2>
                     <ul>
-                        <li>practising</li>
+                        <li>practising for tomorrow</li>
                     </ul>
                 </div>
             </div>
-
         </div>
         <div class="footer"></div>
     </div>
@@ -420,11 +426,26 @@ $.ajax({
     </div>
 </section>
 
+<section>
+    <div class="container wrapper">
+        <div class="content">
+            <h2>Calculator example</h2>
+            <h3>Create ajax calculator.</h3>
+            <p>Create html form with two number inputs and button.</p>
+            <p>On form button pressed, data will be send to server by ajax call.</p>
+            <p>Response of ajax call will be show to user.</p>
+            <p>Create php script, which will add two numbers from POST request.</p>
+
+        </div>
+        <div class="footer"></div>
+    </div>
+</section>
+
 
 <section>
     <div class="container wrapper">
         <div class="content">
-            <h1>Dimensions</h1>
+            <h2>Dimensions</h2>
             <p>jQuery has several important methods for working with dimensions:</p>
 
             <ul>
@@ -444,7 +465,7 @@ $.ajax({
 <section>
     <div class="container wrapper">
         <div class="content">
-            <h1>Dimensions</h1>
+            <h2>Dimensions</h2>
             <img src="http://www.w3schools.com/jquery/img_jquerydim.gif" />
         </div>
         <div class="footer"></div>
@@ -454,7 +475,7 @@ $.ajax({
 <section>
     <div class="container wrapper">
         <div class="content">
-            <h1>Offset</h1>
+            <h2>Offset</h2>
             <p>get the position of element in window</p>
 
             <p>offset()</p>
@@ -481,12 +502,10 @@ $.ajax({
 </section>
 
 
-
 <section>
     <div class="container wrapper">
         <div class="content">
-            <h1>hide() / show()</h1>
-
+            <h2>hide() / show()</h2>
 
             <p>With jQuery, you can hide and show HTML elements with the hide() and show() methods:
 
@@ -507,10 +526,11 @@ $.ajax({
 </section>
 
 
+
 <section>
     <div class="container wrapper">
         <div class="content">
-            <h1>fade()</h1>
+            <h2>fade()</h2>
             <p>With jQuery you can fade an element in and out of visibility.</p>
             <p>jQuery has the following fade methods:
             <ul>
@@ -528,7 +548,7 @@ $.ajax({
 <section>
     <div class="container wrapper">
         <div class="content">
-            <h1>slide()</h1>
+            <h2>slide()</h2>
 
             <p>With jQuery you can create a sliding effect on elements.</p>
             <p>jQuery has the following slide methods:
@@ -547,7 +567,7 @@ $.ajax({
 <section>
     <div class="container wrapper">
         <div class="content">
-            <h1>animate()</h1>
+            <h2>animate()</h2>
 
             <p>The jQuery animate() method is used to create custom animations.</p>
             <h3>$(selector).animate({params},speed,callback);</h3>
@@ -557,10 +577,69 @@ $.ajax({
     </div>
 </section>
 
+
 <section>
     <div class="container wrapper">
         <div class="content">
-            <h1>DOM traversings</h1>
+            <h1>Timing of actions</h1>
+        </div>
+        <div class="footer"></div>
+    </div>
+</section>
+
+
+<section>
+    <div class="container wrapper">
+        <div class="content">
+            <h2>setTimeout()</h2>
+            <p>The setTimeout() method calls a function or evaluates an expression after a specified number of milliseconds.</p>
+<pre>
+setTimeout(function(){  alert('the second has passed')  }, 1000);
+</pre>
+        </div>
+        <div class="footer"></div>
+    </div>
+</section>
+
+<section>
+    <div class="container wrapper">
+        <div class="content">
+            <h2>setInterval()</h2>
+            <p>The setInterval() method calls a function or evaluates an expression at specified intervals (in milliseconds).</p>
+            <p>The setInterval() method will continue calling the function until clearInterval() is called, or the window is closed.</p>
+<pre>
+var interval;
+
+function startInterval(){
+     interval = setInterval(function(){ alert('the second has passed') }, 1000);
+}
+
+function stopInterval() {
+    clearInterval(interval);
+}
+</pre>
+        </div>
+        <div class="footer"></div>
+    </div>
+</section>
+
+
+<section>
+    <div class="container wrapper">
+        <div class="content">
+            <h1>DOM traversing</h1>
+
+            <img src="http://www.w3schools.com/jquery/img_travtree.png" />
+        </div>
+        <div class="footer"></div>
+    </div>
+</section>
+
+
+<section>
+    <div class="container wrapper">
+        <div class="content">
+            <h2>DOM traversing</h2>
             <p>jQuery traversing, which means "move through", are used to "find" (or select) HTML elements based on their relation to other elements. Start with one selection and move through that selection until you reach the elements you desire.</p>
 
             <img src="http://www.w3schools.com/jquery/img_travtree.png" />
@@ -570,18 +649,15 @@ $.ajax({
 </section>
 
 
-
 <section>
     <div class="container wrapper">
         <div class="content">
-            <h1>Ancestors</h1>
+            <h2>Ancestors</h2>
             <h3>parent()</h3>
             <p>The parent() method returns the direct parent element of the selected element.</p>
 
-
             <h3>parents()</h3>
             <p>The parents() method returns all ancestor elements of the selected element, all the way up to the document's root element (&gt;html&lt;).</p>
-
 
             <h3>parentsUntil(selector)</h3>
             <p>The parentsUntil() method returns all ancestor elements until ancestor matched by given selector.</p>
@@ -594,7 +670,7 @@ $.ajax({
 <section>
     <div class="container wrapper">
         <div class="content">
-            <h1>Descendants</h1>
+            <h2>Descendants</h2>
             <h3>children()</h3>
             <p>The children() method returns all direct children of the selected element.</p>
 
@@ -612,7 +688,7 @@ $.ajax({
 <section>
     <div class="container wrapper">
         <div class="content">
-            <h1>Siblings</h1>
+            <h2>Siblings</h2>
 
             <h3>siblings()</h3>
             <h3>next()</h3>
@@ -630,7 +706,7 @@ $.ajax({
 <section>
     <div class="container wrapper">
         <div class="content">
-            <h1>Filtering</h1>
+            <h2>Filtering</h2>
             <h3>first()</h3>
             <p>The first() method returns the first element of the selected elements.</p>
 
